@@ -1,0 +1,25 @@
+*** How to Setup OS Environemnt variables: ***
+1) Open cmd prompt and trpe below commands
+2) set PASSWORD=my_secure_password 
+3) echo %PASSWORD% 
+4) reg delete HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment /F /V PASSWORD
+
+***To run parameterize test script ***
+pytest TC_CreateOpportunity.py --url https://netapp2--uat.sandbox.lightning.force.com/ --browser_type chromium --reruns 2
+pytest TC_CreateOpportunity.py --url https://netapp2--projectdev.sandbox.lightning.force.com/lightning/page/home --browser_type firefox
+pytest TC_CreateOpportunity.py --reruns 2
+
+***Groups Test scripts execution***
+pytest C:\Automation_Project\E2E_Automation\tests_SFDC\TC_Login.py -m master (Test script will execute, as it belongs to master group)
+pytest C:\Automation_Project\E2E_Automation\tests_SFDC\TC_Login.py -m smoke (Test script will execute, as it belongs to smoke group)
+pytest C:\Automation_Project\E2E_Automation\tests_SFDC\TC_Login.py -m regression (Test script will not execute, as it doesn't belongs to regression group)
+
+***Parallel Test scripts execution***
+pytest -n 2 "C:\Automation_Project\E2E_Automation\tests_SFDC\TC_Login.py" "C:\Automation_Project\E2E_Automation\tests_SFDC\TC_CreateOpportunity.py"
+
+***Open Allure reports from Terminal***
+allure serve reports/allure-results
+
+***Open Allure reports from cmd prompt after bat execution***
+allure generate C:/Automation_Project/E2E_Automation/reports/allure-results --clean -o C:/Automation_Project/E2E_Automation/reports/allure-report
+allure open C:/Automation_Project/E2E_Automation/reports/allure-report

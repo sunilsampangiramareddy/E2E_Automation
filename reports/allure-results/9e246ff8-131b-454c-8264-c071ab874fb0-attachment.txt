@@ -1,0 +1,7 @@
+2025-11-17 13:17:02 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 13:17:08 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 13:17:11 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 13:17:16 - playwright_pytest - INFO - Entered password
+2025-11-17 13:17:20 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 13:17:41 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 13:17:44 - playwright_pytest - INFO - Opportunities label has been verified on the homepage

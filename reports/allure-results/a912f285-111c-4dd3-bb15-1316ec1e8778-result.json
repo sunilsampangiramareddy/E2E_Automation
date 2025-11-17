@@ -1,0 +1,1 @@
+{"name": "test_login[test_case0]", "status": "passed", "parameters": [{"name": "test_case", "value": "{'User Name': 'apptestmbob4@netapp.com'}"}], "start": 1763368621085, "stop": 1763368623787, "uuid": "a99d7964-e686-416d-91f7-35012ab96649", "testCaseId": "87238c7d42fa5c814783ed806d0e04fa", "fullName": "tests_SFDC.TC_Login#test_login", "titlePath": ["tests_SFDC", "TC_Login.py"]}

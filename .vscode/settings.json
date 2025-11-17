@@ -1,0 +1,12 @@
+{    
+    // Ensure this points to the correct Python interpreter
+    "python.pythonPath": "C:\\Users\\sunilr2\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    
+    // Path to the environment file
+    "python.envFile": "${workspaceFolder}/.env",
+    
+    // Add the workspace folder to the extra paths
+    "python.analysis.extraPaths": ["${workspaceFolder}"],
+    
+    "python.analysis.autoImportCompletions": false  
+}

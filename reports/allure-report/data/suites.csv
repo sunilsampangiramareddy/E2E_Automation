@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","116355","test_createOpportunity[test_case1]","tests_SFDC","2025-11-17","passed","2025-11-17","","TC_CreateOpportunity","",""
+"","119380","test_createOpportunity[test_case0]","tests_SFDC","2025-11-17","passed","2025-11-17","","TC_CreateOpportunity","",""
+"","44900","test_login[test_case0]","tests_SFDC","2025-11-17","passed","2025-11-17","","TC_Login","",""
