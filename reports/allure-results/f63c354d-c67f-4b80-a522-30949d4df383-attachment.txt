@@ -1,2 +1,0 @@
-[32mINFO    [0m playwright_pytest:TC_Login.py:31 Launching application URL: https://www.google.com
-[32mINFO    [0m playwright_pytest:TC_Login.py:31 Launching application URL: https://www.google.com

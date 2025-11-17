@@ -1,11 +1,12 @@
 from playwright.sync_api import Page, expect
 import time
+import random
+import logging
+
+logger = logging.getLogger('playwright_pytest')
 
 class CreateOpportunity:
-    nw = 2
-    sw = 5
-    mw = 10
-    lw = 20
+    nw=3; sw=5; mw=10; lw=20 
     
     def __init__(self, page: Page):
         self.page = page
@@ -32,9 +33,12 @@ class CreateOpportunity:
         time.sleep(self.sw) 
         
     def enterOpportunityName(self, opportunity_Name: str):
+        random_number = random.randint(10000, 99999)
+        full_opportunity_name = f"{opportunity_Name} {random_number}"
         expect(self.opportunityName).to_be_visible()
         self.opportunityName.click()
-        self.opportunityName.fill(opportunity_Name)
+        self.opportunityName.fill(full_opportunity_name)
+        logger.info(f"Entered opportunity name: {full_opportunity_name}")
         time.sleep(self.nw) 
         
     def selectPrimaryContact_option(self, option_value):

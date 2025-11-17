@@ -19,7 +19,9 @@ pytest -n 2 "C:\Automation_Project\E2E_Automation\tests_SFDC\TC_Login.py" "C:\Au
 
 ***Open Allure reports from Terminal***
 allure serve reports/allure-results
-
-***Open Allure reports from cmd prompt after bat execution***
+***Open Allure reports manually from cmd prompt after bat execution***
 allure generate C:/Automation_Project/E2E_Automation/reports/allure-results --clean -o C:/Automation_Project/E2E_Automation/reports/allure-report
 allure open C:/Automation_Project/E2E_Automation/reports/allure-report
+
+***Open Codegen***
+playwright codegen

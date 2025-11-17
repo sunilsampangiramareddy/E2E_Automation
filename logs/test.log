@@ -721,3 +721,195 @@
 2025-11-17 14:14:15 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
 2025-11-17 14:14:22 - playwright_pytest - INFO - Selected primary contact: Amit Jain
 2025-11-17 14:14:28 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:18:42 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 18:18:48 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 18:18:52 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:18:57 - playwright_pytest - INFO - Entered password
+2025-11-17 18:19:01 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 18:19:22 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 18:19:25 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 18:23:59 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 18:24:04 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 18:24:08 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:24:13 - playwright_pytest - INFO - Entered password
+2025-11-17 18:24:18 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 18:24:40 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 18:24:43 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 18:24:54 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 18:25:05 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 18:25:15 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 18:25:21 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:25:26 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 18:25:31 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 18:25:36 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:49:08 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:49:17 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:49:24 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:00 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:08 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:15 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:22 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:29 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:51:37 - playwright_pytest - INFO - Launching application URL: https://www.google.com
+2025-11-17 18:53:03 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 18:53:08 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 18:53:11 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:53:19 - playwright_pytest - INFO - Entered password
+2025-11-17 18:53:23 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 18:53:44 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 18:53:48 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 18:57:40 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 18:57:40 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 18:57:45 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 18:57:45 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 18:57:49 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:57:49 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:57:54 - playwright_pytest - INFO - Entered password
+2025-11-17 18:57:55 - playwright_pytest - INFO - Entered password
+2025-11-17 18:57:58 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 18:57:59 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 18:58:20 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 18:58:22 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 18:58:23 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 18:58:25 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 18:58:36 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 18:58:47 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 18:58:56 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 18:59:02 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 18:59:05 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 18:59:09 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 18:59:14 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:00:57 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:01:03 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:01:07 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:01:14 - playwright_pytest - INFO - Entered password
+2025-11-17 19:01:18 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:01:39 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:01:42 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:01:53 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:01:59 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:02:03 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:02:09 - playwright_pytest - INFO - Entered password
+2025-11-17 19:02:14 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:02:34 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:02:38 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:02:49 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:02:59 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:03:11 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:03:17 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:03:24 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:03:31 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:03:36 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:10:17 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:10:23 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:10:26 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:10:33 - playwright_pytest - INFO - Entered password
+2025-11-17 19:10:38 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:10:59 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:11:02 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:11:13 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:11:23 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:11:32 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:11:37 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:11:41 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:11:44 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:11:50 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:17:10 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:17:15 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:17:19 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:17:24 - playwright_pytest - INFO - Entered password
+2025-11-17 19:17:28 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:17:48 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:17:52 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:18:02 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:18:12 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:18:24 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:18:29 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:18:31 - playwright_pytest - INFO - Entered opportunity name: full_opportunity_name
+2025-11-17 19:18:34 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:18:38 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:18:44 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:21:32 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:21:38 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:21:41 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:22:13 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:22:19 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:22:22 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:22:27 - playwright_pytest - INFO - Entered password
+2025-11-17 19:22:31 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:22:52 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:22:55 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:23:06 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:23:16 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:23:28 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:23:33 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:23:35 - playwright_pytest - INFO - Entered opportunity name: ['full_opportunity_name']
+2025-11-17 19:23:38 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:23:42 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:23:47 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:25:28 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:25:33 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:25:36 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:25:43 - playwright_pytest - INFO - Entered password
+2025-11-17 19:25:47 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:26:08 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:26:11 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:26:21 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:26:31 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:26:43 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:26:48 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:26:50 - playwright_pytest - INFO - Entered opportunity name: Test for Automation38651
+2025-11-17 19:26:53 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:26:57 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:27:03 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:34:05 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 19:34:11 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 19:34:14 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:34:20 - playwright_pytest - INFO - Entered password
+2025-11-17 19:34:24 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 19:34:45 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 19:34:49 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 19:34:59 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 19:35:09 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 19:35:22 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 19:35:27 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 19:35:31 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 28606
+2025-11-17 19:35:34 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 19:35:40 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 19:35:45 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:32:48 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 23:32:54 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 23:32:57 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:33:03 - playwright_pytest - INFO - Entered password
+2025-11-17 23:33:07 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 23:33:28 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 23:33:33 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 23:35:06 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 23:35:12 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 23:35:15 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:35:21 - playwright_pytest - INFO - Entered password
+2025-11-17 23:35:25 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 23:35:48 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 23:35:52 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 23:37:32 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 23:37:38 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 23:37:42 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:37:47 - playwright_pytest - INFO - Entered password
+2025-11-17 23:37:52 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 23:38:13 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 23:38:16 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-11-17 23:38:27 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-11-17 23:38:38 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-11-17 23:38:52 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-11-17 23:38:58 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:39:00 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 97816
+2025-11-17 23:39:03 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-11-17 23:39:11 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-11-17 23:39:17 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:52:06 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-11-17 23:52:11 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-11-17 23:52:15 - playwright_pytest - INFO - Clicked on next button
+2025-11-17 23:52:22 - playwright_pytest - INFO - Entered password
+2025-11-17 23:52:42 - playwright_pytest - INFO - Signin button clicked
+2025-11-17 23:53:03 - playwright_pytest - INFO - Yes button clicked
+2025-11-17 23:53:07 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
