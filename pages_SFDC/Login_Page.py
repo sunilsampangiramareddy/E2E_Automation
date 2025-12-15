@@ -20,7 +20,7 @@ class LoginPage:
     def clickNextButton(self):
         expect(self.nextButton).to_be_visible()
         self.nextButton.click()
-        time.sleep(self.nw) 
+        time.sleep(self.sw) 
         
     def enterPassword(self, password: str):
         expect(self.passwordInput).to_be_visible()
@@ -30,7 +30,7 @@ class LoginPage:
     def clickSigninButton(self):
         expect(self.signinButton).to_be_visible()
         self.signinButton.click()
-        time.sleep(self.nw) 
+        time.sleep(self.sw) 
         
     def clickYesButton(self):
         expect(self.yesButton).to_be_visible()

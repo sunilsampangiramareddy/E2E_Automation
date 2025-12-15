@@ -9,6 +9,10 @@ from pages_SFDC.Home_Page import HomePage
 from pages_SFDC.Create_Opportunity import CreateOpportunity
 from pages_CPQ.Home_Page_CPQ import HomePageCPQ
 from pages_FAS_AFF_ASA_AFX.HomePage_FAS_AFF_ASA_AFX import HomePageFAS_AFF_ASA_AFX
+from pages_CPQ.Account_Information_Page import AccountInformationPage
+from pages_CPQ.Approval_Request_Page import ApprovalRequestPage
+from pages_CPQ.Attachments_Page import AttachmentsPage
+from pages_CPQ.Purchase_Order_Page import PurchaseOrderPage
 from utils.screenshot_util import ScreenshotUtil
 from utils.config_reader import ConfigReader
 from utils.excel_read import read_test_data
@@ -16,7 +20,7 @@ from utils.write_excel_results import WriteExcelResults
 
 logger = logging.getLogger('playwright_pytest')
 # Load test data from Excel
-relative_file_path = os.path.join('testData', 'TC_ConfigureQuote.xlsx')
+relative_file_path = os.path.join('testData', 'TC_FAS_AFF_Cluster_Config.xlsx')
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
@@ -195,6 +199,80 @@ def test_FAS_AFF_ConfigureQuote(page: Page, base_url, config, test_case) -> None
         
         hpFAS.clickSaveButton()
         logger.info(f"Clicked on Save button")
+        
+        
+        
+        
+        aip=AccountInformationPage(new_tab)
+        logger.info(f"AccountInformationPage instance created for the new tab")
+        
+        aip.clickAccountInformationTab()
+        logger.info(f"Clicked on Account Information Tab")
+        
+        aip.enterAccountInformation()
+        logger.info(f"Entered account information details")
+        
+        aip.selectShippingMethod()
+        logger.info(f"Selected shipping method")
+        
+        aip.enterShippingInstructions()
+        logger.info(f"Entered shipping instructions")
+        
+        hpFAS.clickSaveButton()
+        logger.info(f"Clicked on Save button")
+        
+        ar=ApprovalRequestPage(new_tab)
+        logger.info(f"ApprovalRequestPage instance created for the new tab")
+        
+        ar.clickApprovalRequestTab()
+        logger.info(f"Clicked on Approval request tab")
+        
+        ar.clickInitiateApproval()
+        logger.info(f"Clicked on Initiate Approval button")
+        
+        ap=AttachmentsPage(new_tab)
+        logger.info(f"AttachmentsPage instance created for the new tab")
+        
+        ap.clickAttachmentsTab()
+        logger.info(f"Clicked on Attachments tab")
+        
+        ap.selectDragAndDrop()
+        logger.info(f"Selected file to upload")
+        
+        ap.selectAttachmentType()
+        logger.info(f"Selected attachment type")
+        
+        ap.enterAttachmentDescription()
+        logger.info(f"Enter attachment description")
+        
+        ap.clickUploadButton()
+        logger.info(f"Clicked on upload button")
+        
+        po=PurchaseOrderPage(new_tab)
+        logger.info(f"PurchaseOrderPage instance created for the new tab")
+        
+        po.clickPurchaseOrderTab()
+        logger.info(f"Clicked on Purchase order tab")
+        
+        po.enterPONumber()
+        logger.info(f"Entered PO number")
+        
+        po.enterPODate()
+        logger.info(f"Entered PO date")
+        
+        po.enterPOEmail()
+        logger.info(f"Entered PO email address")
+        
+        po.enterPOComments()
+        logger.info(f"Entered PO comments")
+        
+        hpFAS.clickSaveButton()
+        logger.info(f"Clicked on Save button")
+        
+        po.clickSubmitPO()
+        logger.info(f"Clicked on Submit PO button")
+        
+        
         
         
         
