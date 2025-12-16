@@ -1,0 +1,8 @@
+[32mINFO    [0m playwright_pytest:TC_Login.py:37 Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+[32mINFO    [0m playwright_pytest:TC_Login.py:38 ***TC_Login Test Script Execution Started***
+[32mINFO    [0m playwright_pytest:TC_Login.py:43 Username entered: apptestmbob4@netapp.com
+[32mINFO    [0m playwright_pytest:TC_Login.py:51 Clicked on next button
+[32mINFO    [0m playwright_pytest:TC_Login.py:55 Entered password
+[32mINFO    [0m playwright_pytest:TC_Login.py:59 Signin button clicked
+[32mINFO    [0m playwright_pytest:TC_Login.py:62 Yes button clicked
+[32mINFO    [0m playwright_pytest:TC_Login.py:65 Opportunities label has been verified on the homepage

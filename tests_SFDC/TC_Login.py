@@ -41,7 +41,7 @@ def test_login(page: Page, base_url, config, test_case) -> None:
         lp.enterUserName(test_case['User Name'])
         ss.capture_screenshot("Username entered") 
         logger.info(f"Username entered: {test_case['User Name']}")
-    
+            
         #lp.enterUserName(config.get_username())
         #ss.capture_screenshot("Username entered") 
         #logger.info("Username entered")

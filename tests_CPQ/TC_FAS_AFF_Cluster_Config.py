@@ -28,7 +28,6 @@ test_data = read_test_data(file_path)
 # Get the test script name without the extension
 script_name = os.path.splitext(os.path.basename(__file__))[0]
 
-
 @pytest.mark.parametrize('test_case', test_data.to_dict(orient='records'))
 @pytest.mark.master
 @pytest.mark.regression
@@ -200,9 +199,6 @@ def test_FAS_AFF_ConfigureQuote(page: Page, base_url, config, test_case) -> None
         hpFAS.clickSaveButton()
         logger.info(f"Clicked on Save button")
         
-        
-        
-        
         aip=AccountInformationPage(new_tab)
         logger.info(f"AccountInformationPage instance created for the new tab")
         
@@ -273,13 +269,6 @@ def test_FAS_AFF_ConfigureQuote(page: Page, base_url, config, test_case) -> None
         logger.info(f"Clicked on Submit PO button")
         
         
-        
-        
-        
-        
-        
-        
-    
         
         # Capture test result and write to Excel
         test_results = [

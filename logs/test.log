@@ -10124,3 +10124,1484 @@ Call log:
 2025-12-15 17:11:33 - playwright_pytest - INFO - Signin button clicked
 2025-12-15 17:11:56 - playwright_pytest - INFO - Yes button clicked
 2025-12-15 17:11:56 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Target page, context or browser has been closed
+2025-12-15 17:27:12 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 17:27:12 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 17:27:18 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 17:27:23 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:27:28 - playwright_pytest - INFO - Entered password
+2025-12-15 17:27:35 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 17:27:55 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 17:27:58 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 17:28:09 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 17:28:19 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 17:28:32 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 17:28:37 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:28:40 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 56646
+2025-12-15 17:28:43 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 17:28:49 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 17:28:55 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:29:51 - playwright_pytest - ERROR - An error occurred: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("option", name="Search Products \"All SAN").locator("svg")
+
+2025-12-15 17:29:56 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 17:29:56 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 17:30:02 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 17:30:07 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:30:11 - playwright_pytest - INFO - Entered password
+2025-12-15 17:30:17 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 17:30:38 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 17:30:40 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 17:30:51 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 17:31:01 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 17:31:13 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 17:31:19 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:31:22 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 76722
+2025-12-15 17:31:25 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 17:31:31 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 17:31:36 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:32:07 - playwright_pytest - INFO - Selected product
+2025-12-15 17:32:23 - playwright_pytest - INFO - Entered product price
+2025-12-15 17:33:05 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 17:33:05 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 17:33:25 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 17:33:27 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 17:33:28 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Error: strict mode violation: locator("//div[3]/div[1]/div[2]") resolved to 2 elements:
+    1) <div class="oj-typography-body-sm oj-typography-semi-bold oj-sm-align-self-center">…</div> aka get_by_text("214377", exact=True)
+    2) <div class="wm-visual-design-flex-container" id="container-8dbf786c-7da0-4898-aa4b-f1b836878c53">…</div> aka locator("div").filter(has_text=re.compile(r"^Close me$"))
+
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for locator("//div[3]/div[1]/div[2]")
+
+2025-12-15 17:33:39 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 17:33:39 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 17:33:45 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 17:33:50 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:33:54 - playwright_pytest - INFO - Entered password
+2025-12-15 17:34:00 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 17:34:21 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 17:34:23 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 17:34:34 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 17:34:44 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 17:34:57 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 17:35:02 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:35:05 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 96116
+2025-12-15 17:35:08 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 17:35:14 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 17:35:19 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:35:50 - playwright_pytest - INFO - Selected product
+2025-12-15 17:36:06 - playwright_pytest - INFO - Entered product price
+2025-12-15 17:36:45 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 17:36:45 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 17:37:05 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 17:37:06 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 17:37:06 - playwright_pytest - INFO - Quote Number: 214378
+2025-12-15 17:37:06 - playwright_pytest - INFO - Quote Name: Quote 214378 for Apple Inc.
+2025-12-15 17:37:06 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-15 17:37:11 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-15 17:37:22 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-15 17:37:22 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-15 17:37:25 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-15 17:37:29 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-15 17:37:41 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-15 17:37:49 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-15 17:37:52 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-15 17:38:13 - playwright_pytest - INFO - Clicked on configure button
+2025-12-15 17:38:17 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-15 17:38:24 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-15 17:38:30 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-15 17:38:34 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-15 17:38:41 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-15 17:38:49 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-15 17:39:09 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-15 17:39:15 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-15 17:39:19 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-15 17:39:22 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-15 17:39:26 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-15 17:39:29 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-15 17:40:20 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-15 17:40:20 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-15 17:40:25 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-15 17:40:25 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-15 17:40:26 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-15 17:40:26 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-15 17:40:26 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 17:40:26 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:27 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-15 17:40:28 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-15 17:40:28 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-15 17:40:28 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:29 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:29 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:29 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 17:40:29 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-15 17:40:39 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 17:40:39 - playwright_pytest - INFO - AccountInformationPage instance created for the new tab
+2025-12-15 17:40:46 - playwright_pytest - INFO - Clicked on Account Information Tab
+2025-12-15 17:42:46 - playwright_pytest - INFO - Entered account information details
+2025-12-15 17:42:51 - playwright_pytest - INFO - Selected shipping method
+2025-12-15 17:42:55 - playwright_pytest - INFO - Entered shipping instructions
+2025-12-15 17:43:05 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 17:43:05 - playwright_pytest - INFO - ApprovalRequestPage instance created for the new tab
+2025-12-15 17:43:11 - playwright_pytest - INFO - Clicked on Approval request tab
+2025-12-15 17:43:31 - playwright_pytest - INFO - Clicked on Initiate Approval button
+2025-12-15 17:43:31 - playwright_pytest - INFO - AttachmentsPage instance created for the new tab
+2025-12-15 17:43:38 - playwright_pytest - INFO - Clicked on Attachments tab
+2025-12-15 17:43:45 - playwright_pytest - INFO - Selected file to upload
+2025-12-15 17:43:48 - playwright_pytest - INFO - Selected attachment type
+2025-12-15 17:43:52 - playwright_pytest - INFO - Enter attachment description
+2025-12-15 17:44:03 - playwright_pytest - INFO - Clicked on upload button
+2025-12-15 17:44:03 - playwright_pytest - INFO - PurchaseOrderPage instance created for the new tab
+2025-12-15 17:44:09 - playwright_pytest - INFO - Clicked on Purchase order tab
+2025-12-15 17:44:13 - playwright_pytest - INFO - Entered PO number
+2025-12-15 17:44:16 - playwright_pytest - INFO - Entered PO date
+2025-12-15 17:44:20 - playwright_pytest - INFO - Entered PO email address
+2025-12-15 17:44:24 - playwright_pytest - INFO - Entered PO comments
+2025-12-15 17:44:34 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 17:44:55 - playwright_pytest - INFO - Clicked on Submit PO button
+2025-12-15 17:49:33 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 17:49:33 - playwright_pytest - INFO - ***TC_Login Test Script Execution Started***
+2025-12-15 17:49:40 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 17:49:45 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 17:49:49 - playwright_pytest - INFO - Entered password
+2025-12-15 17:49:55 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 17:50:18 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 17:50:21 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 20:03:25 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:03:25 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:03:30 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("textbox", name="Email Address")
+
+2025-12-15 20:03:40 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:03:40 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:03:46 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:03:51 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:03:57 - playwright_pytest - INFO - Entered password
+2025-12-15 20:04:03 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:04:08 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:04:19 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:04:19 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:04:25 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:04:30 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:04:37 - playwright_pytest - INFO - Entered password
+2025-12-15 20:04:43 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:05:06 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 20:05:06 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: None 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("link", name="Opportunities")
+    - waiting for" https://netapp2--uat.sandbox.lightning.force.com/one/one.app" navigation to finish...
+    - navigated to "https://netapp2--uat.sandbox.lightning.force.com/one/one.app"
+
+2025-12-15 20:05:50 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:05:50 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:05:57 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:06:02 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:06:08 - playwright_pytest - INFO - Entered password
+2025-12-15 20:06:14 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:06:35 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 20:06:40 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("link", name="Opportunities")
+    - waiting for" https://netapp2--uat.sandbox.file.force.com/secur/contentDoor?startURL=https%3A%2F%2Fnetapp2--uat.sandbox.my.salesforce.com%2Fone%2Fone.app&sid=00Dce000003BNal%21AQEAQJamRBG04Z5fnDSdScIXCUpTTjSkg6.xm…" navigation to finish...
+    - navigated to "https://netapp2--uat.sandbox.file.force.com/secur/contentDoor?startURL=https%3A%2F%2Fnetapp2--uat.sandbox.my.salesforce.com%2Fone%2Fone.app&sid=00Dce000003BNal%21AQEAQJamRBG04Z5fnDSdScIXCUpTTjSkg6.xm…"
+    - waiting for" https://netapp2--uat.sandbox.lightning.force.com/visualforce/recsession?sid=00Dce000003BNal%21AQEAQCEXsAnwG9vlBWpRPaFdEOJnamezBuxmuRBE_CHqsXSNIzYdj_ySqxGzLwHOZoBYmG4I0FF84sCvZFwOl8.7kji3Vryj&inst=ce&…" navigation to finish...
+    - navigated to "https://netapp2--uat.sandbox.lightning.force.com/one/one.app"
+
+2025-12-15 20:06:53 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:06:53 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:07:00 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:07:05 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:07:12 - playwright_pytest - INFO - Entered password
+2025-12-15 20:07:18 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:07:41 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 20:07:43 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 20:07:56 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 20:07:56 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Target page, context or browser has been closed
+2025-12-15 20:08:47 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:08:47 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:08:54 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:09:00 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:09:06 - playwright_pytest - INFO - Entered password
+2025-12-15 20:09:13 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:09:18 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:09:23 - playwright_pytest - ERROR - An error occurred: Page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://netapp2--uat.sandbox.lightning.force.com/", waiting until "load"
+
+2025-12-15 20:10:08 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:10:08 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:10:15 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:10:20 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:10:26 - playwright_pytest - INFO - Entered password
+2025-12-15 20:10:32 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:10:37 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:10:46 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:10:46 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:10:52 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:10:57 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:11:03 - playwright_pytest - INFO - Entered password
+2025-12-15 20:11:09 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:11:14 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:11:22 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:11:22 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:11:30 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:11:35 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:11:40 - playwright_pytest - INFO - Entered password
+2025-12-15 20:11:46 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:11:51 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:18:02 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:18:02 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:18:09 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:18:14 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:18:21 - playwright_pytest - INFO - Entered password
+2025-12-15 20:18:27 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:18:33 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+    - waiting for" https://login.microsoftonline.com/common/reprocess?prompt=select_account&sosid=&ctx=rQQIARAArVJPaNNwFE7abXZjuk4EJ3jYwZPaNcma1BQK1jZrE5K03dLG5CJplq6__PvF5Ddqg0cFTyq7iOLJg4edxJOoB08ednG7iScRBjKEiXgYiGC…" navigation to finish...
+    - navigated to "https://login.microsoftonline.com/common/reprocess?prompt=select_account&sosid=&ctx=rQQIARAArVJPaNNwFE7abXZjuk4EJ3jYwZPaNcma1BQK1jZrE5K03dLG5CJplq6__PvF5Ddqg0cFTyq7iOLJg4edxJOoB08ednG7iScRBjKEiXgYiGC…"
+
+2025-12-15 20:19:23 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:19:23 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:19:30 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:19:36 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:19:42 - playwright_pytest - INFO - Entered password
+2025-12-15 20:19:49 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:19:54 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:20:04 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:20:04 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:20:10 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:20:16 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:20:22 - playwright_pytest - INFO - Entered password
+2025-12-15 20:20:28 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:20:52 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 20:20:52 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: None 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("link", name="Opportunities")
+
+2025-12-15 20:21:23 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:21:23 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:21:30 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:21:35 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:21:42 - playwright_pytest - INFO - Entered password
+2025-12-15 20:21:48 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:21:53 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 20:22:02 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 20:22:02 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 20:22:09 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 20:22:14 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:22:20 - playwright_pytest - INFO - Entered password
+2025-12-15 20:22:27 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 20:22:47 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 20:22:50 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 20:23:00 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 20:23:10 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 20:23:23 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 20:23:29 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:23:31 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 68103
+2025-12-15 20:23:34 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 20:23:39 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 20:23:44 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 20:24:14 - playwright_pytest - INFO - Selected product
+2025-12-15 20:24:31 - playwright_pytest - INFO - Entered product price
+2025-12-15 20:25:10 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 20:25:10 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 20:25:31 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 20:25:32 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 20:25:32 - playwright_pytest - INFO - Quote Number: 214399
+2025-12-15 20:25:32 - playwright_pytest - INFO - Quote Name: Quote 214399 for Apple Inc.
+2025-12-15 20:25:32 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-15 20:25:38 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-15 20:25:48 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-15 20:25:48 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-15 20:25:52 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-15 20:25:56 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-15 20:26:07 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-15 20:26:17 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-15 20:26:20 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-15 20:26:41 - playwright_pytest - INFO - Clicked on configure button
+2025-12-15 20:26:45 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-15 20:26:51 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-15 20:26:57 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-15 20:27:01 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-15 20:27:08 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-15 20:27:16 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-15 20:27:36 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-15 20:27:41 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-15 20:27:44 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-15 20:27:48 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-15 20:27:52 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-15 20:27:55 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-15 20:28:46 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-15 20:28:46 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-15 20:28:48 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-15 20:28:49 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-15 20:28:50 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-15 20:28:51 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-15 20:28:51 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-15 20:28:51 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:51 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-15 20:28:52 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-15 20:28:52 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:52 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-15 20:28:53 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:54 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 20:28:54 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-15 20:29:04 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 20:29:04 - playwright_pytest - INFO - AccountInformationPage instance created for the new tab
+2025-12-15 20:29:31 - playwright_pytest - INFO - Clicked on Account Information Tab
+2025-12-15 20:31:34 - playwright_pytest - INFO - Entered account information details
+2025-12-15 20:31:40 - playwright_pytest - INFO - Selected shipping method
+2025-12-15 20:31:43 - playwright_pytest - INFO - Entered shipping instructions
+2025-12-15 20:31:54 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 20:31:54 - playwright_pytest - INFO - ApprovalRequestPage instance created for the new tab
+2025-12-15 20:32:02 - playwright_pytest - INFO - Clicked on Approval request tab
+2025-12-15 20:32:25 - playwright_pytest - INFO - Clicked on Initiate Approval button
+2025-12-15 20:32:25 - playwright_pytest - INFO - AttachmentsPage instance created for the new tab
+2025-12-15 20:32:31 - playwright_pytest - INFO - Clicked on Attachments tab
+2025-12-15 20:32:41 - playwright_pytest - INFO - Selected file to upload
+2025-12-15 20:32:46 - playwright_pytest - INFO - Selected attachment type
+2025-12-15 20:32:51 - playwright_pytest - INFO - Enter attachment description
+2025-12-15 20:33:02 - playwright_pytest - INFO - Clicked on upload button
+2025-12-15 20:33:02 - playwright_pytest - INFO - PurchaseOrderPage instance created for the new tab
+2025-12-15 20:33:08 - playwright_pytest - INFO - Clicked on Purchase order tab
+2025-12-15 20:33:14 - playwright_pytest - INFO - Entered PO number
+2025-12-15 20:33:18 - playwright_pytest - INFO - Entered PO date
+2025-12-15 20:33:23 - playwright_pytest - INFO - Entered PO email address
+2025-12-15 20:33:28 - playwright_pytest - INFO - Entered PO comments
+2025-12-15 20:33:39 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 20:34:00 - playwright_pytest - INFO - Clicked on Submit PO button
+2025-12-15 22:47:44 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:47:44 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:47:50 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:47:56 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:48:02 - playwright_pytest - INFO - Entered password
+2025-12-15 22:48:09 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 22:48:32 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 22:48:35 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 22:48:46 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 22:48:56 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 22:49:09 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 22:49:14 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:49:17 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 19122
+2025-12-15 22:49:20 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 22:49:25 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 22:49:30 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:50:00 - playwright_pytest - INFO - Selected product
+2025-12-15 22:50:16 - playwright_pytest - INFO - Entered product price
+2025-12-15 22:50:57 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 22:50:57 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 22:51:18 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 22:51:18 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 22:51:19 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Error: strict mode violation: locator("//div[3]/div[1]/div[2]") resolved to 2 elements:
+    1) <div class="oj-typography-body-sm oj-typography-semi-bold oj-sm-align-self-center">…</div> aka get_by_text("214410", exact=True)
+    2) <div class="wm-visual-design-flex-container" id="container-8dbf786c-7da0-4898-aa4b-f1b836878c53">…</div> aka locator("div").filter(has_text=re.compile(r"^Close me$"))
+
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for locator("//div[3]/div[1]/div[2]")
+
+2025-12-15 22:51:51 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:51:51 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:51:58 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:52:04 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:52:04 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Target page, context or browser has been closed
+2025-12-15 22:52:48 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:52:48 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:52:54 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:53:00 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:53:07 - playwright_pytest - INFO - Entered password
+2025-12-15 22:53:13 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 22:53:36 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 22:53:39 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 22:53:49 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 22:54:00 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 22:54:12 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 22:54:17 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:54:20 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 52246
+2025-12-15 22:54:23 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 22:54:28 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 22:54:33 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:55:19 - playwright_pytest - INFO - Selected product
+2025-12-15 22:55:35 - playwright_pytest - INFO - Entered product price
+2025-12-15 22:56:17 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 22:56:17 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 22:56:22 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Save Quote")
+
+2025-12-15 22:56:33 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:56:33 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:56:38 - playwright_pytest - ERROR - An error occurred: Page.screenshot: Target page, context or browser has been closed
+2025-12-15 22:57:20 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:57:20 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:57:27 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:57:33 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:57:39 - playwright_pytest - INFO - Entered password
+2025-12-15 22:57:45 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 22:57:50 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 22:57:58 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:57:58 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:58:05 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:58:11 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:58:11 - playwright_pytest - ERROR - An error occurred: LocatorAssertions.to_be_visible: Target page, context or browser has been closed
+2025-12-15 22:58:58 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 22:58:58 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 22:59:04 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 22:59:10 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 22:59:17 - playwright_pytest - INFO - Entered password
+2025-12-15 22:59:23 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 22:59:27 - playwright_pytest - ERROR - An error occurred: Locator expected to be visible
+Actual value: <element(s) not found> 
+Call log:
+  - Expect "to_be_visible" with timeout 5000ms
+  - waiting for get_by_role("button", name="Yes")
+
+2025-12-15 23:00:10 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:00:10 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 23:00:17 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:00:23 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:00:29 - playwright_pytest - INFO - Entered password
+2025-12-15 23:00:36 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:00:56 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:00:59 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:01:09 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 23:01:20 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 23:01:32 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 23:01:37 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:01:39 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 76070
+2025-12-15 23:01:42 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 23:01:47 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 23:01:53 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:02:22 - playwright_pytest - INFO - Selected product
+2025-12-15 23:02:39 - playwright_pytest - INFO - Entered product price
+2025-12-15 23:03:19 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 23:03:19 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 23:03:43 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 23:03:43 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 23:03:43 - playwright_pytest - INFO - Quote Number: 214414
+2025-12-15 23:03:43 - playwright_pytest - INFO - Quote Name: Quote 214414 for Apple Inc.
+2025-12-15 23:03:44 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-15 23:03:49 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-15 23:03:59 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-15 23:03:59 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-15 23:04:06 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-15 23:04:10 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-15 23:04:22 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-15 23:04:47 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-15 23:04:51 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-15 23:05:11 - playwright_pytest - INFO - Clicked on configure button
+2025-12-15 23:05:16 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-15 23:05:22 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-15 23:05:30 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-15 23:05:34 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-15 23:05:42 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-15 23:05:49 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-15 23:06:10 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-15 23:06:16 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-15 23:06:19 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-15 23:06:23 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-15 23:06:26 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-15 23:06:30 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-15 23:07:20 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-15 23:07:20 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-15 23:07:33 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-15 23:07:33 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-15 23:07:34 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-15 23:07:34 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-15 23:07:34 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:34 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:35 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-15 23:07:36 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-15 23:07:36 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:36 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:37 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:07:38 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-15 23:07:48 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 23:07:48 - playwright_pytest - INFO - AccountInformationPage instance created for the new tab
+2025-12-15 23:08:11 - playwright_pytest - INFO - Clicked on Account Information Tab
+2025-12-15 23:10:08 - playwright_pytest - INFO - Entered account information details
+2025-12-15 23:10:12 - playwright_pytest - INFO - Selected shipping method
+2025-12-15 23:10:16 - playwright_pytest - INFO - Entered shipping instructions
+2025-12-15 23:10:26 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 23:10:26 - playwright_pytest - INFO - ApprovalRequestPage instance created for the new tab
+2025-12-15 23:10:33 - playwright_pytest - INFO - Clicked on Approval request tab
+2025-12-15 23:10:53 - playwright_pytest - INFO - Clicked on Initiate Approval button
+2025-12-15 23:10:53 - playwright_pytest - INFO - AttachmentsPage instance created for the new tab
+2025-12-15 23:10:59 - playwright_pytest - INFO - Clicked on Attachments tab
+2025-12-15 23:11:06 - playwright_pytest - INFO - Selected file to upload
+2025-12-15 23:11:09 - playwright_pytest - INFO - Selected attachment type
+2025-12-15 23:11:13 - playwright_pytest - INFO - Enter attachment description
+2025-12-15 23:11:24 - playwright_pytest - INFO - Clicked on upload button
+2025-12-15 23:11:24 - playwright_pytest - INFO - PurchaseOrderPage instance created for the new tab
+2025-12-15 23:11:29 - playwright_pytest - INFO - Clicked on Purchase order tab
+2025-12-15 23:11:33 - playwright_pytest - INFO - Entered PO number
+2025-12-15 23:11:37 - playwright_pytest - INFO - Entered PO date
+2025-12-15 23:11:41 - playwright_pytest - INFO - Entered PO email address
+2025-12-15 23:11:45 - playwright_pytest - INFO - Entered PO comments
+2025-12-15 23:11:56 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 23:12:16 - playwright_pytest - INFO - Clicked on Submit PO button
+2025-12-15 23:15:58 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:15:58 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 23:16:05 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:16:11 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:16:16 - playwright_pytest - INFO - Entered password
+2025-12-15 23:16:23 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:16:46 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:16:49 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:16:59 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 23:17:10 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 23:17:22 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 23:17:27 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:17:30 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 53783
+2025-12-15 23:17:33 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 23:17:38 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 23:17:43 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:18:13 - playwright_pytest - INFO - Selected product
+2025-12-15 23:18:30 - playwright_pytest - INFO - Entered product price
+2025-12-15 23:19:09 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 23:19:09 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 23:19:30 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 23:19:31 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 23:19:31 - playwright_pytest - INFO - Quote Number: 214415
+2025-12-15 23:19:31 - playwright_pytest - INFO - Quote Name: Quote 214415 for Apple Inc.
+2025-12-15 23:19:31 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-15 23:19:36 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-15 23:19:47 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-15 23:19:47 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-15 23:19:53 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-15 23:19:57 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-15 23:20:08 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-15 23:20:28 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-15 23:20:32 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-15 23:20:52 - playwright_pytest - INFO - Clicked on configure button
+2025-12-15 23:20:57 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-15 23:21:05 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-15 23:21:11 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-15 23:21:16 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-15 23:21:24 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-15 23:21:32 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-15 23:21:53 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-15 23:22:03 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-15 23:22:07 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-15 23:22:10 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-15 23:22:14 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-15 23:22:17 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-15 23:23:08 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-15 23:23:08 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-15 23:23:08 - playwright_pytest - INFO - Found 0 elements with the specified XPath
+2025-12-15 23:23:08 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-15 23:23:08 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-15 23:23:09 - playwright_pytest - INFO - Found 0 elements with the specified XPath
+2025-12-15 23:23:09 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-15 23:23:09 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-15 23:23:09 - playwright_pytest - INFO - Found 0 elements with the specified XPath
+2025-12-15 23:23:09 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-15 23:23:21 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 23:38:43 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:38:43 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-15 23:38:49 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:38:55 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:39:02 - playwright_pytest - INFO - Entered password
+2025-12-15 23:39:08 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:39:29 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:39:32 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:39:42 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 23:39:53 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 23:40:05 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 23:40:11 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:40:13 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 56465
+2025-12-15 23:40:16 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 23:40:21 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 23:40:27 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:40:57 - playwright_pytest - INFO - Selected product
+2025-12-15 23:41:13 - playwright_pytest - INFO - Entered product price
+2025-12-15 23:41:54 - playwright_pytest - INFO - Clicked on create quote
+2025-12-15 23:41:54 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-15 23:42:15 - playwright_pytest - INFO - Clicked on save button
+2025-12-15 23:42:15 - playwright_pytest - INFO - Closed pop up message
+2025-12-15 23:42:15 - playwright_pytest - INFO - Quote Number: 214416
+2025-12-15 23:42:15 - playwright_pytest - INFO - Quote Name: Quote 214416 for Apple Inc.
+2025-12-15 23:42:16 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-15 23:42:21 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-15 23:42:31 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-15 23:42:31 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-15 23:42:35 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-15 23:42:39 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-15 23:42:51 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-15 23:43:01 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-15 23:43:04 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-15 23:43:25 - playwright_pytest - INFO - Clicked on configure button
+2025-12-15 23:43:29 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-15 23:43:35 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-15 23:43:41 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-15 23:43:45 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-15 23:43:52 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-15 23:43:58 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-15 23:44:19 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-15 23:44:23 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-15 23:44:27 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-15 23:44:30 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-15 23:44:34 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-15 23:44:38 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-15 23:45:28 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-15 23:45:28 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-15 23:45:31 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-15 23:45:31 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-15 23:45:32 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-15 23:45:32 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-15 23:45:32 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-15 23:45:32 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-15 23:45:33 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-15 23:45:33 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-15 23:45:33 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-15 23:45:44 - playwright_pytest - INFO - Clicked on Save button
+2025-12-15 23:47:19 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:47:19 - playwright_pytest - INFO - ***TC_Login Test Script Execution Started***
+2025-12-15 23:47:25 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:47:30 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:47:38 - playwright_pytest - INFO - Entered password
+2025-12-15 23:47:45 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:48:08 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:48:10 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:49:05 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:49:05 - playwright_pytest - INFO - ***TC_CreateOpportunity Test Script Execution Started***
+2025-12-15 23:49:10 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:49:16 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:49:21 - playwright_pytest - INFO - Entered password
+2025-12-15 23:49:28 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:49:48 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:49:51 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:50:01 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 23:50:12 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 23:50:24 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 23:50:29 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:50:31 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 81596
+2025-12-15 23:50:34 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-15 23:50:38 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 23:50:43 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:51:12 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-15 23:51:12 - playwright_pytest - INFO - ***TC_CreateOpportunity Test Script Execution Started***
+2025-12-15 23:51:18 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-15 23:51:23 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:51:27 - playwright_pytest - INFO - Entered password
+2025-12-15 23:51:33 - playwright_pytest - INFO - Signin button clicked
+2025-12-15 23:51:54 - playwright_pytest - INFO - Yes button clicked
+2025-12-15 23:51:56 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-15 23:52:07 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-15 23:52:17 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-15 23:52:29 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-15 23:52:34 - playwright_pytest - INFO - Clicked on next button
+2025-12-15 23:52:36 - playwright_pytest - INFO - Entered opportunity name: Test for Automation-Second 47722
+2025-12-15 23:52:39 - playwright_pytest - INFO - Entered opportunity name: Test for Automation-Second
+2025-12-15 23:52:44 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-15 23:52:49 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:18:23 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-16 15:18:23 - playwright_pytest - INFO - ***TC_Login Test Script Execution Started***
+2025-12-16 15:18:30 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-16 15:18:35 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:18:40 - playwright_pytest - INFO - Entered password
+2025-12-16 15:18:47 - playwright_pytest - INFO - Signin button clicked
+2025-12-16 15:19:08 - playwright_pytest - INFO - Yes button clicked
+2025-12-16 15:19:10 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-16 15:19:59 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-16 15:19:59 - playwright_pytest - INFO - ***TC_CreateOpportunity Test Script Execution Started***
+2025-12-16 15:20:05 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-16 15:20:11 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:20:15 - playwright_pytest - INFO - Entered password
+2025-12-16 15:20:21 - playwright_pytest - INFO - Signin button clicked
+2025-12-16 15:20:41 - playwright_pytest - INFO - Yes button clicked
+2025-12-16 15:20:44 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-16 15:20:54 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-16 15:21:04 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-16 15:21:17 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-16 15:21:22 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:21:24 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 21207
+2025-12-16 15:21:27 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-16 15:21:31 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-16 15:21:36 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:22:02 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-16 15:22:02 - playwright_pytest - INFO - ***TC_CreateOpportunity Test Script Execution Started***
+2025-12-16 15:22:08 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-16 15:22:14 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:22:18 - playwright_pytest - INFO - Entered password
+2025-12-16 15:22:24 - playwright_pytest - INFO - Signin button clicked
+2025-12-16 15:22:47 - playwright_pytest - INFO - Yes button clicked
+2025-12-16 15:22:49 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-16 15:23:00 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-16 15:23:10 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-16 15:23:22 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-16 15:23:27 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:23:29 - playwright_pytest - INFO - Entered opportunity name: Test for Automation-Second 49388
+2025-12-16 15:23:32 - playwright_pytest - INFO - Entered opportunity name: Test for Automation-Second
+2025-12-16 15:23:36 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-16 15:23:42 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:25:58 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-16 15:25:58 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-16 15:26:04 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-16 15:26:09 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:26:13 - playwright_pytest - INFO - Entered password
+2025-12-16 15:26:19 - playwright_pytest - INFO - Signin button clicked
+2025-12-16 15:26:40 - playwright_pytest - INFO - Yes button clicked
+2025-12-16 15:26:42 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-16 15:26:53 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-16 15:27:03 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-16 15:27:16 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-16 15:27:21 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:27:23 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 90469
+2025-12-16 15:27:26 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-16 15:27:30 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-16 15:27:36 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:28:15 - playwright_pytest - INFO - Selected product
+2025-12-16 15:28:31 - playwright_pytest - INFO - Entered product price
+2025-12-16 15:29:12 - playwright_pytest - INFO - Clicked on create quote
+2025-12-16 15:29:12 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-16 15:29:33 - playwright_pytest - INFO - Clicked on save button
+2025-12-16 15:29:33 - playwright_pytest - INFO - Closed pop up message
+2025-12-16 15:29:33 - playwright_pytest - INFO - Quote Number: 214488
+2025-12-16 15:29:33 - playwright_pytest - INFO - Quote Name: Quote 214488 for Apple Inc.
+2025-12-16 15:29:33 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-16 15:29:39 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-16 15:29:49 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-16 15:29:49 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-16 15:29:53 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-16 15:29:57 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-16 15:30:08 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-16 15:30:16 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-16 15:30:20 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-16 15:30:41 - playwright_pytest - INFO - Clicked on configure button
+2025-12-16 15:30:44 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-16 15:30:50 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-16 15:30:57 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-16 15:31:00 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-16 15:31:07 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-16 15:31:14 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-16 15:31:35 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-16 15:31:39 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-16 15:31:42 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-16 15:31:46 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-16 15:31:49 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-16 15:31:52 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-16 15:32:43 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-16 15:32:43 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-16 15:32:44 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-16 15:32:44 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-16 15:32:45 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-16 15:32:45 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-16 15:32:45 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-16 15:32:45 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:46 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-16 15:32:46 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-16 15:32:46 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:32:46 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:32:47 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-16 15:32:58 - playwright_pytest - INFO - Clicked on Save button
+2025-12-16 15:35:04 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+2025-12-16 15:35:04 - playwright_pytest - INFO - ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+2025-12-16 15:35:09 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2025-12-16 15:35:15 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:35:19 - playwright_pytest - INFO - Entered password
+2025-12-16 15:35:25 - playwright_pytest - INFO - Signin button clicked
+2025-12-16 15:35:48 - playwright_pytest - INFO - Yes button clicked
+2025-12-16 15:35:50 - playwright_pytest - INFO - Opportunities label has been verified on the homepage
+2025-12-16 15:36:00 - playwright_pytest - INFO - Clicked on opportunities tab
+2025-12-16 15:36:11 - playwright_pytest - INFO - Clickecd on new opportunity button
+2025-12-16 15:36:23 - playwright_pytest - INFO - Entered and selected account: Apple Inc.
+2025-12-16 15:36:28 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:36:30 - playwright_pytest - INFO - Entered opportunity name: Test for Automation 84514
+2025-12-16 15:36:33 - playwright_pytest - INFO - Entered opportunity name: Test for Automation
+2025-12-16 15:36:37 - playwright_pytest - INFO - Selected primary contact: Amit Jain
+2025-12-16 15:36:43 - playwright_pytest - INFO - Clicked on next button
+2025-12-16 15:37:12 - playwright_pytest - INFO - Selected product
+2025-12-16 15:37:29 - playwright_pytest - INFO - Entered product price
+2025-12-16 15:38:09 - playwright_pytest - INFO - Clicked on create quote
+2025-12-16 15:38:09 - playwright_pytest - INFO - HomePageCPQ instance created for the new tab
+2025-12-16 15:38:29 - playwright_pytest - INFO - Clicked on save button
+2025-12-16 15:38:29 - playwright_pytest - INFO - Closed pop up message
+2025-12-16 15:38:30 - playwright_pytest - INFO - Quote Number: 214491
+2025-12-16 15:38:30 - playwright_pytest - INFO - Quote Name: Quote 214491 for Apple Inc.
+2025-12-16 15:38:30 - playwright_pytest - INFO - Quote Status: Draft
+2025-12-16 15:38:35 - playwright_pytest - INFO - Clicked on Products tab
+2025-12-16 15:38:45 - playwright_pytest - INFO - Clicked on Configure button
+2025-12-16 15:38:45 - playwright_pytest - INFO - HomePageFAS_AFF_ASA_AFX instance created for the new tab
+2025-12-16 15:38:49 - playwright_pytest - INFO - Clicked on product: FAS/AFF/ASA/AFX
+2025-12-16 15:38:53 - playwright_pytest - INFO - Clicked on sub-product: FAS/AFF Advanced Configure Flow
+2025-12-16 15:39:04 - playwright_pytest - INFO - Clicked on cluster: Configure New Cluster
+2025-12-16 15:39:09 - playwright_pytest - INFO - Selected Model: AFF A20
+2025-12-16 15:39:12 - playwright_pytest - INFO - Clicked on Add HA Pair button
+2025-12-16 15:39:33 - playwright_pytest - INFO - Clicked on configure button
+2025-12-16 15:39:36 - playwright_pytest - INFO - Clicked on storage tab
+2025-12-16 15:39:43 - playwright_pytest - INFO - Selected drive type: 2 x 3.8TB SED NSE
+2025-12-16 15:39:50 - playwright_pytest - INFO - Selected drive pack qty: 4
+2025-12-16 15:39:54 - playwright_pytest - INFO - Clicked on Nics and Adapters tab
+2025-12-16 15:40:00 - playwright_pytest - INFO - Selected cable type: Fiber
+2025-12-16 15:40:08 - playwright_pytest - INFO - Selected cable length: 2M
+2025-12-16 15:40:28 - playwright_pytest - INFO - Clicked on Back to Cluster manager button
+2025-12-16 15:40:32 - playwright_pytest - INFO - Clicked on Services tab
+2025-12-16 15:40:36 - playwright_pytest - INFO - Clicked No button for Is this a tech refresh
+2025-12-16 15:40:39 - playwright_pytest - INFO - Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+2025-12-16 15:40:43 - playwright_pytest - INFO - Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+2025-12-16 15:40:47 - playwright_pytest - INFO - Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+2025-12-16 15:41:37 - playwright_pytest - INFO - Clicked on Add to Quote button
+2025-12-16 15:41:37 - playwright_pytest - INFO - Reading product table for column: Product
+2025-12-16 15:41:37 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: FAS/AFF-A20 Cluster
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: AFF A20
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: AFF-A20
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: AFF-A20-001
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: AFF-A20A-HA-SSA
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: SW-ONTAP-ONE-E-C
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: AFF-A20A-100-C
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: SW-ONTAP-DSR-IPA-NVE
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: X4026A-2-A-C
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: SW-ONTAPO-FLASH-A20-C
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: SW-ONTP-FLASH-A20-PR
+2025-12-16 15:41:37 - playwright_pytest - INFO - Extracted text: SW-OTHR-OO-FLASH-A20-PR
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X60132A-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X66250-2-N-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X65404-N-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X5532A-N-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X800-42U-R6-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X60300A-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X93108A-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: X97602A-C
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: DATA-AT-REST-ENCRYPTION
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: PERSONALITY-DNA
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SES-SYSTEM
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: CS-G1A-SE-ADVISOR
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SVC-G1A-ADVISOR
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SSP-G1A-ADVISOR
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: CS-4HR-REPLACEMENT-A
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: PS-DEPLOY-STD-ONTAP-L
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SW-SMIRROR-CLD
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SW-S3-SM-ONTAP-ONE
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: SW-S3-SMIRROR
+2025-12-16 15:41:38 - playwright_pytest - INFO - Reading Product column values from product LIG table
+2025-12-16 15:41:38 - playwright_pytest - INFO - Reading product table for column: List Price
+2025-12-16 15:41:38 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 170,391.20
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 14,200.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 10,010.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 2,470.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 1,482.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 988.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 5,100.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 19,251.00
+2025-12-16 15:41:38 - playwright_pytest - INFO - Extracted text: 8,136.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 11,115.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 3,850.20
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 8,750.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Reading List Price column values from product LIG table
+2025-12-16 15:41:39 - playwright_pytest - INFO - Reading product table for column: Net Price
+2025-12-16 15:41:39 - playwright_pytest - INFO - Found 33 elements with the specified XPath
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 146,622.81
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 12,403.70
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 8,743.74
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 2,157.55
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 1,294.53
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 863.02
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 4,454.85
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 15,608.71
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 6,596.67
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 9,012.04
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 3,121.74
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 6,877.50
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Extracted text: 0.00
+2025-12-16 15:41:39 - playwright_pytest - INFO - Reading Net Price column values from product LIG table
+2025-12-16 15:41:50 - playwright_pytest - INFO - Clicked on Save button
+2025-12-16 15:41:50 - playwright_pytest - INFO - AccountInformationPage instance created for the new tab
+2025-12-16 15:42:00 - playwright_pytest - INFO - Clicked on Account Information Tab
+2025-12-16 15:43:44 - playwright_pytest - INFO - Entered account information details
+2025-12-16 15:43:48 - playwright_pytest - INFO - Selected shipping method
+2025-12-16 15:43:52 - playwright_pytest - INFO - Entered shipping instructions
+2025-12-16 15:44:02 - playwright_pytest - INFO - Clicked on Save button
+2025-12-16 15:44:02 - playwright_pytest - INFO - ApprovalRequestPage instance created for the new tab
+2025-12-16 15:44:09 - playwright_pytest - INFO - Clicked on Approval request tab
+2025-12-16 15:44:29 - playwright_pytest - INFO - Clicked on Initiate Approval button
+2025-12-16 15:44:29 - playwright_pytest - INFO - AttachmentsPage instance created for the new tab
+2025-12-16 15:44:35 - playwright_pytest - INFO - Clicked on Attachments tab
+2025-12-16 15:44:42 - playwright_pytest - INFO - Selected file to upload
+2025-12-16 15:44:45 - playwright_pytest - INFO - Selected attachment type
+2025-12-16 15:44:49 - playwright_pytest - INFO - Enter attachment description
+2025-12-16 15:44:59 - playwright_pytest - INFO - Clicked on upload button
+2025-12-16 15:44:59 - playwright_pytest - INFO - PurchaseOrderPage instance created for the new tab
+2025-12-16 15:45:05 - playwright_pytest - INFO - Clicked on Purchase order tab
+2025-12-16 15:45:09 - playwright_pytest - INFO - Entered PO number
+2025-12-16 15:45:12 - playwright_pytest - INFO - Entered PO date
+2025-12-16 15:45:16 - playwright_pytest - INFO - Entered PO email address
+2025-12-16 15:45:20 - playwright_pytest - INFO - Entered PO comments
+2025-12-16 15:45:30 - playwright_pytest - INFO - Clicked on Save button
+2025-12-16 15:45:50 - playwright_pytest - INFO - Clicked on Submit PO button

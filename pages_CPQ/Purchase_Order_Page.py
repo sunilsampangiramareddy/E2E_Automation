@@ -34,7 +34,7 @@ class PurchaseOrderPage:
     def enterPODate(self):
         expect(self.poDate).to_be_visible()
         self.poDate.click()
-        self.poDate.fill("12-12-2025")
+        self.poDate.fill("12/12/2025")
         time.sleep(self.nw)
         
     def enterPOEmail(self):

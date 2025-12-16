@@ -1,0 +1,156 @@
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:44 Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:45 ***TC_FAS_AFF_Cluster_Config Test Script Execution Started***
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:49 Username entered: apptestmbob4@netapp.com
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:57 Clicked on next button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:61 Entered password
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:65 Signin button clicked
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:68 Yes button clicked
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:71 Opportunities label has been verified on the homepage
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:74 Clicked on opportunities tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:77 Clickecd on new opportunity button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:80 Entered and selected account: Apple Inc.
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:83 Clicked on next button
+[32mINFO    [0m playwright_pytest:Create_Opportunity.py:41 Entered opportunity name: Test for Automation 90469
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:86 Entered opportunity name: Test for Automation
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:89 Selected primary contact: Amit Jain
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:92 Clicked on next button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:96 Selected product
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:99 Entered product price
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:102 Clicked on create quote
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:106 HomePageCPQ instance created for the new tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:109 Clicked on save button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:112 Closed pop up message
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:116 Quote Number: 214488
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:119 Quote Name: Quote 214488 for Apple Inc.
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:122 Quote Status: Draft
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:125 Clicked on Products tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:128 Clicked on Configure button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:131 HomePageFAS_AFF_ASA_AFX instance created for the new tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:134 Clicked on product: FAS/AFF/ASA/AFX
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:137 Clicked on sub-product: FAS/AFF Advanced Configure Flow
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:140 Clicked on cluster: Configure New Cluster
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:143 Selected Model: AFF A20
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:146 Clicked on Add HA Pair button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:149 Clicked on configure button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:152 Clicked on storage tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:155 Selected drive type: 2 x 3.8TB SED NSE
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:158 Selected drive pack qty: 4
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:161 Clicked on Nics and Adapters tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:164 Selected cable type: Fiber
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:167 Selected cable length: 2M
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:170 Clicked on Back to Cluster manager button
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:173 Clicked on Services tab
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:176 Clicked No button for Is this a tech refresh
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:179 Clicked No button for Does your Customer require BlueXP to be deployed by the Professional Services Team
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:182 Clicked No button for Does your Customer need PS to fully design and configure their ONTAP system
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:185 Clicked No button for Do you want to add the Ransomware Recovery Assurance Service
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:188 Clicked on Add to Quote button
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:66 Reading product table for column: Product
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:70 Found 33 elements with the specified XPath
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: FAS/AFF-A20 Cluster
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: AFF A20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: AFF-A20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: AFF-A20-001
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: AFF-A20A-HA-SSA
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-ONTAP-ONE-E-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: AFF-A20A-100-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-ONTAP-DSR-IPA-NVE
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X4026A-2-A-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-ONTAPO-FLASH-A20-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-ONTP-FLASH-A20-PR
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-OTHR-OO-FLASH-A20-PR
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X60132A-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X66250-2-N-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X65404-N-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X5532A-N-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X800-42U-R6-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X60300A-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X93108A-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: X97602A-C
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: DATA-AT-REST-ENCRYPTION
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: PERSONALITY-DNA
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SES-SYSTEM
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: CS-G1A-SE-ADVISOR
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SVC-G1A-ADVISOR
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SSP-G1A-ADVISOR
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: CS-4HR-REPLACEMENT-A
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: CS-4HR-REPLACEMENT-A
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: PS-DEPLOY-STD-ONTAP-L
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-SMIRROR-CLD-ONTAP-ONE
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-SMIRROR-CLD
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-S3-SM-ONTAP-ONE
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:76 Extracted text: SW-S3-SMIRROR
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:191 Reading Product column values from product LIG table
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:82 Reading product table for column: List Price
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:86 Found 33 elements with the specified XPath
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 170,391.20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 170,391.20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 170,391.20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 14,200.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 10,010.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 2,470.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 1,482.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 988.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 5,100.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 19,251.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 8,136.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 11,115.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 3,850.20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 3,850.20
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 8,750.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:92 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:194 Reading List Price column values from product LIG table
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:98 Reading product table for column: Net Price
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:102 Found 33 elements with the specified XPath
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 146,622.81
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 146,622.81
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 146,622.81
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 12,403.70
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 8,743.74
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 2,157.55
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 1,294.53
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 863.02
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 4,454.85
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 15,608.71
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 6,596.67
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 9,012.04
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 3,121.74
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 3,121.74
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 6,877.50
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:Home_Page_CPQ.py:108 Extracted text: 0.00
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:197 Reading Net Price column values from product LIG table
+[32mINFO    [0m playwright_pytest:TC_FAS_AFF_Cluster_Config.py:200 Clicked on Save button
