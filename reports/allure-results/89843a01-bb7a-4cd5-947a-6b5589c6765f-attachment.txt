@@ -1,0 +1,22 @@
+2026-05-17 23:08:45 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com
+2026-05-17 23:08:45 - playwright_pytest - INFO - ***TC_Login Test Script Execution Started***
+2026-05-17 23:08:50 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2026-05-17 23:08:50 - playwright_pytest - INFO - Clicked on next button
+2026-05-17 23:09:04 - playwright_pytest - INFO - Entered password
+2026-05-17 23:09:06 - playwright_pytest - INFO - Signin button clicked
+2026-05-17 23:09:11 - playwright_pytest - ERROR - An error occurred: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="Yes") to be visible
+
+2026-05-17 23:09:25 - playwright_pytest - INFO - Launching application URL: https://netapp2--uat.sandbox.lightning.force.com
+2026-05-17 23:09:25 - playwright_pytest - INFO - ***TC_Login Test Script Execution Started***
+2026-05-17 23:09:58 - playwright_pytest - INFO - Username entered: apptestmbob4@netapp.com
+2026-05-17 23:09:59 - playwright_pytest - INFO - Clicked on next button
+2026-05-17 23:10:59 - playwright_pytest - ERROR - An error occurred: Failed to wait for element to be 'visible' within 60000ms: Locator.wait_for: Timeout 60000ms exceeded.
+Call log:
+  - waiting for get_by_role("textbox", name="Enter the password for") to be visible
+
+2026-05-17 23:12:14 - playwright_pytest - ERROR - An error occurred: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://netapp2--uat.sandbox.lightning.force.com/", waiting until "load"
+

@@ -1,0 +1,24 @@
+{
+    "LoginPage": {
+        "usernameInput": "//*[@id='signInName']",
+        "nextButton": {
+            "role": "button",
+            "name": "Next"
+        },
+        "passwordInput": {
+            "role": "textbox",
+            "name": "Enter the password for"
+        },
+        "signinButton": {
+            "role": "button",
+            "name": "Sign in"
+        },
+        "yesButton": {
+            "role": "button",
+            "name": "Yes"
+        }
+    },
+    "HomePage": {
+        "opportunitiesLabel": "//div[@id='opportunitiesLabel']"
+    }
+}

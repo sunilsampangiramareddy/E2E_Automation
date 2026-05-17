@@ -1,0 +1,163 @@
+trigger:
+  branches:
+    include:
+      - main
+      - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  REPORT_DIR: 'reports'
+  ALLURE_RESULTS_DIR: 'reports/allure-results'
+  ALLURE_REPORT_DIR: 'reports/allure-report'
+  BROWSER: 'chromium'  # Default browser
+
+parameters:
+- name: browser
+  displayName: Browser
+  type: string
+  default: 'chromium'
+  values:
+  - 'chromium'
+  - 'firefox'
+  - 'edge'
+
+- name: reruns
+  displayName: Rerun Count
+  type: string
+  default: '3'
+  values:
+  - '1'
+  - '2'
+  - '3'
+
+- name: url
+  displayName: Base URL
+  type: string
+  default: 'https://netapp2--uat.sandbox.lightning.force.com/'
+  values:
+  - 'https://netapp2--uat.sandbox.lightning.force.com/'
+  - 'https://netapp2--full.sandbox.lightning.force.com/'
+  - 'https://netapp2--devint.sandbox.lightning.force.com/'
+
+- name: testScript
+  displayName: Test Script
+  type: string
+  default: 'All Scripts'
+  values:
+  - 'All Scripts'
+  - 'tests_SFDC/TC_Login.py'
+  - 'tests_SFDC/TC_CreateOpportunity.py'
+  - 'tests_CPQ/TC_API_Validation.py'
+  - 'tests_CPQ/TC_Copy_Quote.py'
+  - 'tests_CPQ/TC_Open_Quote.py'
+  - 'tests_CPQ/TC_FAS_AFF_Cluster_Config.py'
+  - 'tests_FTR/E2E_UAT_038.py'
+  - 'tests_FTR/E2E_UAT_051.py'
+  - 'tests_FTR/E2E_UAT_017.py'
+  - 'tests_FTR/E2E_UAT_024.py'
+  - 'tests_FTR/E2E_UAT_003_Part_1.py'
+  - 'tests_FTR/E2E_UAT_003_Part_2.py'
+  - 'tests_FTR/TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001.py'
+  - 'tests_Partner/TC_PartnerLogin.py'
+  - 'tests_Partner/TC_Partner_Copy_Quote.py'
+  - 'tests_Partner/TC_Partner_Open_Quote.py'
+
+- name: parallel
+  displayName: Parallel Execution
+  type: string
+  default: '1'
+  values:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+
+stages:
+- stage: Test
+  displayName: 'Run Automation Tests'
+  jobs:
+  - job: RunTests
+    displayName: 'Run Playwright and Pytest Tests'
+    steps:
+    # Step 1: Set up Python environment
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.x' # Specify the Python version
+        addToPath: true
+
+    # Step 2: Install dependencies
+    - script: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        playwright install
+        pip install pytest-html allure-pytest pytest-xdist # Ensure pytest-html, allure-pytest, and pytest-xdist are installed
+      displayName: 'Install Dependencies and Playwright Browsers'
+
+    # Step 3: Install Allure command-line tool
+    - script: |
+        echo "Installing Allure command-line tool..."
+        wget https://github.com/allure-framework/allure2/releases/download/2.20.1/allure-2.20.1.tgz
+        tar -zxvf allure-2.20.1.tgz
+        sudo mv allure-2.20.1 /opt/allure
+        sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+        echo "Allure version:"
+        allure --version
+      displayName: 'Install Allure Command-Line Tool'
+
+    # Step 4: Run specified Pytest scripts with HTML and Allure reporting
+    - script: |
+        echo "Creating report directories..."
+        mkdir -p $REPORT_DIR
+        mkdir -p $ALLURE_RESULTS_DIR
+
+        echo "Running specified Pytest scripts..."
+        if [ "${TEST_SCRIPT}" == "All Scripts" ]; then
+          for script in tests_SFDC/*.py tests_CPQ/*.py tests_FTR/*.py tests_Partner/*.py; do
+            pytest $script -n ${PARALLEL} --browser_type ${BROWSER} --reruns ${RERUNS} --url ${BASE_URL} --disable-warnings --html=$REPORT_DIR/report.html --self-contained-html --alluredir=$ALLURE_RESULTS_DIR || exit 1
+          done
+        else
+          pytest ${TEST_SCRIPT} -n ${PARALLEL} --browser_type ${BROWSER} --reruns ${RERUNS} --url ${BASE_URL} --disable-warnings --html=$REPORT_DIR/report.html --self-contained-html --alluredir=$ALLURE_RESULTS_DIR || exit 1
+        fi
+      displayName: 'Run Specified Pytest Scripts with HTML and Allure Reporting'
+      env:
+        TEST_SCRIPT: ${{ parameters.testScript }}
+        BROWSER: ${{ parameters.browser }}
+        PARALLEL: ${{ parameters.parallel }}
+        RERUNS: ${{ parameters.reruns }}
+        BASE_URL: ${{ parameters.url }}
+
+    # Step 5: Debugging - List contents of report directories
+    - script: |
+        echo "Listing contents of report directory..."
+        ls -l $REPORT_DIR
+        echo "Listing contents of Allure results directory..."
+        ls -l $ALLURE_RESULTS_DIR
+      displayName: 'List Report Directory Contents'
+
+    # Step 6: Generate Allure report
+    - script: |
+        echo "Generating Allure report..."
+        allure generate $ALLURE_RESULTS_DIR -o $ALLURE_REPORT_DIR || echo "Allure report generation failed."
+        echo "Listing contents of Allure report directory..."
+        ls -l $ALLURE_REPORT_DIR
+      displayName: 'Generate Allure Report'
+      condition: always() # Ensure this step runs regardless of test execution outcome
+
+    # Step 7: Publish HTML report and screenshots
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(System.DefaultWorkingDirectory)/$(REPORT_DIR)'
+        artifactName: 'TestReports'
+      displayName: 'Publish HTML Report and Screenshots'
+      condition: always() # Ensure this step runs regardless of test execution outcome
+
+    # Step 8: Publish Allure report
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(System.DefaultWorkingDirectory)/$(ALLURE_REPORT_DIR)'
+        artifactName: 'AllureReport'
+      displayName: 'Publish Allure Report'
+      condition: always() # Ensure this step runs regardless of test execution outcome

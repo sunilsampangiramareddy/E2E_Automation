@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="77.873" timestamp="2026-05-11T17:22:11.046112+05:30" hostname="sunilr201-PC"><testcase time="9.400" /><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+                         ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 167, in _multicall
+    raise exception
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\logging.py", line 801, in pytest_runtestloop
+    return (yield)  # Run all the tests.
+            ^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\terminal.py", line 707, in pytest_runtestloop
+    result = yield
+             ^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\xdist\dsession.py", line 138, in pytest_runtestloop
+    self.loop_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\xdist\dsession.py", line 163, in loop_once
+    call(**kwargs)
+    ~~~~^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\xdist\dsession.py", line 329, in worker_testreport
+    self.config.hook.pytest_runtest_logreport(report=rep)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 167, in _multicall
+    raise exception
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\terminal.py", line 698, in pytest_runtest_logreport
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\terminal.py", line 531, in flush
+    self._tw.flush()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Automation_Project\E2E_Automation\venv1\Lib\site-packages\_pytest\_io\terminalwriter.py", line 187, in flush
+    self._file.flush()
+    ~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument</error></testcase></testsuite></testsuites>
