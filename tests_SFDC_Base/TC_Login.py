@@ -51,7 +51,7 @@ def test_login(page: Page, base_url, config, test_case) -> None:
 
         if is_valid_data(test_case["User Name"]):
             lp.enterUserName(test_case["User Name"])
-            logger.info(f"Username entered: {test_case['User Name']}")
+            logger.info(f"Username entered: {test_case['User Name']}")            
 
         # lp.enterUserName(config.get_username())
         # ss.capture_screenshot("Username entered")
@@ -65,8 +65,8 @@ def test_login(page: Page, base_url, config, test_case) -> None:
         logger.info("Entered password")
 
         lp.clickSigninButton()
-        logger.info("Signin button clicked")
-
+        logger.info("Signin button clicked")      
+        
         lp.clickYesButton()
         logger.info("Yes button clicked")
 

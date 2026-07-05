@@ -83,63 +83,65 @@ class HomePageCPQ:
         quote_Status = self.quoteStatus.inner_text()
         return quote_Status
 
+    def verifyQuoteStatus(self, expected_status):
+        wait_for_element(self.quoteStatus)
+        quote_Status = self.quoteStatus.inner_text()
+        actual_status = quote_Status.strip().lower()
+        if actual_status == expected_status.strip().lower():
+            logger.info(f"Quote status is in expected state: {actual_status}")
+            return True
+        else:
+            logger.warning(
+                f"Quote status is not in expected state. Current quote status: {actual_status}"
+            )
+            return False
+
     def clickProductsTab(self):
         wait_for_element(self.productsTab)
         expect(self.productsTab).to_be_visible()
         self.productsTab.click()
 
     def readProductTable(self, page, column_name):
-        if column_name == "Product":
-            logger.info(f"Reading product table for column: {column_name}")
-            # Locate elements using the provided XPath
-            locator = self.page.locator(
-                "//div[contains(@class, 'oj-fa-cx-cpq-fragmentsUI-lineItems-rowHeader oj-sm-align-self-center cx-cpq-line-item-row')]"
-            )
-            count = locator.count()
-            logger.info(f"Found {count} elements with the specified XPath")
-            # Extract and print text of each element
-            for i in range(count):
-                element = locator.nth(i)
-                text = element.inner_text()
-                if text:
-                    logger.info(f"Extracted text: {text}")
-                    print(text, end="\t")
-                else:
-                    logger.warning(f"Empty text found for element: {element}")
-            print()
-        if column_name == "List Price":
-            logger.info(f"Reading product table for column: {column_name}")
-            # Locate elements using the provided XPath
-            locator = self.page.locator(
-                "//div[contains(@class, 'oj-flex oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate oj-fa-cx-cpq-field-listPrice_l_c')]"
-            )
-            count = locator.count()
-            logger.info(f"Found {count} elements with the specified XPath")
-            # Extract and print text of each element
-            for i in range(count):
-                element = locator.nth(i)
-                text = element.inner_text()
-                if text:
-                    logger.info(f"Extracted text: {text}")
-                    print(text, end="\t")
-                else:
-                    logger.warning(f"Empty text found for element: {element}")
-            print()
-        if column_name == "Net Price":
-            logger.info(f"Reading product table for column: {column_name}")
-            # Locate elements using the provided XPath
-            locator = self.page.locator(
-                "//div[contains(@class, 'oj-flex oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate oj-fa-cx-cpq-field-netPrice_l_c')]"
-            )
-            count = locator.count()
-            logger.info(f"Found {count} elements with the specified XPath")
-            # Extract and print text of each element
-            for i in range(count):
-                element = locator.nth(i)
-                text = element.inner_text()
-                if text:
-                    logger.info(f"Extracted text: {text}")
-                    print(text, end="\t")
-                else:
-                    logger.warning(f"Empty text found for element: {element}")
-            print()
+        logger.info(f"Reading product table for column: {column_name}")
+        # Define a dictionary for column XPaths
+        column_xpaths = {
+            "Product": "//div[contains(@class, 'oj-fa-cx-cpq-fragmentsUI-lineItems-rowHeader oj-sm-align-self-center cx-cpq-line-item-row')]",
+            "Part Description": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-partDescription_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Qty": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-unitQuantity_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Ext Qty": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-extendedQuantity_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "List Price": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-listPrice_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Extended List Price": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-extendedListPrice_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Treshold Group": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-thresholdGroup_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Eligible Discount Source": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-eligibleDiscountSource_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Eligible Discount": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-eligibleDiscount_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Current Discount": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-currentDiscount_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Net Price": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-netPrice_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Extended Net Price": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-extendedNetPrice_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Serial Number": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-serialNumber_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Service Start Date": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-serviceStartDate_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Service End Date": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-serviceEndDate_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Service Duration": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-serviceDuration_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+        }
+        # Get the XPath for the requested column
+        xpath = column_xpaths.get(column_name)
+        if not xpath:
+            logger.error(f"Invalid column name provided: {column_name}")
+            return
+        # Locate elements using the XPath
+        locator = page.locator(xpath)
+        count = locator.count()
+        logger.info(
+            f"Found {count} elements with the specified XPath for column: {column_name}"
+        )
+        # Extract and print text of each element
+        for i in range(count):
+            element = locator.nth(i)
+            text = element.inner_text()
+            if text:
+                logger.info(f"Extracted text: {text}")
+                print(text, end="\t")
+            else:
+                logger.warning(
+                    f"Empty text found for element index {i} in column: {column_name}"
+                )
+        print()

@@ -1,3 +1,4 @@
+from common_Methods.Common_Methods import CommonMethods
 from pages_CPQ.Products_Page import ProductsPage
 import pytest
 import time
@@ -5,6 +6,7 @@ import logging
 import json
 import os
 from playwright.sync_api import Page
+from pages_GTC.HomePage_GTC import HomePageGTC
 from pages_SFDC.Login_Page import LoginPage
 from pages_SFDC.Home_Page import HomePage
 from pages_SFDC.Create_Opportunity import CreateOpportunity
@@ -15,6 +17,7 @@ from pages_CPQ.Approval_Request_Page import ApprovalRequestPage
 from pages_CPQ.Attachments_Page import AttachmentsPage
 from pages_CPQ.Purchase_Order_Page import PurchaseOrderPage
 from pages_SFDC.Quotes_Page import QuotesPage
+from utils.locator_manager import LocatorManager
 from utils.screenshot_util import ScreenshotUtil
 from utils.config_reader import ConfigReader
 from utils.excel_read import read_test_data
@@ -38,6 +41,10 @@ working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
 
+# Load locators from JSON
+locator_file_path = os.path.join(working_directory, "locators", "locators.json")
+locator_manager = LocatorManager(locator_file_path)
+
 # Get the test script name without the extension
 script_name = os.path.splitext(os.path.basename(__file__))[0]
 
@@ -50,6 +57,7 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
     qp = QuotesPage(page)
     hp = HomePage(page)
     ss = ScreenshotUtil(page)
+    cm = CommonMethods(page, locator_manager)
     boolean_status = "Pass"
     direct_Oppty = "Direct"
     indirect_Oppty = "Indirect"
@@ -108,16 +116,19 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
             )
             """
 
-        new_tab = qp.copyQuote()
+        qp.copy_Quote()
         logger.info(f"Clicked on Copy Quote option for the searched quote")
+
+        secondTab = cm.switchToTab(page.context, tab_index=1, expected_tab_count=2)
+        logger.info("Switched to the new tab after clicking on Copy Quote option")
 
         # ============================Capture Quote Details==========================================================================
         # Create an instance of HomePageCPQ for the new tab
-        hpc = HomePageCPQ(new_tab)
+        hpc = HomePageCPQ(secondTab)
         logger.info(f"HomePageCPQ instance created for the new tab")
-        ss = ScreenshotUtil(new_tab)
+        ss = ScreenshotUtil(secondTab)
         logger.info(f"ScreenshotUtil instance created for the new tab")
-        hp = HomePage(new_tab)
+        hp = HomePage(secondTab)
         logger.info(f"HomePage instance created for the new tab")
 
         # Perform actions on the new tab
@@ -139,7 +150,7 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
         ss.capture_screenshot("Captured Quote details")
 
         # =============================Read LIG Product Table=========================================================================
-        pp = ProductsPage(new_tab)
+        pp = ProductsPage(secondTab)
         logger.info(f"ProductsPage instance created for the new tab")
 
         pp.clickProductsTab()
@@ -148,21 +159,88 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
         logger.info(f"Checking for the dynamic popup, if exists then closed the popup")
         hpc.closePopUp_2()
 
-        hpc.readProductTable(new_tab, "Product")
+        hpc.readProductTable(secondTab, "Product")
         logger.info(f"Reading Product column values from product LIG table")
 
-        hpc.readProductTable(new_tab, "List Price")
+        hpc.readProductTable(secondTab, "List Price")
         logger.info(f"Reading List Price column values from product LIG table")
 
-        hpc.readProductTable(new_tab, "Net Price")
+        hpc.readProductTable(secondTab, "Net Price")
         logger.info(f"Reading Net Price column values from product LIG table")
 
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured LIG Product table details")
         logger.info(f"Clicked on Save button")
 
+        # =====================Copy quote second time from SFDC Quotes tab and switch to new tab=========================================================
+        firstTab = cm.switchToTab(page.context, tab_index=0, expected_tab_count=2)
+        logger.info("Switched back to the first tab to copy the quote again")
+
+        qp = QuotesPage(firstTab)
+        logger.info(f"QuotesPage instance created for the first tab")
+
+        qp.copy_Quote()
+        logger.info(f"Clicked on Copy Quote option for the searched quote")
+
+        thirdTab = cm.switchToTab(page.context, tab_index=2, expected_tab_count=3)
+        logger.info("Switched to the new tab after clicking on Copy Quote option")
+
+        # ============================Capture Quote Details==========================================================================
+        # Create an instance of HomePageCPQ for the new tab
+        hpc = HomePageCPQ(thirdTab)
+        logger.info(f"HomePageCPQ instance created for the new tab")
+        ss = ScreenshotUtil(thirdTab)
+        logger.info(f"ScreenshotUtil instance created for the new tab")
+        hp = HomePage(thirdTab)
+        logger.info(f"HomePage instance created for the new tab")
+
+        # Perform actions on the new tab
+        quote_number = hpc.getQuoteNumber()
+        logger.info(f"Quote Number: {quote_number}")
+
+        quote_name = hpc.getQuoteName()
+        logger.info(f"Quote Name: {quote_name}")
+
+        quote_status = hpc.getQuoteStatus()
+        ss.capture_screenshot("Captured Quote details")
+        logger.info(f"Quote Status: {quote_status}")
+
+        cpq_url = hp.getCurrentURL()
+        logger.info(f"CPQ URL: {cpq_url}")
+
+        logger.info(f"Checking for the dynamic popup, if exists then closed the popup")
+        hpc.closePopUp()
+        ss.capture_screenshot("Captured Quote details")
+
+        # =============================Read LIG Product Table=========================================================================
+        pp = ProductsPage(thirdTab)
+        logger.info(f"ProductsPage instance created for the new tab")
+
+        pp.clickProductsTab()
+        logger.info(f"Clicked on Products tab")
+
+        logger.info(f"Checking for the dynamic popup, if exists then closed the popup")
+        hpc.closePopUp_2()
+
+        hpc.readProductTable(thirdTab, "Product")
+        logger.info(f"Reading Product column values from product LIG table")
+
+        hpc.readProductTable(thirdTab, "List Price")
+        logger.info(f"Reading List Price column values from product LIG table")
+
+        hpc.readProductTable(thirdTab, "Net Price")
+        logger.info(f"Reading Net Price column values from product LIG table")
+
+        hpc.clickSaveIcon()
+        ss.capture_screenshot("Captured LIG Product table details")
+        logger.info(f"Clicked on Save button")
+
+        # =========================Close Second tab===================================================================================
+        cm.closeTab(page.context, 1)
+        logger.info(f"Closed the second tab")
+
         # ==============================Account Information Tab=================================================================================
-        aip = AccountInformationPage(new_tab)
+        aip = AccountInformationPage(thirdTab)
         logger.info(f"AccountInformationPage instance created for the new tab")
 
         aip.clickAccountInformationTab()
@@ -208,8 +286,42 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
         ss.capture_screenshot("Captured Account Information details")
         logger.info(f"Clicked on Save button")
 
+        # ======================================GTC Tab=======================================================================
+        hpgtc = HomePageGTC(thirdTab)
+        logger.info(f"HomePageGTC instance created for the new tab")
+
+        logger.info(f"Checking if GTC risk text is visible")
+        if hpgtc.isGTCriskTextVisible() == True:
+
+            hpgtc.clickGTCTab()
+            logger.info(f"Clicked on GTC tab")
+
+            hpgtc.selectEndCustomerENACheckbox_2()
+            logger.info(f"Selected End Customer ENA checkbox")
+
+            if is_valid_data(test_case["DR Override Justification"]):
+                hpgtc.enterDROverrideJustification(
+                    test_case["DR Override Justification"]
+                )
+                logger.info(
+                    f"Entered DR Override Justification: {test_case['DR Override Justification']}"
+                )
+
+            hpgtc.selectOverrideImportControlCheckbox()
+            logger.info(f"Selected Override Import Control checkbox")
+
+            hpgtc.selectShipToCustomerENACheckbox()
+            logger.info(f"Selected Ship To Customer ENA checkbox")
+
+            hpgtc.clickOverrideGTCButton()
+            logger.info(f"Clicked on Override GTC button")
+
+            hpc.clickSaveIcon()
+            ss.capture_screenshot("Captured Account Information details")
+            logger.info(f"Clicked on Save button")
+
         # ======================================Approval Request Tab=================================================================================
-        ar = ApprovalRequestPage(new_tab)
+        ar = ApprovalRequestPage(thirdTab)
         logger.info(f"ApprovalRequestPage instance created for the new tab")
 
         ar.clickApprovalRequestTab()
@@ -220,7 +332,7 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
         logger.info(f"Clicked on Initiate Approval button")
 
         # =====================================Attachments Tab=================================================================================
-        ap = AttachmentsPage(new_tab)
+        ap = AttachmentsPage(thirdTab)
         logger.info(f"AttachmentsPage instance created for the new tab")
 
         ap.clickAttachmentsTab()
@@ -247,7 +359,7 @@ def test_Copy_Quote(page: Page, base_url, config, test_case) -> None:
         logger.info(f"Clicked on Save button")
 
         # =============================Purchase Order Tab=================================================================================
-        po = PurchaseOrderPage(new_tab)
+        po = PurchaseOrderPage(thirdTab)
         logger.info(f"PurchaseOrderPage instance created for the new tab")
 
         po.clickPurchaseOrderTab()

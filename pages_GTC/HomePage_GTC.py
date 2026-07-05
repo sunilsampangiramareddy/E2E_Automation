@@ -35,11 +35,41 @@ class HomePageGTC:
         self.endCustomerENACheckbox_2 = self.page.locator(
             "(//*[contains(@class, 'IconStyle_currentColor__sdo2n67')])[1]"
         )
+        self.shipToCustomerENACheckbox = self.page.locator(
+            "(//*[contains(@class, 'IconStyle_currentColor__sdo2n67')])[2]"
+        )
+        self.shipToCustomerENACheckbox_2 = self.page.locator(
+            "(//*[contains(@class, 'IconStyle_currentColor__sdo2n67')])[2]"
+        )
+        self.shipToCustomerDRCheckbox = self.page.locator(
+            "(//*[contains(@class, 'IconStyle_currentColor__sdo2n67')])[1]"
+        )
 
-    def clickGTCTab(self):
+    def clickGTCTab(self): 
         wait_for_element(self.gtcTab)
         self.gtcTab.click()
         time.sleep(self.sw)
+
+    def isGTCriskTextVisible(self) -> bool:
+        try:
+            # Locate the element using the XPath
+            element = self.page.locator(
+                "//div[@id='txn-header-msgs' and contains(text(), 'This quote has an identified GTC risk.')]"
+            )
+            # Check if the element exists and is visible
+            if element.count() > 0 and element.is_visible():
+                # Get the text content of the element
+                element_text = element.text_content()
+                # Check if the text contains 'GTC risk' and return True/False
+                return "GTC risk" in element_text
+            else:
+                # Element does not exist or is not visible, return False
+                logger.info("GTC risk text not found or not visible.")
+                return False
+        except Exception as e:
+            # Handle exceptions (e.g., locator issues)
+            logger.error(f"Error occurred while checking GTC risk text: {e}")
+            return False
 
     def selectEndCustomerDRCheckbox(self):
         wait_for_element(self.endCustomerDRCheckbox)
@@ -59,6 +89,24 @@ class HomePageGTC:
         self.endCustomerENACheckbox_2.press("Tab")
         time.sleep(self.nw)
 
+    def selectShipToCustomerENACheckbox(self):
+        wait_for_element(self.shipToCustomerENACheckbox)
+        self.shipToCustomerENACheckbox.click()
+        self.shipToCustomerENACheckbox.press("Tab")
+        time.sleep(self.nw)
+
+    def selectShipToCustomerENACheckbox_2(self):
+        wait_for_element(self.shipToCustomerENACheckbox_2)
+        self.shipToCustomerENACheckbox_2.click()
+        self.shipToCustomerENACheckbox_2.press("Tab")
+        time.sleep(self.nw)
+
+    def selectShipToCustomerDRCheckbox(self):
+        wait_for_element(self.shipToCustomerDRCheckbox)
+        self.shipToCustomerDRCheckbox.click()
+        self.shipToCustomerDRCheckbox.press("Tab")
+        time.sleep(self.nw)
+
     def enterDROverrideJustification(self, justification):
         self.page.get_by_role("textbox", name="DR Override Justification (").wait_for(
             state="visible", timeout=60000
@@ -71,6 +119,16 @@ class HomePageGTC:
         self.page.get_by_role("textbox", name="DR Override Justification (").press(
             "Tab"
         )
+        time.sleep(self.nw)
+
+    def enterDROverrideJustification_2(self, justification):
+        self.page.locator("//textarea[@id='_rczp59qajxs-input']").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("//textarea[@id='_rczp59qajxs-input']").click()
+        self.page.locator("//textarea[@id='_rczp59qajxs-input']").click()
+        self.page.locator("//textarea[@id='_rczp59qajxs-input']").fill(justification)
+        self.page.locator("//textarea[@id='_rczp59qajxs-input']").press("Tab")
         time.sleep(self.nw)
 
     def selectOverrideImportControlCheckbox(self):

@@ -61,8 +61,8 @@ class HomePagePrint:
 
             # Use Computer Downloads folder to save the downloaded file
             # download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
-            # OR Use the project's working directory Downloads folder to save the downloaded file
-            download_dir = os.path.join(os.getcwd(), "Downloads")
+            # OR Use the project's working directory downloads folder to save the downloaded file
+            download_dir = os.path.join(os.getcwd(), "downloads")
             with self.page.expect_download() as download_info:
                 self.page.locator("//a[contains(., '.xml')]").click()
             download = download_info.value

@@ -30,6 +30,7 @@ TEST_SCRIPT_PATHS = {
     "TC_Copy_Quote": "tests_CPQ/TC_Copy_Quote.py",
     "TC_Open_Quote": "tests_CPQ/TC_Open_Quote.py",
     "TC_FAS_AFF_Cluster_Config": "tests_CPQ/TC_FAS_AFF_Cluster_Config.py",
+    "TC_E_EF_Series_Regression": "tests_CPQ_Regression/TC_E_EF_Series_Regression.py",
     "E2E_UAT_003_Part_1": "tests_FTR/E2E_UAT_003_Part_1.py",
     "E2E_UAT_003_Part_2": "tests_FTR/E2E_UAT_003_Part_2.py",
     "E2E_UAT_017": "tests_FTR/E2E_UAT_017.py",

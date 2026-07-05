@@ -80,8 +80,8 @@ if __name__ == "__main__":
     encryptor = Encryptor(loaded_key)
 
     # =========Step 4: Enter multiple passwords below to encrypt and save to config.json========================================
-    password1 = "pwd_1"  # Replace with your actual password for apptestmbob4 user
-    password2 = "pwd_2"  # Replace with your actual password for netAppApiTestUser user
+    password1 = "pwd1"  # Replace with your actual password for apptestmbob4 user
+    password2 = "pwd2"  # Replace with your actual password for netAppApiTestUser user
     # ==========================================================================================================================
 
     encrypted_password1 = encryptor.encrypt_password(password1)

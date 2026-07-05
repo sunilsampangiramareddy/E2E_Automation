@@ -83,10 +83,22 @@ class QuotesPage:
             self.page.locator("//lightning-menu-item[1]//div[1]//a[1]").click()
         new_tab = new_page_info.value
         return new_tab
+    
+    def copy_Quote(self):
+        self.page.locator(
+            "//lightning-datatable//tbody//tr//th//lightning-primitive-cell-actions//lightning-button-menu//button//lightning-primitive-icon"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            "//lightning-datatable//tbody//tr//th//lightning-primitive-cell-actions//lightning-button-menu//button//lightning-primitive-icon"
+        ).click()
+        time.sleep(self.nw)
+        self.page.locator("//lightning-menu-item[1]//div[1]//a[1]").click() 
+        time.sleep(self.nw)
 
     def clickSearchedQuote(self, quoteNumber):
         with self.page.context.expect_page() as new_page_info:
-            xpath = f"//a[text()='{quoteNumber}']"
+            xpath = f"(//a[text()='{quoteNumber}'])[2]"
+            self.page.locator(xpath).wait_for(state="visible", timeout=60000)
             self.page.locator(xpath).click()
         new_tab = new_page_info.value
         return new_tab

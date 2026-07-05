@@ -25,3 +25,18 @@ allure open C:/Automation_Project/E2E_Automation/reports/allure-report
 
 ***Open Codegen***
 playwright codegen
+
+***Playwright Environemnt Setup Commands***
+1) python -m venv venv 
+2) .\venv\Scripts\activate
+3) pip install -r requirements.txt
+4) playwright install
+
+***Jenkins Corn Syntax Format***
+0 21 * * * (Everyday 9pm)
+0 10 * * 1 (Every Monday 10am)
+0 */2 * * * (Every 2 hours)
+
+
+
+ 

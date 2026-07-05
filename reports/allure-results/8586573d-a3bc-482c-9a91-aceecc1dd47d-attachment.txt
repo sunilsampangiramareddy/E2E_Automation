@@ -1,0 +1,10 @@
+[32mINFO    [0m playwright_pytest:TC_Login.py:49 Launching application URL: https://netapp2--uat.sandbox.lightning.force.com/
+[32mINFO    [0m playwright_pytest:TC_Login.py:50 ***TC_Login Test Script Execution Started***
+[32mINFO    [0m playwright_pytest:TC_Login.py:54 Username entered: apptestmbob4@netapp.com
+[32mINFO    [0m playwright_pytest:TC_Login.py:61 Clicked on next button
+[32mINFO    [0m playwright_pytest:TC_Login.py:65 Entered password
+[32mINFO    [0m playwright_pytest:TC_Login.py:68 Signin button clicked
+[32mINFO    [0m playwright_pytest:TC_Login.py:71 Yes button clicked
+[32mINFO    [0m playwright_pytest:TC_Login.py:75 Opportunities label has been verified on the homepage
+[32mINFO    [0m playwright_pytest:TC_Login.py:78 Spark URL: https://netapp2--uat.sandbox.lightning.force.com/lightning/n/Daily_Recommender
+[32mINFO    [0m playwright_pytest:TC_Login.py:87 ***TC_Login Test Script Execution Completed Successfully***

@@ -51,7 +51,7 @@ class HomePageFAS_AFF_ASA_AFX:
         self.saveButton = self.page.get_by_role("button", name="Save")
         self.productsTab = self.page.get_by_role("tab", name=" Products")
 
-    def clickProductName(self, product_name):
+    def click_ProductName(self, product_name):
         if product_name == "FAS/AFF/ASA/AFX":
             wait_for_element(self.productName)
             self.productName.click()
@@ -59,7 +59,18 @@ class HomePageFAS_AFF_ASA_AFX:
         else:
             raise ValueError(f"Invalid product name: {product_name}")
 
-    def selectSubProduct(self, sub_Product):
+    def clickProductName(self, product_name):
+        # Dynamically create the XPath using the product_name argument
+        locator = self.page.locator(
+            f"(//*[normalize-space(text())='{product_name}'])[1]"
+        )
+        # Wait for the element to be visible
+        locator.wait_for(state="visible", timeout=60000)
+        # Click on the element
+        locator.click()
+        time.sleep(self.nw)
+
+    def select_SubProduct(self, sub_Product):
         if sub_Product == "FAS/AFF Advanced Configure Flow":
             self.page.get_by_role("option", name="FAS/AFF/ASA/AFX").wait_for(
                 state="visible", timeout=60000
@@ -71,6 +82,18 @@ class HomePageFAS_AFF_ASA_AFX:
             time.sleep(self.nw)
         else:
             raise ValueError(f"Invalid sub product name: {sub_Product}")
+
+    def selectSubProduct(self, sub_Product):
+        try:
+            # Construct the XPath with the parameterized sub_Product
+            xpath = f"//tr[@class='template' and .//span[@class='templateHeader' and contains(text(), '{sub_Product}')]]//a[@class='punchinConfig' and text()='Configure']"
+            # Wait for the element to be visible
+            self.page.locator(xpath).wait_for(state="visible", timeout=60000)
+            # Click the element
+            self.page.locator(xpath).click()
+            time.sleep(self.sw)
+        except Exception as e:
+            print(f"Error selecting sub product {sub_Product}: {e}")
 
     def configureCluster(self, cluster):
         # Parameterized XPath

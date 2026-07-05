@@ -20,6 +20,8 @@ class QuoteInfoPage:
     def _initialize_locators(self):
         self.quoteInfoTab = self.page.get_by_role("tab", name=" Quote Info")
         self.keystone = self.page.locator("(//input[@role='combobox'])[3]")
+        self.keystoneInternalHardwareQuotes = self.page.locator("(//input[@autocomplete='on' and contains(@class, 'TextFieldInputStyles_textFieldInputBase__lkfh4l0')])[5]")
+        
 
     def clickQuoteInfoTab(self):
         wait_for_element(self.quoteInfoTab)
@@ -42,3 +44,9 @@ class QuoteInfoPage:
             "list", name="List of fields of section Quote Info"
         ).get_by_label("", exact=True).check()
         time.sleep(self.sw)
+        
+    def enterKeystoneInternalHardwareQuotes(self, option: str):
+        wait_for_element(self.keystoneInternalHardwareQuotes)
+        self.keystoneInternalHardwareQuotes.click()
+        self.keystoneInternalHardwareQuotes.fill(option)
+        time.sleep(self.nw)

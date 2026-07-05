@@ -298,6 +298,9 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
 
         cpq_url = hp.getCurrentURL()
         logger.info(f"CPQ URL: {cpq_url}")
+        
+        hpc.verifyQuoteStatus("Draft")
+        logger.info(f"Verified quote status is in expected state: Draft") 
 
         # =============================Configure Keystone Product================================================================
         pp = ProductsPage(new_tab)
@@ -323,11 +326,11 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
             kp.selectOrderType(test_case["Order Type"])
             logger.info(f"Selected order type: {test_case['Order Type']}")
 
-        kp.selectTargetSiteDate()
-        logger.info(f"Selected target site date")
+        # kp.selectTargetSiteDate()
+        # logger.info(f"Selected target site date")
 
-        kp.selectTargetStartDate()
-        logger.info(f"Selected target start date")
+        # kp.selectTargetStartDate()
+        # logger.info(f"Selected target start date")
 
         kp.clickKeystoneServicesTab()
         logger.info(f"Clicked on Keystone Services tab")
@@ -349,6 +352,28 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
         kp.clickAddToQuote()
         ss.capture_screenshot("Captured Product configuration details")
         logger.info(f"Clicked on Add to Quote button")
+        
+        kp.selectTargetReadinessDate()
+        logger.info(f"Selected target readiness date")
+        
+        kp.selectTarget_StartDate()
+        logger.info(f"Selected target start date")
+        
+        hpc.clickSaveIcon()
+        logger.info(f"Clicked on Save button")
+        
+        #==================Quote Info Tab-Enter Keystone Internal Hardware Quotes===================================================        
+        qip = QuoteInfoPage(new_tab)
+        logger.info(f"QuoteInfoPage instance created for the new tab")
+
+        qip.clickQuoteInfoTab()
+        logger.info(f"Clicked on Quote Info tab")
+
+        qip.enterKeystoneInternalHardwareQuotes(quote_number)
+        logger.info(f"Entered Keystone Internal Hardware Quotes: {quote_number}")
+
+        hpc.clickSaveIcon()
+        logger.info(f"Clicked on Save button")
 
         # =============================Read LIG Product Table=========================================================================
         pp.clickProductsTab()
@@ -371,6 +396,9 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
 
         pp.collapseAllProducts()
         logger.info(f"Collapsed all products in the LIG product table")
+        
+        hpc.verifyQuoteStatus("Configured")
+        logger.info(f"Verified quote status is in expected state: Configured")
 
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured LIG Product table details")
@@ -435,6 +463,9 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
         ar.clickInitiateApproval()
         ss.capture_screenshot("Captured Approval Tab details")
         logger.info(f"Clicked on Initiate Approval button")
+        
+        hpc.verifyQuoteStatus("Orderable")
+        logger.info(f"Verified quote status is in expected state: Orderable")
 
         # =====================================Attachments Tab=================================================================================
         ap = AttachmentsPage(new_tab)
@@ -508,6 +539,9 @@ def test_E2E_UAT_003_Part_2(page: Page, base_url, config, test_case) -> None:
         quote_status = hpc.getQuoteStatus()
         ss.capture_screenshot("Captured PO submission quote status")
         logger.info(f"Quote Status: {quote_status}")
+        
+        hpc.verifyQuoteStatus("PO Submitted")
+        logger.info(f"Verified quote status is in expected state: PO Submitted")
 
         # =====================================TPD=========================================================================================
         thp = TPDHomePage(new_tab)

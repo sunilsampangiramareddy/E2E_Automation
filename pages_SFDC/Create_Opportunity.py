@@ -82,7 +82,7 @@ class CreateOpportunity:
         wait_for_element(self.searchAccount)
         self.searchAccount.click()
         self.searchAccount.click()
-        time.sleep(self.nw)
+        # time.sleep(self.nw)
         self.searchAccount.fill(str(account))
         time.sleep(self.nw)
         self.page.get_by_role("option", name="Search Show more results for").locator(

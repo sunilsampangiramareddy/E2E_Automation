@@ -10,8 +10,8 @@ from utils.screenshot_util import ScreenshotUtil
 from utils.config_reader import ConfigReader
 from utils.excel_read import read_test_data
 from utils.write_excel_results import WriteExcelResults
-from api_Functions.List_Price_API import ListPriceAPI
-from api_Functions.Parts_DB_API import PartsDBAPI
+from api_Methods.List_Price_API import ListPriceAPI
+from api_Methods.Parts_DB_API import PartsDBAPI
 from pages_SFDC.Quotes_Page import QuotesPage
 from utils.data_validation import is_valid_data
 

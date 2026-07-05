@@ -278,8 +278,8 @@ def test_createDirectOpportunityStepLogger(
             [
                 script_name,
                 boolean_status,
-                oppty_number,
-                oppty_name,
+                oppty_number, # type: ignore
+                oppty_name, # type: ignore
                 "Opportunity created successfully",
             ],
         ]

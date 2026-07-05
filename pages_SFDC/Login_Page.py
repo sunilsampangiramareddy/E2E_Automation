@@ -17,29 +17,29 @@ class LoginPage:
         with open(locators_file, "r") as file:
             locators = json.load(file)["LoginPage"]
 
-        self.username_input = page.locator(locators["usernameInput"])
-        self.next_button = page.get_by_role(**locators["nextButton"])
-        self.password_input = page.get_by_role(**locators["passwordInput"])
-        self.signin_button = page.get_by_role(**locators["signinButton"])
-        self.yes_button = page.get_by_role(**locators["yesButton"])
+        self.usernameInput = page.locator(locators["username_Input"])
+        self.nextButton = page.get_by_role(**locators["next_Button"])
+        self.passwordInput = page.get_by_role(**locators["password_Input"])
+        self.signinButton = page.get_by_role(**locators["signin_Button"])
+        self.yesButton = page.get_by_role(**locators["yes_Button"])
 
     def enterUserName(self, username: str):
-        wait_for_element(self.username_input)
-        self.username_input.fill(username)
+        wait_for_element(self.usernameInput)
+        self.usernameInput.fill(username)
 
     def clickNextButton(self):
-        wait_for_element(self.next_button)
-        self.next_button.click()
+        wait_for_element(self.nextButton)
+        self.nextButton.click()
 
     def enterPassword(self, password: str):
-        wait_for_element(self.password_input)
-        self.password_input.fill(password)
+        wait_for_element(self.passwordInput)
+        self.passwordInput.fill(password)
 
     def clickSigninButton(self):
-        wait_for_element(self.signin_button)
-        self.signin_button.click()
+        wait_for_element(self.signinButton)
+        self.signinButton.click()
 
     def clickYesButton(self):
-        self.yes_button.wait_for(state="visible", timeout=5000)
-        # wait_for_element(self.yes_button)
-        self.yes_button.click()
+        self.yesButton.wait_for(state="visible", timeout=5000)
+        # wait_for_element(self.yesButton)
+        self.yesButton.click()

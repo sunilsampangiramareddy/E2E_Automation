@@ -80,7 +80,14 @@ class HomePageEAndEFSeries:
         self.page.get_by_role("tab", name="Access").click()
         self.page.get_by_role("checkbox", name="Select All").check()
         time.sleep(self.nw)
-        self.page.get_by_role("tab", name="System").click()
+        # Check if the "System" tab is present and click it
+        if self.page.get_by_role("tab", name="System").is_visible():
+            self.page.get_by_role("tab", name="System").click()
+        # Otherwise, check if the "Configuration" tab is present and click it
+        elif self.page.get_by_role("tab", name="Configuration").is_visible():
+            self.page.get_by_role("tab", name="Configuration").click()
+        else:
+            raise Exception("Neither 'System' nor 'Configuration' tab is visible")
         time.sleep(self.nw)
 
     def selectModel_System(self, model):
@@ -128,7 +135,7 @@ class HomePageEAndEFSeries:
         self.page.locator(
             '[id="oj-searchselect-filter-capacity_eSeriesBaseStorage|input"]'
         ).fill(capacity)
-        self.page.get_by_text(capacity).click()
+        self.page.get_by_text(capacity).first.click() 
         time.sleep(self.nw)
 
     def enterQtyPerEnclosure_Storage(self, qty):
@@ -139,7 +146,7 @@ class HomePageEAndEFSeries:
         self.page.locator('[id="qty_eSeriesBaseStorage|input"]').click()
         self.page.locator('[id="qty_eSeriesBaseStorage|input"]').click()
         self.page.locator('[id="qty_eSeriesBaseStorage|input"]').fill(str(qty))
-        self.page.locator('[id="qty_eSeriesBaseStorage|input"]').press("Tab")
+        self.page.locator('[id="qty_eSeriesBaseStorage|input"]').press("Tab") 
         time.sleep(self.nw)
 
     def enterQtyPerEnclosure_Storage_2(self, qty):
@@ -164,6 +171,14 @@ class HomePageEAndEFSeries:
         ).fill(encryption)
         self.page.get_by_text(encryption).click()
         time.sleep(self.nw)
+        
+    def selectDriveType_BaseStorage(self, driveType):
+        self.page.get_by_role("gridcell").nth(2).wait_for(state="visible", timeout=60000)
+        self.page.get_by_role("gridcell").nth(2).click()
+        self.page.locator("[id=\"oj-searchselect-filter-driveType_base|input\"]").click()
+        self.page.locator("[id=\"oj-searchselect-filter-driveType_base|input\"]").fill(driveType)
+        self.page.get_by_text(driveType).click()
+        time.sleep(self.nw)
 
     def selectCard_HIC(self, card):
         self.page.get_by_role("combobox", name="Card").wait_for(
@@ -172,8 +187,14 @@ class HomePageEAndEFSeries:
         self.page.get_by_role("combobox", name="Card").click()
         self.page.get_by_role("combobox", name="Card").click()
         self.page.get_by_role("combobox", name="Card").fill(card)
-        self.page.get_by_text(card).click()
+        self.page.get_by_text(card).first.click()
         time.sleep(self.nw)
+        
+    def selectAdaptersToAdd(self, protocol):
+        xpath = f"//button[contains(@data-add-id, '{protocol}')]"
+        self.page.locator(xpath).wait_for(state="visible", timeout=60000)
+        self.page.locator(xpath).click()
+        time.sleep(self.nw)        
 
     def clickAddToQuote(self):
         wait_for_element(self.addToQuote)

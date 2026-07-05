@@ -7,7 +7,6 @@ from utils.utils import wait_for_element
 class HomePage:
     nw = 2
     sw = 5
-    bw = 30
 
     def __init__(self, page: Page):
         self.page = page
@@ -73,6 +72,12 @@ class HomePage:
             self.createQuote_2.click()
         new_tab = new_page_info.value
         return new_tab
+
+    def createQuote(self):
+        wait_for_element(self.createQuote_1)
+        self.createQuote_1.click()
+        wait_for_element(self.createQuote_2)
+        self.createQuote_2.click()
 
     def getCurrentURL(self):
         current_url = self.page.url

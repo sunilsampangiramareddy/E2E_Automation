@@ -1,24 +1,147 @@
 {
     "LoginPage": {
-        "usernameInput": "//*[@id='signInName']",
-        "nextButton": {
+        "username_Input": "//*[@id='signInName']",
+        "next_Button": {
             "role": "button",
             "name": "Next"
         },
-        "passwordInput": {
+        "password_Input": {
             "role": "textbox",
             "name": "Enter the password for"
         },
-        "signinButton": {
+        "signin_Button": {
             "role": "button",
             "name": "Sign in"
         },
-        "yesButton": {
+        "yes_Button": {
             "role": "button",
             "name": "Yes"
         }
     },
     "HomePage": {
-        "opportunitiesLabel": "//div[@id='opportunitiesLabel']"
+        "opportunities_Label": "//span[@class='slds-truncate' and text()='Opportunities']",
+        "opportunities_Tab": {
+            "role": "link",
+            "name": "Opportunities"
+        },
+        "new_Opportunity_Button": {
+            "role": "button",
+            "name": "New Opportunity"
+        },
+        "create_Quote_1": "//button[normalize-space()='Create Quote']",
+        "create_Quote_2": "//button[@class='slds-button slds-button_brand'][normalize-space()='Create Quote']"
+    },
+    "CreateOpportunity": {
+        "next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "opportunity_Type": "//select[@class='slds-select' and @name='Opportunity_Type']",
+        "primary_Contact": "//select[@class='slds-select' and @name='Primary_Contact']",
+        "primary_Contact_1P": "//input[@placeholder='Search Primary Contact']",
+        "sales_Play": "//select[@class='slds-select' and (@name='Sales_Play_NON_Enterprise' or @name='Sales_Play_Enterprise')]",
+        "channel": "//select[@class='slds-select' and @name='Channel']",
+        "sales_Type": "//select[@class='slds-select' and @name='Sales_Motion']",
+        "sales_Type_1P": "//select[@name='Sales_Type' and contains(@class, 'slds-select')]",
+        "currency": "//select[@class='slds-select' and @name='Currency']",
+        "end_Customer_Usage": "//select",
+        "hyperscaler": "//select[@name='X1PHyperscaler' and contains(@class, 'slds-select')]",
+        "reseller": "//input[@class='slds-combobox__input slds-input' and @placeholder='Search Accounts...' and @aria-label='Reseller']",
+        "pathway": "//select[@class='slds-select' and (@name='Pathway' or @name='Pathway1' or @name='Pathway0')]",
+        "partner_Sales_Model": "//select[@class='slds-select' and @name='Partner_Sales_Model']",
+        "reseller_Sales_Rep": "//select[@class='slds-select' and @name='Final_Reseller_Sales_Rep']",
+        "reseller_SE": "//select[@class='slds-select' and @name='FInal_Reseller_SE']",
+        "distributor": "//select[@class='slds-select' and @name='Distributor_R']",
+        "opportunity_Number": "//records-highlights-details-item[2]/div/p[2]/slot/lightning-formatted-text",
+        "opportunity_Name": "//h1/slot/lightning-formatted-text"
+
+    },
+    "HomePage_CPQ": {
+        "quote_Number": "//div[3]/div[1]/div[2]",
+        "quote_Name": "//div[2]/div[1]/div[2]/div",
+        "quote_Status": "//div[3]/div[2]/div[2]",
+        "save_Icon": "//span[@slot='startIcon' and contains(@class, 'oj-ux-ico-save')]",
+        "view_More_Link": "//a[text()='View more']",
+        "error_Message": "(//div[@class='oj-messagebanner-detail'])[4]",
+        "close_Button": {
+            "role": "button",
+            "name": "Close"
+        }
+    },
+    "QuoteInfoPage": {
+        "quote_Info_Tab": "//span[normalize-space()='Quote Info']",
+        "save_Button": {
+            "role": "button",
+            "name": "Save Quote"
+        },
+        "pop_Up": "//*[@id='border-8dbf786c-7da0-4898-aa4b-f1b836878c53']"        
+    },
+    "ProductsPage": {
+        "products_Tab": "//span[text()='Products ']",
+        "configure_Button": {
+            "role": "button",
+            "name": "Configure Product"
+        },
+        "keystone_Internal_HardwareQuotes": "(//input[contains(@class, 'TextFieldInputStyles_textFieldInputBase')])[3]",
+        "link_Hardware_Quote": "//button[@aria-label='Link Hardware Quote']"
+    },
+    "ConfigurePage": {
+        "bill_Of_Materials": "//span[text()='Bill of Materials']",
+        "close_Button": {
+            "role": "button",
+            "name": "Close"
+        },
+        "add_To_Quote": {
+            "role": "button",
+            "name": "Add to Quote"
+        }        
+    },
+    "AccountInformationPage": {
+        "account_Information_Tab": "//*[@id='cx-cpq-58ddf3ec-ff14-45d4-8d77-303c703c2c48']/div/div",
+        "shipping_Instructions": {
+            "role": "textbox",
+            "name": "Shipping Instructions"
+        }
+    },
+    "ApprovalRequestPage": {
+        "approval_Request_Tab": "//span[normalize-space()='Approval Request']",
+        "initiate_Approval": "//oj-c-button[@class='oj-sm-margin-4x-end cx-cpq-header-action-button oj-complete']//button[@aria-label='Initiate Approval'][normalize-space()='Initiate Approval']"
+    },
+    "AttachmentsPage": {
+        "attachments_Tab": "//span[text()='Attachments']",
+        "upload_Button": {
+            "role": "button",
+            "name": "Upload"
+        }
+    },
+    "PurchaseOrderPage": {
+        "purchase_Order_Tab": "//span[text()='Purchase Order']",
+        "purchase_Order_Number": "(//input[contains(@class, 'TextFieldInputStyles_textFieldInputBase__lkfh4l0')])[1]",
+        "po_Email": {
+            "role": "textbox",
+            "name": "Order Acknowledgement Contact"
+        },
+        "po_Comments": {
+            "role": "textbox",
+            "name": "Order Review Comments"
+        },
+        "submit_PO_Button": {
+            "role": "button",
+            "name": "Submit PO"
+        }
+    },
+    "HomePage_TPD": {
+            "global_Search": "//a[@href='/global-search']",
+            "transaction_Number": "//*[@id='transactionNumber']",
+            "po_Number": "//*[@id='poNumber']",
+            "go_Button": "//*[@id='go-submit-search']",
+            "order_Status": "//*[@id='tpd-table']/tbody/tr/td[16]/app-tpd-table-field",
+            "sub_Process_Status": "//*[@id='tpd-table']/tbody/tr/td[17]/app-tpd-table-field",
+            "transaction_Review": "//div[contains(text(), 'Transaction Review')]",
+            "rpa_Review": "//div[contains(text(), 'RPA Review')]",
+            "actions_DD": "(//select[@id='transaction-actions'])[1]",
+            "actions_Go_Button": "//*[@id='action-go-btn']",
+            "yes_Button": "//button[normalize-space(text())='Yes']"        
     }
+    
 }

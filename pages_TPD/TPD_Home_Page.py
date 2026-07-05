@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from playwright.sync_api import Page, expect
 import time
 
@@ -86,3 +88,18 @@ class TPDHomePage:
         wait_for_element(self.yesButton)
         self.yesButton.click()
         time.sleep(self.mw)
+
+    def checkGlobalSearchVisibility_SessionTimeOut(self):
+        element = self.globalSearch
+        if element.is_visible():
+            element.click()
+            if element.is_visible():
+                print("Global Search is visible on the TPD homepage")
+            else:
+                print("Global Search is not visible on the TPD homepage")
+        else:
+            print("Global Search is not visible on the TPD homepage")
+
+    def getCurrentTime(self):
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return current_time

@@ -6,7 +6,9 @@ import os
 from playwright.sync_api import Page
 from pages_SFDC.Login_Page import LoginPage
 from pages_SFDC.Home_Page import HomePage
+from common_Methods.Common_Methods import CommonMethods
 from pages_SFDC.Create_Opportunity import CreateOpportunity
+from utils.locator_manager import LocatorManager
 from utils.screenshot_util import ScreenshotUtil
 from utils.config_reader import ConfigReader
 from utils.excel_read import read_test_data
@@ -30,6 +32,10 @@ working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
 
+# Load locators from JSON
+locator_file_path = os.path.join(working_directory, "locators", "locators.json")
+locator_manager = LocatorManager(locator_file_path)
+
 # Get the test script name without the extension
 script_name = os.path.splitext(os.path.basename(__file__))[0]
 
@@ -40,6 +46,7 @@ script_name = os.path.splitext(os.path.basename(__file__))[0]
 def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
     lp = LoginPage(page)
     hp = HomePage(page)
+    cm = CommonMethods(page, locator_manager)
     co = CreateOpportunity(page)
     ss = ScreenshotUtil(page)
     boolean_status = "Pass"
@@ -81,17 +88,17 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
         logger.info(f"Spark URL: {spark_url}")
 
         # =======================Create Opportunity===========================================================================
-        hp.clickOpportunitiesTab()
+        cm.clickElement("HomePage", "opportunities_Tab")
         logger.info(f"Clicked on opportunities tab")
 
-        hp.clickNewOpportunityButton()
-        logger.info(f"Clickecd on new opportunity button")
+        cm.clickElement("HomePage", "new_Opportunity_Button")
+        logger.info(f"Clicked on new opportunity button")
 
         if is_valid_data(test_case["Account Name"]):
             co.enterAccount(test_case["Account Name"])
             logger.info(f"Entered and selected account: {test_case['Account Name']}")
 
-        co.clickNextButton()
+        cm.clickElement("CreateOpportunity", "next_Button")
         logger.info(f"Clicked on next button")
 
         if (
@@ -100,7 +107,11 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
             or test_case["Opportunity Type"] == x1p_Oppty
         ):
             if is_valid_data(test_case["Opportunity Type"]):
-                co.selectOpportunityType(test_case["Opportunity Type"])
+                cm.selectOptionInListbox(
+                    "CreateOpportunity",
+                    "opportunity_Type",
+                    test_case["Opportunity Type"],
+                )
                 logger.info(
                     f"Selected opportunity type: {test_case['Opportunity Type']}"
                 )
@@ -112,15 +123,27 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                         f"Entered opportunity name: {test_case['Opportunity Name']}"
                     )
                 if is_valid_data(test_case["Primary Contact"]):
-                    co.selectPrimaryContact(test_case["Primary Contact"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "primary_Contact",
+                        test_case["Primary Contact"],
+                    )
                     logger.info(
                         f"Selected primary contact: {test_case['Primary Contact']}"
                     )
                 if is_valid_data(test_case["Sales Play"]):
-                    co.selectSalesPlay(test_case["Sales Play"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "sales_Play",
+                        test_case["Sales Play"],
+                    )
                     logger.info(f"Selected sales play: {test_case['Sales Play']}")
                 if is_valid_data(test_case["Channel"]):
-                    co.selectChannel(test_case["Channel"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "channel",
+                        test_case["Channel"],
+                    )
                     logger.info(f"Selected channel: {test_case['Channel']}")
 
             if test_case["Opportunity Type"] == x1p_Oppty:
@@ -130,15 +153,27 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                         f"Entered 1P opportunity name: {test_case['Opportunity Name']}"
                     )
                 if is_valid_data(test_case["Sales Type"]):
-                    co.selectSalesType_1p(test_case["Sales Type"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "sales_Type_1P",
+                        test_case["Sales Type"],
+                    )
                     logger.info(f"Selected 1P sales type: {test_case['Sales Type']}")
                 if is_valid_data(test_case["Primary Contact"]):
-                    co.selectPrimaryContact_1p(test_case["Primary Contact"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "primary_Contact_1P",
+                        test_case["Primary Contact"],
+                    )
                     logger.info(
                         f"Selected 1P primary contact: {test_case['Primary Contact']}"
                     )
                 if is_valid_data(test_case["Hyperscaler"]):
-                    co.selectHyperscaler(test_case["Hyperscaler"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "hyperscaler",
+                        test_case["Hyperscaler"],
+                    )
                     logger.info(f"Selected hyperscaler: {test_case['Hyperscaler']}")
 
             if (
@@ -156,7 +191,11 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                 and test_case["Opportunity Type"] != x1p_Oppty
             ):
                 if is_valid_data(test_case["Sales Type"]):
-                    co.selectSalesType(test_case["Sales Type"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "sales_Type",
+                        test_case["Sales Type"],
+                    )
                     logger.info(f"Selected sales type: {test_case['Sales Type']}")
                     """
                 if is_valid_data(test_case["Installed Base Type"]):
@@ -164,10 +203,14 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                     logger.info(f"Selected installed base type: {test_case['Installed Base Type']}")
                     """
                 if is_valid_data(test_case["Currency"]):
-                    co.selectCurrency(test_case["Currency"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "currency",
+                        test_case["Currency"],
+                    )
                     ss.capture_screenshot("Captured Create Opportunity details")
                     logger.info(f"Selected currency: {test_case['Currency']}")
-                co.clickNextButton()
+                cm.clickElement("CreateOpportunity", "next_Button")
                 logger.info(f"Clicked on next button")
 
             if (
@@ -175,22 +218,34 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                 and test_case["Opportunity Type"] != x1p_Oppty
             ):
                 if is_valid_data(test_case["Pathway"]):
-                    co.selectPathway(test_case["Pathway"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "pathway",
+                        test_case["Pathway"],
+                    )
                     logger.info(f"Selected pathway: {test_case['Pathway']}")
                 if is_valid_data(test_case["Partner Sales Model"]):
-                    co.selectPartnerSalesModel(test_case["Partner Sales Model"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "partner_Sales_Model",
+                        test_case["Partner Sales Model"],
+                    )
                     logger.info(
                         f"Selected partner sales model: {test_case['Partner Sales Model']}"
                     )
-                co.clickNextButton()
+                cm.clickElement("CreateOpportunity", "next_Button")
                 logger.info(f"Clicked on next button")
-            """
+
             if (
                 test_case["Opportunity Type"] == std_Oppty
                 and test_case["Opportunity Type"] != x1p_Oppty
             ):
                 if is_valid_data(test_case["End Customer Usage"]):
-                    co.selectEndCustomerUsage_option(test_case["End Customer Usage"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "end_Customer_Usage",
+                        test_case["End Customer Usage"],
+                    )
                     logger.info(
                         f"Selected end customer usage: {test_case['End Customer Usage']}"
                     )
@@ -199,36 +254,41 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
                 test_case["Channel"] == direct_Oppty
                 or test_case["Opportunity Type"] == x1p_Oppty
             ):
-                co.clickNextButton_2()
+                cm.clickElement("CreateOpportunity", "next_Button")
                 logger.info(f"Clicked on next button")
-            """
+
             if (
                 test_case["Channel"] == indirect_Oppty
                 and test_case["Opportunity Type"] != x1p_Oppty
             ):
-                co.clickNextButton()
+                cm.clickElement("CreateOpportunity", "next_Button")
                 logger.info(f"Clicked on next button")
                 if is_valid_data(test_case["Reseller Sales Rep"]):
-                    co.selectResellerSalesRep(test_case["Reseller Sales Rep"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "reseller_Sales_Rep",
+                        test_case["Reseller Sales Rep"],
+                    )
                     logger.info(
                         f"Selected reseller sales rep: {test_case['Reseller Sales Rep']}"
                     )
                 if is_valid_data(test_case["Reseller SE"]):
-                    co.selectResellerSE(test_case["Reseller SE"])
+                    cm.selectOptionInListbox(
+                        "CreateOpportunity",
+                        "reseller_SE",
+                        test_case["Reseller SE"],
+                    )
                     logger.info(f"Selected reseller SE: {test_case['Reseller SE']}")
-                if is_valid_data(test_case["Distrubutor"]):
-                    co.selectDistributor(test_case["Distrubutor"])
-                    logger.info(f"Selected distributor: {test_case['Distrubutor']}")
-                co.clickNextButton_2()
+                cm.clickElement("CreateOpportunity", "next_Button")
                 logger.info(f"Clicked on next button")
 
-            oppty_number = co.captureOpportunityNumber()
+            oppty_number = cm.readText("CreateOpportunity", "opportunity_Number")
             logger.info(f"Opportunity Number: {oppty_number}")
 
-            oppty_name = co.captureOpportunityName()
+            oppty_name = cm.readText("CreateOpportunity", "opportunity_Name")
             logger.info(f"Opportunity Name: {oppty_name}")
 
-        spark_url = hp.getCurrentURL()
+        spark_url = cm.getCurrentURL()
         logger.info(f"Captured Spark URL: {spark_url}")
 
         # =========================================Capture Test Result and Write To Excel==============================================
@@ -243,8 +303,8 @@ def test_createOpportunity(page: Page, base_url, config, test_case) -> None:
             [
                 script_name,
                 boolean_status,
-                oppty_number,
-                oppty_name,
+                oppty_number,  # type: ignore
+                oppty_name,  # type: ignore
                 "Opportunity created successfully",
             ],
         ]

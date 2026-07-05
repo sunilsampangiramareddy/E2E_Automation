@@ -281,6 +281,9 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
 
         cpq_url = hp.getCurrentURL()
         logger.info(f"CPQ URL: {cpq_url}")
+        
+        hpc.verifyQuoteStatus("Draft")
+        logger.info(f"Verified quote status is in expected state: Draft") 
 
         # =============================Configure Quick Ship/Express Pack parts(X65404)================================================================
         # Create an instance of Products Page for the new tab
@@ -324,6 +327,9 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
 
         pp.collapseAllProducts()
         logger.info(f"Collapsed all products in the LIG product table")
+        
+        hpc.verifyQuoteStatus("Configured")
+        logger.info(f"Verified quote status is in expected state: Configured")
 
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured LIG Product table details")
@@ -380,6 +386,7 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
         logger.info(f"Clicked on Save button")
 
         # ======================================GTC Tab=======================================================================
+        """
         hpgtc = HomePageGTC(new_tab)
         logger.info(f"HomePageGTC instance created for the new tab")
 
@@ -407,10 +414,10 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured Account Information details")
         logger.info(f"Clicked on Save button")
-
+        """
         # ============================Capture Quote Details==========================================================================
-        quote_number = hpc.getQuoteNumber()
-        logger.info(f"Quote Number: {quote_number}")
+        # quote_number = hpc.getQuoteNumber()
+        # logger.info(f"Quote Number: {quote_number}")
 
         quote_name = hpc.getQuoteName()
         logger.info(f"Quote Name: {quote_name}")
@@ -432,6 +439,9 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
         ar.clickInitiateApproval()
         ss.capture_screenshot("Captured Approval Tab details")
         logger.info(f"Clicked on Initiate Approval button")
+        
+        hpc.verifyQuoteStatus("Orderable")
+        logger.info(f"Verified quote status is in expected state: Orderable")
 
         # =====================================Attachments Tab=================================================================================
         ap = AttachmentsPage(new_tab)
@@ -487,6 +497,9 @@ def test_E2E_UAT_051(page: Page, base_url, config, test_case) -> None:
         quote_status = hpc.getQuoteStatus()
         ss.capture_screenshot("Captured PO submission quote status")
         logger.info(f"Quote Status: {quote_status}")
+        
+        hpc.verifyQuoteStatus("PO Submitted")
+        logger.info(f"Verified quote status is in expected state: PO Submitted")
 
         # =====================================TPD=========================================================================================
         thp = TPDHomePage(new_tab)

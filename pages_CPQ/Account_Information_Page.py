@@ -48,7 +48,33 @@ class AccountInformationPage:
         self.page.get_by_role("textbox", name="First Name").fill(first_name)
         self.page.get_by_role("textbox", name="Last Name").click()
         self.page.get_by_role("textbox", name="Last Name").fill(last_name)
-        self.page.get_by_role("button", name="Search").click()
+        self.page.get_by_role("button", name="Search").last.click()
+        self.page.get_by_role("button", name="Select").first.click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Close").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("button", name="Close").click()
+        time.sleep(self.nw)
+        
+    def enterSoldTo_2(self, email):
+        self.page.get_by_title("Sold To").wait_for(state="visible", timeout=60000)
+        self.page.get_by_title("Sold To").click()
+        self.page.wait_for_selector(
+            "(//span[contains(text(),'Edit')])[1]",
+            state="visible",
+            timeout=60000,
+        )
+        self.page.locator("(//span[contains(text(),'Edit')])[1]").click()
+        time.sleep(self.nw)
+        self.page.get_by_label("Search Type :").wait_for(state="visible", timeout=60000)
+        self.page.get_by_label("Search Type :").select_option("Contact")
+        time.sleep(self.nw)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(state="visible", timeout=60000)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').click()
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').fill(email)
+        self.page.get_by_role("button", name="Search").last.click()
+        self.page.get_by_role("button", name="Select").wait_for(state="visible", timeout=60000)        
         self.page.get_by_role("button", name="Select").first.click()
         time.sleep(self.nw)
         self.page.get_by_role("button", name="Close").wait_for(
@@ -88,7 +114,7 @@ class AccountInformationPage:
         self.page.get_by_role("textbox", name="First Name").fill(first_name)
         self.page.get_by_role("textbox", name="Last Name").click()
         self.page.get_by_role("textbox", name="Last Name").fill(last_name)
-        self.page.get_by_role("button", name="Search").click()
+        self.page.get_by_role("button", name="Search").last.click()
         self.page.get_by_role("button", name="Select").first.click()
         time.sleep(self.nw)
         self.page.get_by_role("button", name="Close").wait_for(
@@ -96,6 +122,28 @@ class AccountInformationPage:
         )
         self.page.get_by_role("button", name="Close").click()
         time.sleep(self.nw)
+        
+    def enterEndCustomer_2(self, email):
+        self.page.get_by_text("End Customer").wait_for(state="visible", timeout=60000)
+        self.page.get_by_text("End Customer").click()
+        self.page.locator("(//span[contains(text(),'Edit')])[3]").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("(//span[contains(text(),'Edit')])[3]").click()
+        time.sleep(self.nw)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(state="visible", timeout=60000)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').click()
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').fill(email)
+        self.page.get_by_role("button", name="Search").last.click()
+        self.page.get_by_role("button", name="Select").wait_for(state="visible", timeout=60000)
+        self.page.get_by_role("button", name="Select").first.click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Close").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("button", name="Close").click()
+        time.sleep(self.nw)
+
 
     def enterSoftwareDelivery(self):
         self.page.get_by_text("Software Delivery").wait_for(

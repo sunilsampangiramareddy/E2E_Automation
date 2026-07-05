@@ -294,6 +294,9 @@ def test_E2E_UAT_026_Part_2(page: Page, base_url, config, test_case) -> None:
 
         cpq_url = hp.getCurrentURL()
         logger.info(f"CPQ URL: {cpq_url}")
+        
+        hpc.verifyQuoteStatus("Draft")
+        logger.info(f"Verified quote status is in expected state: Draft")
 
         # ===================Configure First Product E-Series(E5700)================================================================
 
@@ -474,6 +477,9 @@ def test_E2E_UAT_026_Part_2(page: Page, base_url, config, test_case) -> None:
 
         pp.collapseAllProducts()
         logger.info(f"Collapsed all products in the LIG product table")
+        
+        hpc.verifyQuoteStatus("Configured")
+        logger.info(f"Verified quote status is in expected state: Configured")
 
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured LIG Product table details")
@@ -556,6 +562,9 @@ def test_E2E_UAT_026_Part_2(page: Page, base_url, config, test_case) -> None:
         ar.clickInitiateApproval()
         ss.capture_screenshot("Captured Approval Tab details")
         logger.info(f"Clicked on Initiate Approval button")
+        
+        hpc.verifyQuoteStatus("Orderable")
+        logger.info(f"Verified quote status is in expected state: Orderable")
 
         hpc.clickSaveIcon()
         ss.capture_screenshot("Captured Account Information details")
