@@ -36,7 +36,7 @@ from utils.data_validation import is_valid_data
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
 relative_file_path = os.path.join(
-    "testData", "TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001.xlsx"
+    "testData/tests_ERP_FTR", "TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001.xlsx"
 )
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
@@ -285,9 +285,9 @@ def test_TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001(
 
         cpq_url = hp.getCurrentURL()
         logger.info(f"CPQ URL: {cpq_url}")
-        
+
         hpc.verifyQuoteStatus("Draft")
-        logger.info(f"Verified quote status is in expected state: Draft") 
+        logger.info(f"Verified quote status is in expected state: Draft")
 
         # =============================Configure FAS/AFF/ASA/AFX First Product(AFF A400)================================================================
         pp = ProductsPage(new_tab)
@@ -602,7 +602,7 @@ def test_TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001(
 
         pp.collapseAllProducts()
         logger.info(f"Collapsed all products in the LIG product table")
-        
+
         hpc.verifyQuoteStatus("Configured")
         logger.info(f"Verified quote status is in expected state: Configured")
 
@@ -671,7 +671,7 @@ def test_TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001(
         ar.clickInitiateApproval()
         ss.capture_screenshot("Captured Approval Tab details")
         logger.info(f"Clicked on Initiate Approval button")
-        
+
         hpc.verifyQuoteStatus("Orderable")
         logger.info(f"Verified quote status is in expected state: Orderable")
 
@@ -729,7 +729,7 @@ def test_TC_FAS_AFF_ASA_AFX_Multiple_Cluster_Config_001(
         quote_status = hpc.getQuoteStatus()
         ss.capture_screenshot("Captured PO submission quote status")
         logger.info(f"Quote Status: {quote_status}")
-        
+
         hpc.verifyQuoteStatus("PO Submitted")
         logger.info(f"Verified quote status is in expected state: PO Submitted")
 

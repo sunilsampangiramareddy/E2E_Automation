@@ -38,7 +38,7 @@ from utils.data_validation import is_valid_data
 
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
-relative_file_path = os.path.join("testData", "E2E_UAT_017.xlsx")
+relative_file_path = os.path.join("testData/tests_ERP_FTR", "E2E_UAT_017.xlsx")
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
@@ -284,9 +284,9 @@ def test_E2E_UAT_017(page: Page, base_url, config, test_case) -> None:
 
         cpq_url = hp.getCurrentURL()
         logger.info(f"CPQ URL: {cpq_url}")
-        
+
         hpc.verifyQuoteStatus("Draft")
-        logger.info(f"Verified quote status is in expected state: Draft") 
+        logger.info(f"Verified quote status is in expected state: Draft")
 
         # =============================Configure FAS/AFF/ASA/AFX First Product(FAS8300)================================================================
         pp = ProductsPage(new_tab)
@@ -501,7 +501,7 @@ def test_E2E_UAT_017(page: Page, base_url, config, test_case) -> None:
 
         pp.collapseAllProducts()
         logger.info(f"Collapsed all products in the LIG product table")
-        
+
         hpc.verifyQuoteStatus("Configured")
         logger.info(f"Verified quote status is in expected state: Configured")
 
@@ -572,7 +572,7 @@ def test_E2E_UAT_017(page: Page, base_url, config, test_case) -> None:
         ar.clickInitiateApproval()
         ss.capture_screenshot("Captured Approval Tab details")
         logger.info(f"Clicked on Initiate Approval button")
-        
+
         hpc.verifyQuoteStatus("Orderable")
         logger.info(f"Verified quote status is in expected state: Orderable")
 
@@ -646,7 +646,7 @@ def test_E2E_UAT_017(page: Page, base_url, config, test_case) -> None:
         quote_status = hpc.getQuoteStatus()
         ss.capture_screenshot("Captured PO submission quote status")
         logger.info(f"Quote Status: {quote_status}")
-        
+
         hpc.verifyQuoteStatus("PO Submitted")
         logger.info(f"Verified quote status is in expected state: PO Submitted")
 

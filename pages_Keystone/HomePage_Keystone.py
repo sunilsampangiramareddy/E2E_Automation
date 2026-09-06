@@ -31,6 +31,7 @@ class HomePageKeystone:
         self.keystoneServicesTab = self.page.locator(
             "//a[normalize-space()='Keystone Services']"
         )
+        self.addOnServicesTab = self.page.get_by_role("tab", name="Add-On Services")
         self.addToQuote = self.page.get_by_role("button", name="Add to Quote")
         self.viewMoreLink = self.page.locator("//a[text()='View more']")
         self.errorMessage = self.page.locator(
@@ -70,6 +71,36 @@ class HomePageKeystone:
         except Exception as e:
             print(f"Error selecting sub product {sub_Product}: {e}")
 
+    def selectAdvancedDataProtect(self, yesOrNo: str):
+        if yesOrNo.lower() == "no":
+            self.page.get_by_role("option", name="No").wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.get_by_role("option", name="No").click()
+            time.sleep(self.nw)
+        elif yesOrNo.lower() == "yes":
+            self.page.get_by_role("option", name="Yes").wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.get_by_role("option", name="Yes").click()
+            time.sleep(self.nw)
+        else:
+            raise ValueError(f"Invalid option for Advanced Data Protect: {yesOrNo}")
+
+    def enterADPTotalQuantity(self, totalQuantity: str):
+        self.page.get_by_role("spinbutton", name="Total Quantity", exact=True).wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity", exact=True).click()
+        self.page.get_by_role("spinbutton", name="Total Quantity", exact=True).click()
+        self.page.get_by_role("spinbutton", name="Total Quantity", exact=True).fill(
+            str(totalQuantity)
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity", exact=True).press(
+            "Tab"
+        )
+        time.sleep(self.nw)
+
     def selectOrderType(self, orderType: str):
         wait_for_element(self.orderType)
         self.orderType.click()
@@ -105,7 +136,16 @@ class HomePageKeystone:
         self.keystoneServicesTab.click()
         time.sleep(self.nw)
 
-    def selectDataType(self, dataType: str):
+    def clickAddFileAndBlockStorageServices(self):
+        self.page.get_by_label("File and Block Storage").get_by_role(
+            "button", name="Add"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.get_by_label("File and Block Storage").get_by_role(
+            "button", name="Add"
+        ).click()
+        time.sleep(self.nw)
+
+    def selectDataType_FileAndBlockStorageServices(self, dataType: str):
         self.page.locator(
             "//div[contains(@class, 'cpq-table-data-cell') and contains(@class, 'col-dataType_KS')]"
         ).wait_for(state="visible", timeout=60000)
@@ -123,7 +163,21 @@ class HomePageKeystone:
         self.page.locator(xpath).click()
         time.sleep(self.sw)
 
-    def selectServiceLevel(self, serviceLevel: str):
+    def selectDataType_FileAndBlockStorageServices_2(self, dataType: str):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-dataType_KS.type-menu.has-errors"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-dataType_KS.type-menu.has-errors"
+        ).click()
+        self.page.locator('[id="dataType_KS|input"]').click()
+        self.page.locator('[id="oj-searchselect-filter-dataType_KS|input"]').fill(
+            dataType
+        )
+        self.page.get_by_text(dataType, exact=True).first.click()
+        time.sleep(self.nw)
+
+    def selectServiceLevel_FileAndBlockStorageServices(self, serviceLevel: str):
         self.page.get_by_role("gridcell").nth(2).wait_for(
             state="visible", timeout=60000
         )
@@ -136,7 +190,23 @@ class HomePageKeystone:
         self.page.get_by_text(serviceLevel, exact=True).click()
         time.sleep(self.sw)
 
-    def enterTotalCapacityCommitted(self, totalCapacity: str):
+    def selectServiceLevel_FileAndBlockStorageServices_2(self, serviceLevel: str):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-serviceLevel_KS.type-menu.oj-selected"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-serviceLevel_KS.type-menu.oj-selected"
+        ).click()
+        self.page.locator('[id="serviceLevel_KS|input"]').click()
+        self.page.locator('[id="oj-searchselect-filter-serviceLevel_KS|input"]').fill(
+            serviceLevel
+        )
+        self.page.get_by_text(serviceLevel, exact=True).click()
+        time.sleep(self.nw)
+
+    def enterTotalCapacityCommitted_FileAndBlockStorageServices(
+        self, totalCapacity: str
+    ):
         self.page.locator(
             "//div[@role='gridcell' and contains(@class, 'col-quantity_KS')]"
         ).wait_for(state="visible", timeout=60000)
@@ -151,6 +221,259 @@ class HomePageKeystone:
             "//input[@id='quantity_KS|input' and @role='spinbutton' and @aria-invalid='true']"
         ).fill(str(totalCapacity))
         time.sleep(self.sw)
+
+    def enterTotalCapacityCommitted_FileAndBlockStorageServices_2(
+        self, totalCapacity: str
+    ):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-quantity_KS.type-number.oj-inputnumber-hide-spinbutton.oj-selected"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-quantity_KS.type-number.oj-inputnumber-hide-spinbutton.oj-selected"
+        ).click()
+        self.page.locator('[id="quantity_KS|input"]').click()
+        self.page.locator('[id="quantity_KS|input"]').click()
+        self.page.locator('[id="quantity_KS|input"]').fill(str(totalCapacity))
+        self.page.locator('[id="quantity_KS|input"]').press("Tab")
+        time.sleep(self.nw)
+
+    def selectOptionalFeatures(self, optionalFeature: str):
+        self.page.get_by_role("combobox", name="Optional Features").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Optional Features").click()
+        self.page.get_by_role("combobox", name="Optional Features").click()
+        self.page.get_by_role("combobox", name="Optional Features").fill(
+            optionalFeature
+        )
+        self.page.get_by_text(optionalFeature).click()
+        self.page.get_by_role("combobox", name="Optional Features").press("Tab")
+        time.sleep(self.nw)
+
+    def enterTotalQuantity_OptionalFeatures(self, totalQuantity: str):
+        self.page.get_by_role("spinbutton", name="Total Quantity (TiB)").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity (TiB)").click()
+        self.page.get_by_role("spinbutton", name="Total Quantity (TiB)").click()
+        self.page.get_by_role("spinbutton", name="Total Quantity (TiB)").fill(
+            str(totalQuantity)
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity (TiB)").press("Tab")
+        time.sleep(self.nw)
+
+    def selectDataType_ObjectStorageServices(self, dataType: str):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-dataTypeObject_KS"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-dataTypeObject_KS"
+        ).click()
+        self.page.locator('[id="dataTypeObject_KS|input"]').click()
+        self.page.locator('[id="oj-searchselect-filter-dataTypeObject_KS|input"]').fill(
+            dataType
+        )
+        self.page.get_by_text(dataType, exact=True).click()
+        time.sleep(self.nw)
+
+    def selectServiceLevel_ObjectStorageServices(self, serviceLevel: str):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-serviceLevelObject_KS"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-serviceLevelObject_KS"
+        ).click()
+        self.page.locator('[id="serviceLevelObject_KS|input"]').click()
+        self.page.locator(
+            '[id="oj-searchselect-filter-serviceLevelObject_KS|input"]'
+        ).fill(serviceLevel)
+        self.page.get_by_text(serviceLevel, exact=True).first.click()
+        time.sleep(self.nw)
+
+    def selectTotalCapacity_ObjectStorageServices(self, totalCapacity: str):
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-quantityObject_KS"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.locator(
+            ".cpq-table-data-cell.oj-table-data-cell.oj-form-control-inherit.col-quantityObject_KS"
+        ).click()
+        self.page.locator('[id="quantityObject_KS|input"]').click()
+        self.page.locator('[id="quantityObject_KS|input"]').fill(str(totalCapacity))
+        self.page.locator('[id="quantityObject_KS|input"]').press("Tab")
+        time.sleep(self.nw)
+
+    def selectBillingFrequency(self, billingFrequency: str):
+        self.page.get_by_role("combobox", name="Required Billing Frequency").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Required Billing Frequency").click()
+        self.page.get_by_role("combobox", name="Billing Frequency").fill(
+            billingFrequency
+        )
+        self.page.get_by_text(billingFrequency, exact=True).last.click()
+        time.sleep(self.nw)
+
+    def selectTerm(self, term: str):
+        term = str(int(float(term)))
+        self.page.get_by_role("combobox", name="Required Term (Months)").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Required Term (Months)").click()
+        self.page.get_by_role("combobox", name="Term (Months)").fill(term)
+        self.page.get_by_text(term, exact=True).click()
+        self.page.get_by_role("combobox", name="Term (Months)").press("Tab")
+        time.sleep(self.nw)
+
+    def clickAddOnServicesTab(self):
+        wait_for_element(self.addOnServicesTab)
+        self.addOnServicesTab.click()
+        time.sleep(self.nw)
+
+    def selectDataInfrastructureInsights(self, dataInfrastructureInsights: str):
+        if dataInfrastructureInsights.lower() == "no":
+            self.page.get_by_role(
+                "listbox", name="Required Data Infrastructure"
+            ).get_by_label("No").wait_for(state="visible", timeout=60000)
+            self.page.get_by_role(
+                "listbox", name="Required Data Infrastructure"
+            ).get_by_label("No").click()
+            time.sleep(self.nw)
+        elif dataInfrastructureInsights.lower() == "yes":
+            self.page.get_by_role(
+                "listbox", name="Required Data Infrastructure"
+            ).get_by_label("Yes").wait_for(state="visible", timeout=60000)
+            self.page.get_by_role(
+                "listbox", name="Required Data Infrastructure"
+            ).get_by_label("Yes").click()
+            time.sleep(self.nw)
+        else:
+            raise ValueError(
+                f"Invalid option for Data Infrastructure Insights: {dataInfrastructureInsights}"
+            )
+
+    def enterKeystoneSupplementalServices_Subscription(
+        self, keystoneSupplementalServices: str
+    ):
+        self.page.get_by_role(
+            "spinbutton", name="Keystone Supplemental Services"
+        ).wait_for(state="visible", timeout=60000)
+        self.page.get_by_role(
+            "spinbutton", name="Keystone Supplemental Services"
+        ).click()
+        self.page.get_by_role(
+            "spinbutton", name="Keystone Supplemental Services"
+        ).click()
+        self.page.get_by_role("spinbutton", name="Keystone Supplemental Services").fill(
+            str(keystoneSupplementalServices)
+        )
+        self.page.get_by_role(
+            "spinbutton", name="Keystone Supplemental Services"
+        ).press("Tab")
+        time.sleep(self.nw)
+
+    def enterTotalQuantity_Networking(self, totalQuantity: str):
+        self.page.get_by_role("spinbutton", name="Total Quantity").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity").click()
+        self.page.get_by_role("spinbutton", name="Total Quantity").click()
+        self.page.get_by_role("spinbutton", name="Total Quantity").fill(
+            str(totalQuantity)
+        )
+        self.page.get_by_role("spinbutton", name="Total Quantity").press("Tab")
+        time.sleep(self.nw)
+
+    def selectNRDType_Support(self, nrdType: str):
+        self.page.get_by_role("combobox", name="Non-Returnable Drives (NRD)").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Non-Returnable Drives (NRD)").click()
+        self.page.get_by_role("combobox", name="NRD Type").fill(nrdType)
+        self.page.get_by_text(nrdType, exact=True).click()
+        time.sleep(self.nw)
+
+    def selectManagedServices_ProfessionalServices(self, managedServices: str):
+        self.page.get_by_role("combobox", name="Managed Services").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Managed Services").click()
+        self.page.get_by_role("combobox", name="Managed Services").click()
+        self.page.get_by_role("combobox", name="Managed Services").fill(managedServices)
+        self.page.get_by_text(managedServices, exact=True).click()
+        time.sleep(self.nw)
+
+    def selectCountry(self, country: str):
+        self.page.get_by_role("combobox", name="Country").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Country").click()
+        self.page.get_by_role("combobox", name="Country").clear()
+        self.page.get_by_role("combobox", name="Country").fill(country)
+        self.page.get_by_text(country, exact=True).click()
+        time.sleep(self.nw)
+
+    def enterMigrationServices_DataMigrationAsService(self, migrationServices: str):
+        self.page.locator("//*[@id='dMaaS_KS|input']").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("//*[@id='dMaaS_KS|input']").click()
+        self.page.locator("//*[@id='dMaaS_KS|input']").fill(str(migrationServices))
+        self.page.locator("//*[@id='dMaaS_KS|input']").press("Tab")
+        time.sleep(self.nw)
+
+    def selectOnsiteDelivery_TravelAndExpense(self, onsiteDelivery: str):
+        if onsiteDelivery.lower() == "check":
+            self.page.locator('[id="dMaaSTE_KStrue|cb"]').wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator('[id="dMaaSTE_KStrue|cb"]').check()
+            time.sleep(self.nw)
+        elif onsiteDelivery.lower() == "uncheck":
+            self.page.locator('[id="dMaaSTE_KStrue|cb"]').wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator('[id="dMaaSTE_KStrue|cb"]').uncheck()
+            time.sleep(self.nw)
+
+    def enterTimeAndMaterials_Days(self, timeAndMaterials: str):
+        self.page.get_by_role("spinbutton", name="Time & Materials (Days)").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("spinbutton", name="Time & Materials (Days)").click()
+        self.page.get_by_role("spinbutton", name="Time & Materials (Days)").click()
+        self.page.get_by_role("spinbutton", name="Time & Materials (Days)").fill(
+            str(timeAndMaterials)
+        )
+        self.page.get_by_role("spinbutton", name="Time & Materials (Days)").press("Tab")
+        time.sleep(self.nw)
+
+    def selectOnsiteDelivery_TravelAndExpense_2(self, onsiteDelivery: str):
+        if onsiteDelivery.lower() == "check":
+            self.page.locator('[id="tnMTE_KStrue|cb"]').wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator('[id="tnMTE_KStrue|cb"]').check()
+            time.sleep(self.nw)
+        elif onsiteDelivery.lower() == "uncheck":
+            self.page.locator('[id="tnMTE_KStrue|cb"]').wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator('[id="tnMTE_KStrue|cb"]').uncheck()
+            time.sleep(self.nw)
+
+    def selectSAMService(self, samService: str):
+        if samService.lower() == "no":
+            self.page.locator("#sAMService_KS-no").wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator("#sAMService_KS-no").click()
+            time.sleep(self.nw)
+        elif samService.lower() == "yes":
+            self.page.locator("#sAMService_KS-yes").wait_for(
+                state="visible", timeout=60000
+            )
+            self.page.locator("#sAMService_KS-yes").click()
+            time.sleep(self.nw)
 
     def clickAddToQuote(self):
         wait_for_element(self.addToQuote)
@@ -288,3 +611,110 @@ class HomePageKeystone:
         except Exception as e:
             logger.error(f"An error occurred while validating objects: {e}")
             raise e
+
+    def validateEligibleDiscountForInternalEngineering(self, page) -> bool:
+        """
+        Validates the Eligible Discount for rows where Eligible Discount Source matches 'Internal Engineering'.
+
+        Args:
+            page (Page): The Playwright page object.
+
+        Returns:
+            bool: True if all validations pass, False otherwise.
+        """
+        logger.info(
+            "Starting validation for Eligible Discount Source and Eligible Discount for Internal Engineering Quote."
+        )
+        # Define constants
+        EXPECTED_DISCOUNT = 100
+        COLUMN_XPATHS = {
+            "Eligible Discount Source": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-eligibleDiscountSource_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+            "Eligible Discount": "//div[contains(@class, 'oj-flex oj-fa-cx-cpq-field-eligibleDiscount_l_c oracle-cx-cpq-fragmentsUI-cx-cpq-fragment-dataGridColumnTruncate')]",
+        }
+        # Locate elements for both columns
+        source_locator = page.locator(COLUMN_XPATHS["Eligible Discount Source"])
+        discount_locator = page.locator(COLUMN_XPATHS["Eligible Discount"])
+        # Get the number of rows
+        row_count = source_locator.count()
+        if row_count == 0:
+            logger.warning("No rows found in the table. Skipping validation.")
+            print("No rows found in the table. Skipping validation.")
+            return True  # No rows to validate, consider it passed
+        logger.info(f"Found {row_count} rows in the table.")
+        print(f"Found {row_count} rows in the table.")
+
+        # Initialize a flag to track overall validation status
+        validation_passed = True
+
+        # Iterate through each row
+        for i in range(row_count):
+            try:
+                # Read the "Eligible Discount Source" value
+                source_value = (
+                    source_locator.nth(i).inner_text().strip()
+                )  # Strip whitespace to handle blank values
+                logger.info(
+                    f"Row {i + 1}: Eligible Discount Source value: '{source_value}'"
+                )
+                # Check if the source value is empty (blank or whitespace)
+                if not source_value:
+                    logger.info(
+                        f"Row {i + 1}: Eligible Discount Source is empty or blank. Skipping row."
+                    )
+                    continue
+                # Check if the source value matches "Internal Engineering"
+                if source_value == "Internal Engineering":
+                    logger.info(
+                        f"Row {i + 1}: Found matching Eligible Discount Source: {source_value}"
+                    )
+                    # Read the corresponding "Eligible Discount" value
+                    discount_value = discount_locator.nth(i).inner_text().strip()
+                    logger.info(
+                        f"Row {i + 1}: Eligible Discount value: '{discount_value}'"
+                    )
+                    # Validate the discount value
+                    try:
+                        numeric_discount_value = float(discount_value)
+                        if numeric_discount_value == EXPECTED_DISCOUNT:
+                            logger.info(
+                                f"Row {i + 1}: Eligible Discount validation passed (100%)."
+                            )
+                            print(
+                                f"\033[92m✅ Row {i + 1}: Eligible Discount validation passed (100%).\033[0m"
+                            )
+                        else:
+                            logger.warning(
+                                f"Row {i + 1}: Eligible Discount validation failed. Expected: {EXPECTED_DISCOUNT}, Found: {numeric_discount_value}"
+                            )
+                            print(
+                                f"\033[91m❌ Row {i + 1}: Eligible Discount validation failed. Expected: {EXPECTED_DISCOUNT}, Found: {numeric_discount_value}\033[0m"
+                            )
+                            validation_passed = False
+                    except ValueError:
+                        logger.error(
+                            f"Row {i + 1}: Invalid Eligible Discount value: '{discount_value}'. Cannot convert to number."
+                        )
+                        print(
+                            f"\033[91m❌ Row {i + 1}: Invalid Eligible Discount value: '{discount_value}'. Cannot convert to number.\033[0m"
+                        )
+                        validation_passed = False
+                else:
+                    logger.debug(
+                        f"Row {i + 1}: Eligible Discount Source does not match 'Internal Engineering'."
+                    )
+                    print(
+                        f"\033[91m❌ Row {i + 1}: Eligible Discount Source does not match 'Internal Engineering'.\033[0m"
+                    )
+            except Exception as e:
+                logger.error(
+                    f"Row {i + 1}: An error occurred during validation. Error: {e}"
+                )
+                print(
+                    f"\033[91m❌ Row {i + 1}: An error occurred during validation. Error: {e}\033[0m"
+                )
+                validation_passed = False
+
+        logger.info(
+            "Validation for Eligible Discount Source and Eligible Discount completed."
+        )
+        return validation_passed

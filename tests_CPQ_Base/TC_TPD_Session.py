@@ -29,7 +29,7 @@ from utils.data_validation import is_valid_data
 
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
-relative_file_path = os.path.join("testData", "TC_TPD_Session.xlsx")
+relative_file_path = os.path.join("testData/tests_CPQ_Base", "TC_TPD_Session.xlsx")
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)

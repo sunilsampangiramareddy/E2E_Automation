@@ -18,7 +18,9 @@ logger.info(
     f"Number of CPU cores detected: {MAX_WORKERS}. Using this for parallel execution."
 )
 # Load test data from Excel
-relative_file_path = os.path.join("testData", "Test_Orchestration.xlsx")
+relative_file_path = os.path.join(
+    "testData/tests_Orchestration", "Test_Orchestration.xlsx"
+)
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)

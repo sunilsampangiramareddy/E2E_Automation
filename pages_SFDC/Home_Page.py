@@ -88,3 +88,26 @@ class HomePage:
 
     def refreshPage(self):
         self.page.reload(timeout=60000)
+
+    def selectFromSearchResults(self, result_name: str):
+        self.page.get_by_role("option", name=result_name).click()
+
+    def gotoDeveloperConsole(self):
+        wait_for_element(self.setup_icon)
+        self.setup_icon.click()
+
+        with self.page.expect_popup() as popup_info:
+            self.page.get_by_role(
+                "menuitem", name="Developer Console Opens in a new tab"
+            ).click()
+
+        setup_page = popup_info.value
+        setup_page.wait_for_load_state()
+        setup_page.bring_to_front()
+
+        try:
+            setup_page.get_by_role("button", name="OK").click()
+        except Exception:
+            pass
+
+        return setup_page

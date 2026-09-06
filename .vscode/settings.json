@@ -10,7 +10,7 @@
     
     "python.analysis.autoImportCompletions": false,
     "python.testing.pytestArgs": [
-        "tests_SFDC"
+        "tests_SFDC_Regression"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true

@@ -76,6 +76,15 @@ class TPDHomePage:
         xpath = f"//a[normalize-space(text())='{quote_number}']"
         self.page.locator(xpath).click()
 
+    def selectCostCenterAndGLAccountValidation(self):
+        self.page.get_by_role("button", name="Transaction Data").wait_for(state="visible", timeout=60000)
+        self.page.get_by_role("button", name="Transaction Data").click()
+        self.page.locator("#costCenterAndGlAccountValidationcbox").wait_for(state="visible", timeout=60000)
+        self.page.locator("#costCenterAndGlAccountValidationcbox").check()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Transaction Data").click()
+
+
     def select_ActionsDD(self, option_value: str) -> None:
         wait_for_element(self.actionsDD)
         self.actionsDD.select_option(value=option_value)

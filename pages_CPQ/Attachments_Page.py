@@ -59,6 +59,32 @@ class AttachmentsPage:
         fc_info.value.set_files(file_path)
         time.sleep(self.sw)
 
+    def selectDragAndDrop_PDF(self):
+        # Path to the file in the resources folder
+        current_dir = os.path.dirname(
+            os.path.abspath(__file__)
+        )  # Get the current directory of this file
+        file_path = os.path.join(
+            current_dir, "../resources/test.pdf"
+        )  # Relative path to the PDF file
+        # Normalize the path for cross-platform support (Windows, Linux, macOS)
+        file_path = os.path.normpath(file_path)
+        # Safety check
+        assert os.path.exists(file_path), f"File not found: {file_path}"
+
+        # Wait for Drag & Drop button
+        expect(self.dragAndDrop).to_be_visible(timeout=30000)
+        expect(self.dragAndDrop).to_be_enabled()
+
+        # Click button and wait for native file chooser
+        with self.page.expect_file_chooser(timeout=30000) as fc_info:
+            self.dragAndDrop.click()
+
+        # Set file
+        # (This internally fills "File name" field and clicks Open)
+        fc_info.value.set_files(file_path)
+        time.sleep(self.sw)
+
     def selectAttachmentType(self, attachment_type):
         wait_for_element(self.attachmentType)
         self.attachmentType.click()

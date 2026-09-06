@@ -20,8 +20,9 @@ class QuoteInfoPage:
     def _initialize_locators(self):
         self.quoteInfoTab = self.page.get_by_role("tab", name=" Quote Info")
         self.keystone = self.page.locator("(//input[@role='combobox'])[3]")
-        self.keystoneInternalHardwareQuotes = self.page.locator("(//input[@autocomplete='on' and contains(@class, 'TextFieldInputStyles_textFieldInputBase__lkfh4l0')])[5]")
-        
+        self.keystoneInternalHardwareQuotes = self.page.locator(
+            "(//input[@autocomplete='on' and contains(@class, 'TextFieldInputStyles_textFieldInputBase__lkfh4l0')])[5]"
+        )
 
     def clickQuoteInfoTab(self):
         wait_for_element(self.quoteInfoTab)
@@ -44,9 +45,32 @@ class QuoteInfoPage:
             "list", name="List of fields of section Quote Info"
         ).get_by_label("", exact=True).check()
         time.sleep(self.sw)
-        
+
     def enterKeystoneInternalHardwareQuotes(self, option: str):
         wait_for_element(self.keystoneInternalHardwareQuotes)
         self.keystoneInternalHardwareQuotes.click()
         self.keystoneInternalHardwareQuotes.fill(option)
+        time.sleep(self.nw)
+
+    def selectOrderType(self, option: str):
+        wait_for_element(self.page.get_by_role("combobox", name="Order Type"))
+        self.page.get_by_role("combobox", name="Order Type").click()
+        self.page.get_by_role("combobox", name="Order Type").fill(option)
+        self.page.get_by_text(option).click()
+        time.sleep(self.sw)
+
+    def selectSubQuoteType(self, option: str):
+        wait_for_element(self.page.get_by_role("combobox", name="Sub Quote Type"))
+        self.page.get_by_role("combobox", name="Sub Quote Type").click()
+        self.page.get_by_role("combobox", name="Sub Quote Type").fill(option)
+        self.page.get_by_text(option).first.click()
+        time.sleep(self.sw)
+        self.page.get_by_role("combobox", name="Sub Quote Type").press("Tab")
+
+    def selectConfirmYourSelection(self, option: str):
+        self.page.get_by_role("button", name="Yes/No").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("button", name="Yes/No").click()
+        self.page.get_by_role("menuitem", name=option).click()
         time.sleep(self.nw)

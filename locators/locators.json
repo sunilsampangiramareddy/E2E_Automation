@@ -19,53 +19,1067 @@
         }
     },
     "HomePage": {
+        "Account_Show_More_Actions": "//records-lwc-highlights-panel//runtime_platform_actions-actions-ribbon/ul/li[6]//lightning-button-menu/button[@aria-haspopup='true']",
+         "Request_Resource_Button": {
+            "role": "menuitem",
+            "name": "Request a Resource"
+        },
+        "request_Resource_Button": "//button[@type='button' and contains(@class,'slds-button') and normalize-space(.)='Request a Resource']",
+        "request_Team_Combobox": "//button[@role='combobox' and @aria-label='Request Team' and contains(@class,'slds-combobox__input')]",
+        "request_Team_Hyperscaler_CSM_Option": "(//lightning-base-combobox-item[@role='option' and @data-value='Hyperscaler CSM'])[1]",
+        "request_Team_PCS_Solution_Architects_Option": "(//lightning-base-combobox-item[@role='option' and @data-value='PCS Solution Architects'])[1]",
+        "requested_Activity_Input": "//input[@name='Requested_Activity' or contains(@aria-label,'Requested Activity') or contains(@aria-label,'Request Activity') or contains(@placeholder,'Requested Activity') or contains(@placeholder,'Request Activity')] | //textarea[@name='Requested_Activity' or contains(@aria-label,'Requested Activity') or contains(@aria-label,'Request Activity') or contains(@placeholder,'Requested Activity') or contains(@placeholder,'Request Activity')]",
+        "submit_Button": "//button[normalize-space()='Submit' or .//span[normalize-space()='Submit']]",
+        "RR_Status": "//*[normalize-space()='Status']/ancestor::*[contains(@class,'slds-form-element') or contains(@class,'slds-form__item') or contains(@class,'record-layout-item')][1]//*[contains(@class,'test-id__field-value')]",
+        "approval_History_Tab": "(//span[@title='Approval History' and normalize-space()='Approval History']/ancestor::a[1])[1]",
+        "approval_status_1":"(//table//tbody/tr[1]/td[3]//span[contains(@class,'slds-truncate') and normalize-space()])[1]",
+        "approval_status_2":"(//table//tbody/tr[2]/td[3]//span[contains(@class,'slds-truncate') and normalize-space()])[1]",
         "opportunities_Label": "//span[@class='slds-truncate' and text()='Opportunities']",
+        "app_Launcher_Button": "//button[.//div[contains(@class,'slds-icon-waffle')] or @title='App Launcher' or @aria-label='App Launcher'] | //div[contains(@class,'slds-icon-waffle') and .//span[normalize-space()='App Launcher']]/ancestor::button[1]",
+        "app_Launcher_Search_Input": "//input[@type='search' and @placeholder='Search apps and items...']",
+        "app_Launcher_Incentive_Registration_Link": "(//a[@role='link' and .//span[normalize-space()='Incentive Registration']] | //a[@role='option' and .//span[normalize-space()='Incentive Registration']] | //one-app-launcher-menu-item//a[.//span[normalize-space()='Incentive Registration']])[1]",
+        
+        "frame_Locator":"iframe[name^='vfFrameId_']",
+
+        "leads_Link": {
+            "role": "link",
+            "name": "Leads"
+        },
         "opportunities_Tab": {
             "role": "link",
             "name": "Opportunities"
+        },
+        "accounts_Tab": {
+            "role": "link",
+            "name": "Accounts"
         },
         "new_Opportunity_Button": {
             "role": "button",
             "name": "New Opportunity"
         },
+        "products_Link": {
+            "role": "link",
+            "name": "Products (0)"
+        },
+        "add_Products_Button": {
+            "role": "button",
+            "name": "Add Products"
+        },
+        "search_Products_Input": "//input[@title='Search Products']",
+        "product_Search_Result": "//tr[1]/td[2]/span/div/span",
+        "product_Next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "edit_Sales_Price_Button": {
+            "role": "button",
+            "name": "Edit Sales Price: Item null"
+        },
+        "sales_Price_Input": {
+            "role": "textbox",
+            "name": "Sales Price"
+        },
+        "save_Button": {
+            "role": "button",
+            "name": "Save"
+        },
         "create_Quote_1": "//button[normalize-space()='Create Quote']",
-        "create_Quote_2": "//button[@class='slds-button slds-button_brand'][normalize-space()='Create Quote']"
+        "create_Quote_2": "//button[@class='slds-button slds-button_brand'][normalize-space()='Create Quote']",
+        "error_Label": ".errorsList li",
+        "error_Label_1": "//div[contains(@class, 'slds-popover__body')]//ul[contains(@class, 'errorsList')]/li[1]",
+        "error_Label_2": "//div[contains(@class, 'slds-popover__body')]//ul[contains(@class, 'errorsList')]/li[2]",
+        "contacts_Link": {
+            "role": "link",
+            "name": "Contacts"
+        },
+
+        "cancel_Button": {
+            "role": "button",
+            "name": "Cancel"
+        },
+        "continue_Button": {
+            "role": "button",
+            "name": "Continue"
+        },
+        "mark_Stage_As_Complete_Button": {
+            "role": "button",
+            "name": "Mark Stage as Complete"
+        },
+        "opportunity_Stage_Label": "(//record_flexipage-record-field[.//span[@class='test-id__field-label' and text()='Stage']])[2]",
+        "channel":"//p[text()='Channel']/following-sibling::p//lightning-formatted-text",
+        "sales_Type_Label": "[data-target-selection-name='sfdc:RecordField.Opportunity.Sales_Motion__c']",
+        "opportunity_Stage_Label_1": "//record_flexipage-record-field[.//span[@class='test-id__field-label' and text()='Stage']]",
+        "new_Button": {
+            "role": "button",
+            "name": "New"
+        },
+        "next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "salutation_Combobox": {
+            "role": "combobox",
+            "name": "Salutation"
+        },
+        "salutation_Ms_Option": {
+            "text": "Ms."
+        },
+        "first_Name_Textbox": {
+            "role": "textbox",
+            "name": "First Name"
+        },
+        "last_Name_Textbox": {
+            "role": "textbox",
+            "name": "Last Name"
+        },
+        "account_Name_Combobox": {
+            "role": "combobox",
+            "name": "Account Name"
+        },
+        "phone_Textbox": {
+            "role": "textbox",
+            "name": "Phone"
+        },
+        "email_Textbox": {
+            "role": "textbox",
+            "name": "Email"
+        },
+        "search_Bar": {
+            "role": "searchbox",
+            "name": "Search this list..."
+        },
+        "show_All_Details_Button": {
+            "role": "link",
+            "name": "Show All"
+        },
+        "setup_Icon": {
+            "role": "button",
+            "name": "Setup"
+        },
+        "developer_Console_Option": {
+            "role": "menuitem",
+            "name": "Developer Console"
+        },
+        "quotes_Link": {
+            "role": "link",
+            "name": "View All Quotes"
+        },
+        "seq_Number_Link" : "//th[@data-label='Quote Seq Number']//a",
+        "edit_FA_Verified_Button": {
+            "role": "button",
+            "name": "Edit FA Verified"
+        },
+        "fa_Verified_Checkbox": {
+            "role": "checkbox",
+            "name": "FA Verified"
+        },
+        "opportunity_Stage_Listbox": "label:has-text('Stage') + select",
+        "setup_icon": "//a[@title='Setup' and contains(@class,'slds-global-actions__item-action')]",
+        "setup_menu_item": {
+            "role": "menuitem",
+            "name": "Setup Opens in a new tab"
+        },
+        "owner_Label_WWSS": "//div[contains(@class, 'slds-form-element__control') and preceding-sibling::div[contains(@class, 'slds-form-element__label')]/span[text()='Opportunity Owner']]//lightning-formatted-text",
+        "owner_Label": "//p[contains(@class, 'slds-text-title') and text()='Opportunity Owner']/following-sibling::p[contains(@class, 'fieldComponent')]//span[contains(@class, 'slds-truncate')]/slot/span",
+        "service_Categories_Link": {
+            "role": "link",
+            "name": "Service Categories"
+        },
+        "service_Category_Link":{
+            "role": "link",
+            "name": "SC-"
+        },
+        "edit_Override_Discount_Button": {
+            "role": "button",
+            "name": "Edit Override Discount %"
+        },
+        "override_Discount_Input": {
+            "role": "spinbutton",
+            "name": "Override Discount %"
+        },
+        "gross_Booking_Amount_Input": {
+            "role": "spinbutton",
+            "name": "Gross Booking Amount Local"
+        },
+        "booking_Amount_Label": "//div[contains(@class, 'slds-form-element__control') and preceding-sibling::div[contains(@class, 'slds-form-element__label')]/span[text()='Gross Booking Amount Local Currency']]//lightning-formatted-number[1]",
+        "wwss_Forecasting_Request_Tab":{
+            "role":"link",
+            "name":"WWSS Forecasting Request"
+        },
+        "show_Actions":{
+            "role":"button",
+            "name":"Show Actions",
+            "parent_role": "grid" 
+        },
+        "delete_Menuitem":{
+            "role":"menuitem",
+            "name" : "Delete"
+        },
+        "delete_Button":{
+            "role":"button",
+            "name" : "Delete"
+        },
+        "show_more_actions":{
+            "role":"button",
+            "name":"Show more actions"
+        },
+        "convert_to_Indirect":{
+            "role":"menuitem",
+            "name":"Convert to Indirect"
+        },
+        "Ship_to_or_install_in_different_country":"select[name='Ship_to_or_install_in_different_country']",
+        "app_Launcher":{
+            "role": "button",
+            "name": "App Launcher"
+        },
+        "leads":{
+            "role": "link",
+            "name": "Leads"
+        },
+        "app_Launcher_Search":{
+            "role":"combobox",
+            "name":"Search apps and items..."
+        },
+        "campaigns":{
+            "role":"option",
+            "name":"Campaigns"
+        },
+        "delete_MenuItem":{
+            "role":"menuitem",
+            "name":"Delete"
+        },
+        "delete":{
+            "role":"button",
+            "name":"Delete"
+        },
+        "partner_Tab":{
+            "role":"tab",
+            "name":"Partner"
+        },
+        "edit_Reseller_Partner_Tab":{
+            "role":"button",
+            "name":"Edit Reseller"
+        },
+        "reseller": "//input[@class='slds-combobox__input slds-input slds-combobox__input-value' and @aria-label='Reseller' and @placeholder='Search Accounts...']",
+        "reseller_Value":"//span[text()='Reseller']/ancestor::div[contains(@class,'slds-form-element')]//a/span",
+        "account_Icon":".slds-media__figure > .slds-icon-standard-account > span > lightning-primitive-icon > .slds-icon",
+        "show_Actions_For_Campaign":{
+            "role":"button",
+            "name":"Show actions for Campaign"
+        },
+        "add_To_Campaign_MenuItem":{
+            "role":"menuitem",
+            "name":"Add to Campaign"
+        },
+        "campaign":{
+            "role":"combobox",
+            "name":"Campaign"
+        } ,
+        "related_Tab":{
+            "role":"tab",
+            "name":"Related"
+        },"campaign_Members_Section":"article[aria-label='Campaign Members']",
+        "account_Parties_link":{
+            "role":"link",
+            "name":"Account Parties"
+        },
+        "pipeline_Link":{
+            "role":"link",
+            "name":"Pipelines"
+        },
+        "account_Combobox":{
+            "role":"combobox",
+            "name":"Account"
+        },"role_Combobox":{
+            "role":"combobox",
+            "name":"Role"
+        },"click_On_Setup_Icon": {
+            "role": "menuitem",
+            "name": "Setup Opens in a new tab"
+        }, "search_box": {
+            "role": "combobox",
+            "name": "Search apps and items..."
+        },
+        "salutation_Dropdown":{
+            "role":"combobox", 
+            "name":"Salutation"
+        },
+        "account_leads_Link":"(//a[contains(@href,'/related/Leads__r/view')])[1]",
+        "first_Name_Input":"//input[@name='firstName']",
+        "last_Name_Input":"//input[@name='lastName']",
+        "company_Input":"//*[@name='Company']",
+        "edit_meeting_set_date_Button":{"role":"button","name":"Edit Meeting Set Date"},
+        "grp_meeting_set_date":"(//input[@name='Meeting_Set_Date__c'])[1]",
+        "cmb_meeting_type":"//button[@aria-label='Meeting Type']//span[text()='--None--']/parent::button",
+        "txt_qualification_criteria":"//input[@type='text' and @name='Qualification_Criteria__c']",
+        "txt_meeting_link":"//input[@name='Zoom_Teams_Link__c']",
+        "cmb_product":"//input[@role='combobox' and @aria-label='Product']",
+        "cmb_meeting_category":"//button[@role='combobox' and @aria-label='Meeting Category']//span[text()='--None--']/parent::button",
+        "email_Input":"//*[@name='Email']",
+        "oppty_Label_Lead":"//flexipage-field[@data-field-id='RecordConverted_Opportunity_ID_cField']//a[contains(@href,'/Opportunity/')]",
+        "converted_Status_Dropdown":"//div[@class='uiInput uiInputSelect uiInput--default uiInput--select']//select",
+        "close_Error_Button": "//button[@title='Close error dialog']",
+        "account_Information_Tab": "//button[@class='slds-button slds-section__title-action' and @aria-controls='field-section-content-3069' and @aria-expanded='true']/span[text()='Account Intelligence']",
+        "edit_Strategic_Programs":{
+            "role":"button",
+            "name":"Edit Strategic Programs"
+        },
+        "lead_Account": "//input[@role='combobox' and @aria-label='Lead Account']",
+        "mark_As_Closed_Lost":{
+            "role":"button",
+            "name":"Mark as Closed Lost"
+        },
+        "reason_Dropdown":"//select[@name='ClosedReason']",
+        "primary_reason_Dropdown":"//select[@name='Primary_Reason1']",
+        "additional_Insights":"//label[contains(.,'Additional Insights')]/following-sibling::div//textarea",
+        "competitor":"//select[@name='Competitor_and_Product_req']",
+        "exception_Error_Label":"//p[contains(text(),'FIELD_CUSTOM_VALIDATION_EXCEPTION')]",
+        "finish_Button":{
+            "role":"button",
+            "name":"Finish"
+        },
+        "global_Search_Button": {
+            "role": "button",
+            "name": "Search"
+        },
+        "global_Search_Input": {
+            "role": "searchbox",
+            "name": "Search..."
+        },
+        "edit_Meeting_Assignee_Button":{
+            "role":"button",
+            "name":"Edit Meeting Feedback Assignee"
+        },
+        "clear_Assignee_Button":{
+            "role":"button",
+            "name":"Clear Meeting Feedback Assignee"
+        },
+        "meeting_Assignee":{
+            "role":"combobox",
+            "name":"Meeting Feedback Assignee"
+        },
+        "opportunity_Teams_Link":{
+            "role":"link",
+            "name":"Opportunity Team"},
+        "grid":"//table[@role='grid']",
+        "grid_Body_Renewal_Specialist":"(//table[@role='grid']//span[normalize-space()='Renewal Specialist'])[1]",
+        "edit_Purchase_Type_Button": {
+            "role": "button",
+            "name": "Edit Purchase Type"
+        },
+        "purchase_Type_Combobox": {
+            "role": "combobox",
+            "name": "Purchase Type"
+        },
+        "details_Link": {
+            "role": "tab",
+            "name": "Details"
+        },
+        "prebuild_Option": {
+            "role": "menuitem",
+            "name": "Prebuilds"
+        },
+        "ok_Button": {
+            "role": "button",
+            "name": "OK"
+        }
+
+    },
+    "IncentiveRegistrationPage": {
+        "new_IR_Button": "(//button[normalize-space()='New IR' or .//div[@title='New IR' and normalize-space()='New IR']] | //a[normalize-space()='New IR' or .//div[@title='New IR' and normalize-space()='New IR']] | //div[@title='New IR' and normalize-space()='New IR'])[1]",
+        "cmat_Address": "input[name='Address_CMATID']",
+        "cmat_Search_Button": "//button[normalize-space()='Search']",
+        "next_Button":"//button[normalize-space()='Next']",
+        "partner_Account_Search":"//input[@role='combobox' and @aria-label='Select Partner Account']",
+        "partner_Radio_Button":"(//td[@role='gridcell' and contains(@data-col-key-value,'SELECTABLE_CHECKBOX')]//span[contains(@class,'slds-radio_faux')])[1]",
+        "select_Button":"//button[normalize-space()='Select']",
+        "partner_Account_Result":"(//*[(@role='listbox' or contains(@class,'slds-listbox'))]//*[@role='option' and not(contains(normalize-space(.),'No Results'))])[1]",
+        "customer_Contact_Search":"//input[@placeholder='Search Customer Contact']",
+        "quote_Source_Click":"//button[@role='combobox' and @aria-label='Quote Source']",
+        "product_Right_Arrow": "(//*[name()='svg' and @data-key='right']/ancestor::button[1])[1]",
+        "project_Description": "//textarea[contains(@class,'slds-textarea') and @required]",
+        "save_Continue_Button": "//button[normalize-space()='Save & Continue']",
+        "estimated_Booking": "//input[@name='Estimated_Booking' and @role='spinbutton']",
+        "create_Incentive_Registration_Button": "//button[@type='button' and normalize-space()='Create Incentive Registration']",
+        "ir_Status_Value": "(//span[contains(@class,'test-id__field-label') and (normalize-space()='Status' or normalize-space()='Incentive Registration Status')]/following::span[contains(@class,'test-id__field-value')][1]//lightning-formatted-text)[1]",
+        "associated_Opportunity_Edit_Icon": "(//button[@title='Edit Associated Opportunity' or .//span[normalize-space()='Edit Associated Opportunity']] | //span[contains(@class,'test-id__field-label') and normalize-space()='Associated Opportunity']/following::button[contains(@class,'inline-edit-trigger')][1])[1]",
+        "associated_Opportunity_Input": "//input[@role='combobox' and @aria-label='Associated Opportunity' and @placeholder='Search Opportunities...']",
+        "associated_Opportunity_First_Result": "(//*[(@role='listbox' or contains(@class,'slds-listbox'))]//*[@role='option' and not(contains(normalize-space(.),'No Results'))])[1]",
+        "associated_Opportunity_Save_Button": "//button[@name='SaveEdit' and normalize-space()='Save']",
+        "purchase_Type":"//select[@name = 'Marketplace_Purchase_Type']",
+        "hyperscaler_Value":"//select[@name = 'Hyperscaler']",
+        "hyperscaler_Checkbox":"//span[@class = 'slds-checkbox_faux']/parent::label/ancestor::lightning-primitive-input-checkbox",
+        "estimated_Revenue": "//input[@name='Estimated_Revenue' and @role='spinbutton']",
+        "quote_Source_value" :"//span[text() = 'Quote Source']/parent::div/following-sibling::lightning-helptext/following-sibling::div/span/slot/lightning-formatted-text"
+    },
+    "AccountList": {
+        "account_Search_Input": {
+        "role": "searchbox",
+        "name": "Search this list..."
+        },
+    "account_First_Result_Link": "(//span[@data-cell-type='lstOutputLookup']//a[contains(@class,'slds-truncate') and @data-navigation='enable' and contains(@href,'/lightning/r/') and contains(@href,'/view') and normalize-space()])[1]"
+    },
+    "CampaignPage": {        
+        "create_Option": {
+            "role": "menuitem",
+            "name": "Create"
+        },
+        "edit_Option": {
+            "role": "menuitem",
+            "name": "Edit"
+        },
+        "show_more": {
+            "role": "button",
+            "name": "Show Actions"
+        },
+        "search_SetupBox": {
+            "role": "combobox",
+            "name": "Search Setup"
+        },
+        "click_Login": {
+            "role": "button",
+            "name": "Login",
+            "exact": true,
+            "index": 1
+        }
+    },
+    "GeneralSetup": {
+        "search_Setup_Input": {
+            "role": "combobox",
+            "name": "Search Setup"
+        },
+        "login_Button": "(//button[normalize-space()='Login'])[2]"
     },
     "CreateOpportunity": {
         "next_Button": {
             "role": "button",
             "name": "Next"
         },
+        "edit_Sales_Play_Button": {
+            "role": "button",
+            "name": "Edit Sales Play"
+        },
+        "edit_Sales_Type_Button": {
+            "role": "button",
+            "name": "Edit Sales Type"
+        },
+        "copy_Opportunity_Button": {
+            "role": "button",
+            "name": "Copy Opportunity"
+        },
+        "copy_Opportunity_MenuItem": "//*[@role='menuitem' and normalize-space()='Copy Opportunity']",
+        "continue_Button": {
+            "role": "button",
+            "name": "Continue"
+        },
         "opportunity_Type": "//select[@class='slds-select' and @name='Opportunity_Type']",
-        "primary_Contact": "//select[@class='slds-select' and @name='Primary_Contact']",
+        "account": {
+            "role": "combobox",
+            "name": "Account"
+        },
+        "primary_Contact": "//input[@class='slds-combobox__input slds-input' and @type='text' and @role='combobox' and @placeholder='Search Primary Contact' and @aria-label='Primary Contact']",
         "primary_Contact_1P": "//input[@placeholder='Search Primary Contact']",
         "sales_Play": "//select[@class='slds-select' and (@name='Sales_Play_NON_Enterprise' or @name='Sales_Play_Enterprise')]",
+        "sales_Play_Combobox": {
+             "role": "combobox",
+            "name": "Sales Play"
+        },
+        "installed_base_renewal" : "//button[@role='combobox' and @aria-label='Installed Base Type']",
         "channel": "//select[@class='slds-select' and @name='Channel']",
-        "sales_Type": "//select[@class='slds-select' and @name='Sales_Motion']",
+        "sales_Type": "//select[@class='slds-select' and @name='Sales_Type_Value']",
+        "sales_Type_2": "//select[@class='slds-select' and @name='Sales_Type']",
+        "sales_Type_Combobox": {
+            "role": "combobox",
+            "name": "Sales Type"
+        },
+        "installed_Base_Type_Combobox": {
+            "role": "combobox",
+            "name": "Installed Base Type"
+        },
+        "sales_Type_Prefilled": "select[name='Sales_Motion'] option:checked",
+        "sales_Type_Prefilled2": "select[name='Sales_Type'] option:checked",
+        "1p_Sales_Type_Prefilled": "select[name='X1P_Sales_Motion'] option:checked",
+        "sales_Type_1P_Error": "(//*[contains(@class,'flowruntime-input-error')])[1]",
         "sales_Type_1P": "//select[@name='Sales_Type' and contains(@class, 'slds-select')]",
+        "sales_Type_1P_new": "//select[@name='X1P_Sales_Motion' and contains(@class, 'slds-select')]",
+        "Confidential": "//select[@name='Confidential' and contains(@class, 'slds-select')]",
+        "installed_Base_Type": "//select[@class='slds-select' and @name='Installed_Base_Type']",
         "currency": "//select[@class='slds-select' and @name='Currency']",
         "end_Customer_Usage": "//select",
+        "end_Customer_Label": "//span[text()='End Customer Usage']",
         "hyperscaler": "//select[@name='X1PHyperscaler' and contains(@class, 'slds-select')]",
         "reseller": "//input[@class='slds-combobox__input slds-input' and @placeholder='Search Accounts...' and @aria-label='Reseller']",
+        "reseller_Show_More_Results": "//span[starts-with(@title, 'Show more results for')]",
+        "reseller_First_Row_Checkbox": "//tr[1]/td[1]/lightning-primitive-cell-checkbox/span/label/span[1]",
+        "reseller_Select_Button": {
+            "role": "button",
+            "name": "Select"
+        },
         "pathway": "//select[@class='slds-select' and (@name='Pathway' or @name='Pathway1' or @name='Pathway0')]",
         "partner_Sales_Model": "//select[@class='slds-select' and @name='Partner_Sales_Model']",
         "reseller_Sales_Rep": "//select[@class='slds-select' and @name='Final_Reseller_Sales_Rep']",
         "reseller_SE": "//select[@class='slds-select' and @name='FInal_Reseller_SE']",
         "distributor": "//select[@class='slds-select' and @name='Distributor_R']",
+        "confidential": "//select[@name='Confidential' and contains(@class, 'slds-select')]",
         "opportunity_Number": "//records-highlights-details-item[2]/div/p[2]/slot/lightning-formatted-text",
-        "opportunity_Name": "//h1/slot/lightning-formatted-text"
+        "opportunity_Name": "//h1/slot/lightning-formatted-text",
+        "opportunity_Sales_Type": "(//*[@data-target-selection-name='sfdc:RecordField.Opportunity.Sales_Motion__c']//lightning-formatted-text[@data-output-element-id='output-field'])[last()]",
+        "hyperscaler_Error_Message": "(//div[@class='slds-form-element__help'])[23]",
+        "edit_Hyperscaler_Button": {
+            "role": "button",
+            "name": "Edit Hyperscaler"
+        },
+        "hyperscaler_Dropdown_Button": "//button[@aria-label='Hyperscaler']",
+        "save_Edit_Button": "//button[@name='SaveEdit']",
+        "Opportunity_Name_Input": "//input[@class='slds-input' and @name='Opportunity_Name']",
+        "indirect_Opporty_Channel": "(//p[text()='Channel']/following-sibling::p//lightning-formatted-text)[last()]",
+        "edit_Flexpod_Button": {
+            "role": "button",
+            "name": "Edit Flexpod"
+        },
+        "flexpod_Combobox": {
+            "role": "combobox",
+            "name": "Flexpod"
+        },
+        "deal_Registration_Button": {
+            "role": "button",
+            "name": "Create Deal Registration"
+        },
+        "deal_Origination": "//select[@name = 'Deal_Origination1']",
+        "planned_Activities_Checkbox": "//span[text() = 'Define and Present Solution']",
+        "project_Description": "//textarea[@class = 'slds-textarea']",
+        "next_Button_DR": "//button[text() = 'Next']",
+        "last_Meeting_Held_With_Customer":"//input[@name = 'Last_Meeting_held_with_Customer1']",
+        "last_Meeting_Held_Date_Selection":"//button[text() = 'Today']",
+        "next_Meeting_Date_Button": "//input[@name = 'Next_meeting_date_with_customer1']",
+        "next_Month_Button" : "//button[@title = 'Next Month']",
+        "next_Meeting_Date_Selection": "//span[text() = '15']",
+        "proceed_Button": {
+            "role": "button",
+            "name": "Proceed"
+        },
+        "deal_Registration_Text":"//*[text() = 'Deal Registration']/parent::slot/parent::div",
+        "deal_Registration_Number":"(//lightning-formatted-text[contains(text(),'DR')])[last()]",
+        "deal_Reg_Oppty":"(//slot[contains(text(),'Deal Registration')]/parent::span/parent::a)[1]"
+        
 
+    
+    
+    },
+    "DeveloperConsole": {
+        "logging_Disabled_Text": "//*[text()='Logging disabled']",
+        "ok_Button": {
+            "role": "button",
+            "name": "OK"
+        },
+        "file_Button": {
+            "role": "button",
+            "name": "File"
+        },
+        "close_All_Link": {
+            "role": "link",
+            "name": "Close All CTRL+ALT+/"
+        },
+        "query_Editor_Button": {
+            "role": "button",
+            "name": "Query Editor"
+        }
+    },
+    "MultiQuotePage": {
+        "aggregate_Deal_Score_Label": "//*[text()='Aggregate Deal Score']",
+        "dds_Guidance_Section_Label": "//*[text()='Target to Improve Deal Values']",
+        "mq_Aggregated_Deal_Score_Message": "//*[contains(text(),'MQ Aggregated Deal Score is not applicable until all child quotes transition from Color Rating to Deal Score.')]",
+        "Edit_Deal Score to 2 Net": {
+            "role": "button",
+            "name": "Deal Score to 2 Net"
+        },
+        "deal_Score_To_2_Net_Label": "//*[text()='Deal Score to 2 Net']",
+        "deal_Score_To_3_Net_Label": "//*[text()='Deal Score to 3 Net']",
+        "deal_Score_To_4_Net_Label": "//*[text()='Deal Score to 4 Net']",
+        "deal_Score_To_5_Net_Label": "//*[text()='Deal Score to 5 Net']",
+        "deal_Score_To_2_Net_Value": "(//*[text()='Deal Score to 2 Net']//following::span)[1]",
+        "Total_List_Price": "(//lightning-formatted-text[@data-output-element-id='output-field'])[3]",
+        "deal_Score_To_3_Net_Value": "(//*[text()='Deal Score to 3 Net']//following::span)[1]",
+        "deal_Score_To_4_Net_Value": "(//*[text()='Deal Score to 4 Net']//following::span)[1]",
+        "deal_Score_To_5_Net_Value": "(//*[text()='Deal Score to 5 Net']//following::span)[1]",
+        "deal_Score_To_2_Percent_Value": "(//*[text()='Deal Score to 2(%)']//following::span)[1]",
+        "deal_Score_To_3_Percent_Value": "(//*[text()='Deal Score to 3(%)']//following::span)[1]",
+        "deal_Score_To_4_Percent_Value": "(//*[text()='Deal Score to 4(%)']//following::span)[1]",
+        "deal_Score_To_5_Percent_Value": "(//*[text()='Deal Score to 5(%)']//following::span)[1]"
+    },
+    "MultiQuoteWizard": {
+        "multi_Quotes_Link": {
+            "role": "link",
+            "name": "Multi Quotes"
+        },
+        "new_Button": {
+            "role": "button",
+            "name": "New"
+        },
+        "name_Textbox": {
+            "role": "textbox",
+            "name": "Name"
+        },
+        "save_And_Add_Quotes_Button": {
+            "text": "Save & Add Quotes"
+        },
+        "next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "fields_Combobox": {
+            "role": "combobox",
+            "name": "Fields"
+        },
+        "quote_Number_Option": {
+            "role": "option",
+            "name": "Quote Number"
+        },
+        "search_Searchbox": {
+            "role": "searchbox",
+            "name": "Search"
+        },
+        "first_Quote_Selection_Indicator": "(//span[@part='indicator'])[2]",
+        "second_Last_Quote_Selection_Indicator": "(//span[@part='indicator'])[last()-1]",
+        "last_Quote_Selection_Indicator": "(//span[@part='indicator'])[last()]",
+        "first_Quote_Selection_Indicator_Tbody": "(//tbody//span[@part='indicator'])[1]",
+        "second_Last_Quote_Selection_Indicator_Tbody": "(//tbody//span[@part='indicator'])[last()-1]",
+        "last_Quote_Selection_Indicator_Tbody": "(//tbody//span[@part='indicator'])[last()]",
+        "add_Remove_Quotes_Button": {
+            "role": "button",
+            "name": "Add/Remove Quotes"
+        },
+        "add_Quotes_Button": {
+            "role": "button",
+            "name": "Add Quotes"
+        },
+        "remove_Button": {
+            "role": "button",
+            "name": "Remove"
+        },
+        "save_Button": {
+            "role": "button",
+            "name": "Save"
+        }
+    },
+    "Propensity_Accounts": {
+        "propensity_Engagement_Score_Label": "//*[text()='Propensity Engagement Score']",
+        "aws_Engagement_Score_Label": "//*[text()='AWS Engagement Score']",
+        "gcp_Engagement_Score_Label": "//*[text()='GCP Engagement Score']",
+        "azure_Engagement_Score_Label": "//*[text()='Azure Engagement Score']",
+        "aws_Engagement_Score_Value": "(//*[text()='AWS Engagement Score']//following::span)[1]",
+        "gcp_Engagement_Score_Value": "(//*[text()='GCP Engagement Score']//following::span)[1]",
+        "azure_Engagement_Score_Value": "(//*[text()='Azure Engagement Score']//following::span)[1]"
+    },
+    "Propensity_Details": {
+        "propensity_Engagement_Score_Label": "(//*[text()='Propensity Engagement Score'])",
+        "aws_Engagement_Score_Label": "(//*[text()='AWS Engagement Score'])",
+        "azure_Engagement_Score_Label": "(//*[text()='Azure Engagement Score'])",
+        "gcp_Engagement_Score_Label": "(//*[text()='GCP Engagement Score'])",
+        "aws_Engagement_Score_Value": "(//*[text()='AWS Engagement Score'])//following::span[1]",
+        "azure_Engagement_Score_Value": "(//*[text()='Azure Engagement Score'])//following::span[1]",
+        "gcp_Engagement_Score_Value": "(//*[text()='GCP Engagement Score'])//following::span[1]"
+    },
+    "LeadDetail": {
+        "converted_status_button": "[title='Converted']",
+        "opportunity_name_label": "//*[text()='Opportunity Name']",
+        "select_converted_status_button": "//button[contains(normalize-space(), 'Select Converted Status')]",
+        "status_dropdown": {
+            "label": "Status*"
+        },
+        "save_button": {
+            "role": "button",
+            "name": "Save"
+        },
+        "lead_heading": "lightning-formatted-name[slot='primaryField']",
+        "opportunity_name_link": "[data-field-id='RecordConverted_Opportunity_ID_cField'] a",
+        "opportunity_name_link_2": "(//*[@data-field-id='RecordConverted_Opportunity_ID_cField']//a)[2]",
+        "copy_oppty_dropdown": "(//button[contains(@class, 'slds-button') and .//span[text()='Show more actions']])[2]"
+    },
+    "OpportunityDetailPage": {
+        "details_Tab": {
+            "role": "tab",
+            "name": "Details"
+        },
+        "poc_Button": {
+            "role": "button",
+            "name": "POC"
+        },
+        "poc_Button_Text": "//*[text()='POC']",
+        "edit_POC_Status_Button": {
+            "role": "button",
+            "name": "Edit POC Status"
+        },
+        "edit_POC_Failed_Reason_Button": {
+            "role": "button",
+            "name": "Edit POC Failed Reason"
+        },
+        "edit_POC_Comments_Button": {
+            "role": "button",
+            "name": "Edit POC Comments"
+        },
+        "edit_POC_Start_Date_Button": {
+            "role": "button",
+            "name": "Edit POC Start Date"
+        },
+        "edit_POC_End_Date_Button": {
+            "role": "button",
+            "name": "Edit POC End Date"
+        },
+        "edit_POC_Original_End_Date_Button": {
+            "role": "button",
+            "name": "Edit POC Original End Date"
+        },
+        "show_More_Actions_Button": {
+            "role": "button",
+            "name": "Show more actions"
+        },
+        "request_A_Resource_Menuitem": {
+            "role": "menuitem",
+            "name": "Request a Resource"
+        },
+        "request_Team_Combobox": {
+            "role": "combobox",
+            "name": "Request Team"
+        },
+        "request_Team_Option_Hyperscaler_CSM": {
+            "text": "Hyperscaler CSM"
+        },
+        "request_Team_Option_PCS_Solution_Architects": {
+            "text": "PCS Solution Architects"
+        },
+        "requested_Activity_Input": "input[name='Requested_Activity']",
+        "submit_Button": {
+            "role": "button",
+            "name": "Submit"
+        },
+        "Continue_Button": {
+            "role": "title",
+            "name": "Continue"
+        },
+        "pending_Assignment_Status": {
+            "text": "Pending Assignment"
+        },
+        "pending_Assignment_Status_1": "//*[text()='Pending Assignment']",
+        "hyperscaler_Error_Message": "//*[text()='Please select Hyperscaler on the opportunity before proceeding to create a private offer request.']",
+        "opportunity_Hyperscaler_Edit_Icon": "(//button[@title='Hyperscaler' or .//span[normalize-space()='Hyperscaler']] | //span[contains(@class,'test-id__field-label') and normalize-space()='Hyperscaler']/following::button[contains(@class,'inline-edit-trigger')][1])[1]",
+        "purchaseType_Dropdown_Button": "//button[@aria-label='Purchase Type']",
+        "opportunity_Closed_Message": "(//strong[contains(normalize-space(),'This opportunity has been closed and is no longer editable')])[1]",
+        "opportunity_Stage_Closed_Won": "(//a[@role='option' and @title='Closed Won' and @aria-selected='true'] | //a[@role='option' and @title='Closed Won']//span[normalize-space()='Closed Won'])[1]",
+        "opportunity_Product_Sales_Price": "(//*[normalize-space()='Sales Price']/following::span[contains(@class,'forceOutputCurrency')][1])[1]",
+        "opportunity_Product_Quantity": "(//*[normalize-space()='Expected Capacity in Terabytes']/following::span[contains(@class,'uiOutputNumber')][1])[1]",
+        "hyperscaler_Dropdown_Button":"//button[@role='combobox' and @aria-label='Hyperscaler']",
+        "validation_Event_Section": "//span[@title='Validation Event' and normalize-space()='Validation Event']",
+        "poc_Start_Date_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC Start Date']",
+        "poc_End_Date_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC End Date']",
+        "poc_Status_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC Status']",
+        "poc_Comments_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC Comments']",
+        "poc_Lead_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC Lead']",
+        "poc_Size_TB_Label":"//span[contains(@class,'test-id__field-label') and normalize-space()='POC Size (TB)']",
+        "poc_Data_Source_Label": "//span[contains(@class,'test-id__field-label') and normalize-space()='POC Data Source']",
+        "finish_Button":{
+            "role":"button",
+            "name":"Finish"
+        },
+        "save_Button": {
+        "role": "button",
+        "name": "Save"
+        },
+        "privateoffer_Request_Menuitem": {
+            "role": "menuitem",
+            "name": "Create Private Offer Request"
+        }
+    },
+    "OpportunityQuotesPage": {
+        "view_All_Quotes_Link": {
+            "role": "link",
+            "name": "View All Quotes"
+        },
+        "quote_Sequence_Number_Link": "//th[@data-label='Quote Seq Number']//a",
+        "quote_Status": "//p[normalize-space()='Quote Status']/following-sibling::p//lightning-formatted-text",
+        "net_Price": "//p[normalize-space()='Net Price']/following-sibling::p//lightning-formatted-number",
+        "request_Private_Offer_Button": {
+            "role": "button",
+            "name": "Request Private Offer"
+        },
+        "request_Private_Offer_Text": "//h2[normalize-space()='Request Private Offer']",
+        "next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "create_Offer_Button": {
+            "role": "button",
+            "name": "Create Offer"
+        }
+    },
+    "Partner_Connect":{
+        "details_tab":{
+            "role": "tab",
+            "name": "Details"
+        },
+        "partner_Connect_Section":"//span[normalize-space(text())='Partner Connect']",
+        "primary_Language_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Primary Language']",
+        "primary_Description_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Primary Description']",
+        "secondary_Language_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Secondary Language']",
+        "secondary_Description_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Secondary Description']",
+        "short_Description_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Short Description']",
+        "opt_in_Field":"(//span[contains(@class, 'test-id__field-label') and normalize-space(text())='Opt-In'])[1]",
+        "technology_Alliance_Solutions_Field": "//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Technology Alliance Solutions']",
+        "partner_Logo_Field": "//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Partner Logo']",
+        "demo_Lab_Availability_Field":"(//span[contains(@class, 'test-id__field-label') and normalize-space(text())='Demo Lab Availability'])[1]",
+        "serial_Number_Field":"//div[//span[normalize-space(text())='Partner Connect']]//span[normalize-space(text())='Serial Number']"
+    },
+    "PartnerConnectSubmissionForm":{
+        "program_Tab": {
+            "role": "button",
+            "name": "Program"
+        },
+        "partner_Connect_Option":"//a[text()='Partner Connect']",
+        "create_Or_Update_Profile":"//a[text()='Create or update your profile']" ,
+        "partner_Connect_Submission_Form_Label":"//span[text()='Partner Connect Update Request Form']",
+        "requester_Name_Value":"//label[text()='Requester Name']/following-sibling::div//input",
+        "requester_Email_Value":"//label[text()='Requester Email']/following-sibling::div//input",
+        "partner_Accounts":"(//label[text()='Partner Account']/following::button[@class='slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value'])[1]",
+        "provide_Additional_Details":"//span[label/span[text()='Provide Additional Details']]/input[@type='checkbox']",
+        "primary_Language":"(//label[contains(text(), 'Primary Language')]/following::div[contains(@class, 'slds-combobox')])[1]",
+        "primary_Language_Description":"//label[contains(text(), 'Primary Language Description')]/following::div[contains(@class, 'slds-rich-text-area__content')][1]",
+        "secondary_Language":"(//label[contains(text(), 'Secondary Language')]/following::div[contains(@class, 'slds-combobox')])[1]",
+        "secondary_Language_Description":"//label[contains(text(), 'Secondary Language Description')]/following::div[contains(@class, 'slds-rich-text-area__content')][1]",
+        "short_Description":"//label[contains(text(), 'Short Description')]/following::input[1]",
+        "website":"(//label[span[contains(text(), 'Website')]]/following-sibling::lightning-input//input)[1]",
+        "demo_Lab_Availability_Checkbox":"//span[label/span[text()='Demo Lab Availability']]/input[@type='checkbox']",
+        "serial_Number":"//label[contains(text(), 'Serial Number')]/following::input[1]",
+        "upload_File":"//span[text()='Upload File']",
+        "submit_Button":{
+            "role": "button",
+            "name": "Submit Button"
+        }
+    },
+    "CreatePartnerAccount":{
+        "new_Button": {
+            "role": "button",
+            "name": "New"
+        },
+        "select_Account_Type":"//legend[contains(text(), 'Please Select Account Type')]",
+        "account_Partner_Type":"//label[@part='input-radio' and .//span[text()='Partner']]",
+        "partner_Acccount_Name_Input":"//input[@class='slds-input' and @name='Partner_Name']",
+        "search_Button":{
+            "role": "button",
+            "name": "Search"
+        },
+        "no_Duplicate_Account_Info":"//*[contains(text(), 'No Duplicate Partner Accounts')]",
+        "continue_New_Partner_Request_Button":{
+            "role": "button",
+            "name": "Continue New Partner Request"
+        },
+        "continue_to_Create_New_Partner_Button":{
+            "role": "button",
+            "name": "Continue to Create New Partner"
+        },
+        "main_Phone_Number":"//input[@placeholder='Please Enter Valid Phone Number']",
+        "country":{
+            "role": "combobox",
+            "name": "Country"
+        },
+        "street":"//textarea[@name='street']",
+        "city":"//input[@name='city']",
+        "state_Province":{
+            "role": "combobox",
+            "name": "province"
+        },
+        "zip_Postal_Code":"//input[@name='postalCode']",
+        "web_Site_Address":"//input[@name='Web_Site_Address']",
+        "save_Partner_And_Continue_Button":{
+            "role": "button",
+            "name": "Save Partner & Continue"
+        },
+        "domain":"//input[@name='Domain']",
+        "save_Domain_And_Continue_Button":{
+            "role": "button",
+            "name": "Save Domain & Continue"
+        },
+        "main_Program":{
+            "role": "combobox",
+            "name": "Main Program"
+        },
+        "service_Provider":"//span[text()='Service Provider']",
+        "available_To_Selected_Button":"//button[@title='Move selection to Selected']",
+        "partner_Level":{
+            "role": "combobox",
+            "name": "Partner Level"
+        },
+        "partner_Type_Checkbox":"//span[text()='Partner Commercial Flag']",
+        "save_And_Continue_Button":{
+            "role": "button",
+            "name": "Save & Continue"
+        },
+        "main_Program_Success_Message":"//*[contains(text(), 'Main Program')]",
+        "first_Name_Input":"//input[@name='fstName']",
+        "last_Name_Input":"//input[@name='lstName']",
+        "email_Input":"//input[@name='conEmail']",
+        "phone_Number_Input":"//input[@name='conPhone']",
+        "contact_Type":"//span[text()='Primary Contact']",
+        "save_Contacts_And_Continue_Button":{
+            "role": "button",
+            "name": "Save Contact(s) & Continue"
+        },
+        "primary_Partner_Manager":"//input[@placeholder='Search People...']",
+        "save_And_Complete_Button":{
+            "role": "button",
+            "name": "Save & Complete"
+        },
+        "success_Message":"//*[contains(text(), 'The Partner Account has been created')]",
+        "primary_Manager_Failure_Message":"//*[contains(text(), 'Error while Adding the Partner Manager')]",
+        "partner_Status_Value":"//p[text()='Partner Status']/following-sibling::p//lightning-formatted-text",
+        "account_Level_Value":"//div[contains(@class,'slds-form-element') and .//span[text()='Account Level']]//lightning-formatted-text",
+        "sync_To_CMAT_Button":{
+            "role": "button",
+            "name": "Sync To CMAT"
+        },
+        "cmat_Success_Message":"//*[contains(text(), 'submitted for processing')]",
+        "partner_Attributes":{
+            "role":"link",
+            "name": "Partner Attributes"
+        },
+        "related_Contacts":{
+            "role": "link",
+            "name": "Related Contacts"
+        },
+        "domains":{
+            "role": "link",
+            "name": "Domains"
+        },
+        "partner_Competencies":{
+            "role": "link",
+            "name": "Partner Competencies"
+        },
+        "partner_Relation":"(//slot[contains(text(),'Partner Relations')]/parent::span/parent::a)[1]",
+        "distributor":"//input[@class='slds-combobox__input slds-input' and @aria-label='Distributor' and @placeholder='Search Accounts...']",
+        "partner_Tier":"//input[@name = 'Partner_Tier__c']",
+        "save_Button":"//button[@name = 'SaveEdit']",
+        "business_Right":{
+            "role": "combobox",
+            "name": "Business Right"
+        },
+        "business_Right_Status":{
+            "role": "combobox",
+            "name": "Business Right Status"
+        },
+        "main_Program_Radio_Button":"//span[@class = 'slds-radio_faux']",
+        "show_More_Results":"//span[contains(text(),'Show more results for')]",
+        "select_Button":"//button[text() = 'Select']",
+        "is_Primary_Checkbox":"//input[@name= 'IsPrimary__c']",
+        "show_Action_Button":"(//span[text() = 'Show Actions']/parent::button)[last()]",
+        "edit_Button":{
+            "role": "menuitem",
+            "name": "Edit"
+        },
+        "partner_Relation_Value":"(//span[contains(text(),'DR-')])[last()]",
+        "business_Right_Listbox":"//button[@aria-label = 'Business Right']",
+        "approved_Business_Right":"(//span[text() = 'Approved'])[last()]",
+        "pending_Approval_Status":"(//span[text() = 'Pending Approval'])[last()]",
+        "purchasing_Channel_End_Date":"//span[text() = 'Edit Purchasing Channel End Date']/parent::button"
+    },   
+    "CreateSiteAccount":{
+        "site_Account_Name":"//input[@name='accountName']",
+        "search_Button":"//button[text()='Search']",
+        "website":"//input[@name='Website']",
+        "phone":"//input[@name='Phone']",
+        "save":"//button[@name='SaveEdit' and normalize-space()='Save']",
+        "security_Code_Value":"//div[contains(@class,'slds-form-element') and .//span[text()='Security Code']]//lightning-formatted-text",
+        "site_Account_Name_Value":"//div[contains(@class,'slds-form-element') and .//span[text()='Account Name']]//lightning-formatted-text",
+        "created_By_Value":"(//div[.//span[text()='Created By']]//span[contains(@class, 'test-id__field-value')]//a)[2]",
+        "contacts_Section":"//h2/a[span[text()='Contacts']]",
+        "customer_Record_Type":"//span[text()='Customer']",
+        "actual_Contact_Name":"(//th[@data-label='Contact Name']//a)[1]",
+        "edit_Account_Currency":"//button[@title='Edit Account Currency']",
+        "account_Currency":"//button[@aria-label='Account Currency']",
+        "account_Team_Link":{
+            "role": "link",
+            "name": "Account Team"
+        },
+        "add_Team_Members":"//div[@title='Add Team Members']",
+        "add_Team_Member_User":"(//button[@title='Edit User: Item '])[1]",
+        "add_Team_Member_Role":"(//button[@title='Edit Team Role: Item '])[1]",
+        "add_team_Member_Role_Select":"//div[@class='uiPopupTrigger']//a[@role='button']",
+        "error_Message_Label": ".messageList li"
+    }, 
+    "CreateSiteAccountPartnerHub":{
+        "selling_Tab":{
+            "role":"button",
+            "name":"Selling"
+        },
+        "oppty_Deal_Reg":"//a[text()='Opportunities & Deal Reg']",
+        "start_Deal":"//a[text()='Start a deal']",
+        "select_Partner_Entity":"//input[@placeholder='Select Accounts']",
+        "next_Button":{
+            "role":"button",
+            "name":"Next"
+        },
+        "select_Sales_Model":"//select[@name='PartnerSalesModel1']",
+        "select_Pathway":"//select[@name='Pathway']",
+        "select_SalesType":"//select[@name='Sales_Motion']",
+        "sales_Play":"//button[@aria-label='Sales Play']",
+        "select_Currency":"//select[@name='Opp_currency']",
+        "enter_CMAT":"//input[@name='Address_CMATID']",
+        "search_Button":"//button[text()='Search']",
+        "create_Account_Yes":"//label[.//span[text()='Yes']]",
+        "account_Name_Input":"//input[contains(@name, 'Account_Name')]",
+        "oppty_Name_Input":"//input[(@name= 'Opp_Name')]",
+        "primary_Contact_Input":"//input[@placeholder='Search Primary Contact']",
+        "create_New_Account":"//lightning-base-combobox-item[@role='option' and @data-value='CreateNewContact']",
+        "first_Name_Input":"//input[@name='Con_First_Name']",
+        "last_Name_Input":"//input[@name='Con_Last_Name']",
+        "email_Input":"//input[@inputmode='email']",
+        "phone_Input":"//input[@type='tel']",
+        "estimated_Booking_Input":"//input[@name='Partner_Estimated_Booking_number']",
+        "ship_to_Different_Country":"//select[@name='Opp_shipto_ctrl']",
+        "install_Base_Type":"//select[@name='IBType_Land']",
+        "end_Customer_Usage":"//select[@name='Opp_EndCustomerusage_reseller']",
+        "create_Oppty_Button":{
+            "role":"button",
+            "name":"Create Opportunity"
+        },
+        "oppty_Number_Value":"//p[text()='Opportunity Number']/following-sibling::p//lightning-formatted-text",
+        "account_Name_Value_On_Oppty":"//p[text()='Account Name']/following-sibling::p//lightning-formatted-text"
     },
     "HomePage_CPQ": {
-        "quote_Number": "//div[3]/div[1]/div[2]",
+        "save_Button": {
+            "role": "button",
+            "name": "Save Quote"
+        },
+        "private_Offer_Combobox": {
+            "role": "combobox",
+            "name": "Private Offer"
+        },
+        "private_Offer_Yes_Option": {
+            "role": "option",
+            "name": "Yes"
+        },
+        "hyperscaler_Combobox": {
+            "role": "combobox",
+            "name": "Hyperscaler Name"
+        },
+        "quote_Number": "(//*[text()='Quote Number']//following::div)[1]",
+        "quote_Number_Alt": "//div[3]/div[1]/div[2]",
         "quote_Name": "//div[2]/div[1]/div[2]/div",
         "quote_Status": "//div[3]/div[2]/div[2]",
+        "approval_Status": "//div[3]/div[4]/div[2]",
         "save_Icon": "//span[@slot='startIcon' and contains(@class, 'oj-ux-ico-save')]",
         "view_More_Link": "//a[text()='View more']",
         "error_Message": "(//div[@class='oj-messagebanner-detail'])[4]",
         "close_Button": {
             "role": "button",
             "name": "Close"
+        },
+        "net_Price": "(//div[contains(@class, 'oj-typography-body-sm') and contains(@class, 'oj-typography-semi-bold') and contains(@class, 'oj-sm-align-self-center')])[3]",
+        "more_Actions_Button": {
+            "role": "button",
+            "name": "More Actions"
+        },
+        "sync_Quote_To_SFDC_Menuitem": {
+            "role": "menuitem",
+            "name": "Sync Quote to SFDC"
         }
     },
     "QuoteInfoPage": {
@@ -74,7 +1088,9 @@
             "role": "button",
             "name": "Save Quote"
         },
-        "pop_Up": "//*[@id='border-8dbf786c-7da0-4898-aa4b-f1b836878c53']"        
+        "pop_Up": "//*[@id='border-8dbf786c-7da0-4898-aa4b-f1b836878c53']",
+        "order_Type": "(//input[@aria-autocomplete='list' and @role='combobox'])[3]",
+        "sub_Quote_Type": "(//input[@aria-autocomplete='list' and @role='combobox'])[4]"
     },
     "ProductsPage": {
         "products_Tab": "//span[text()='Products ']",
@@ -91,13 +1107,17 @@
             "role": "button",
             "name": "Close"
         },
+        "fast_Quotes_Option": {
+            "role": "option",
+            "name": "FAST Quotes"
+        },
         "add_To_Quote": {
             "role": "button",
             "name": "Add to Quote"
-        }        
+        }
     },
     "AccountInformationPage": {
-        "account_Information_Tab": "//*[@id='cx-cpq-58ddf3ec-ff14-45d4-8d77-303c703c2c48']/div/div",
+        "account_Information_Tab": "//span[text()='Account Information ']",
         "shipping_Instructions": {
             "role": "textbox",
             "name": "Shipping Instructions"
@@ -105,7 +1125,167 @@
     },
     "ApprovalRequestPage": {
         "approval_Request_Tab": "//span[normalize-space()='Approval Request']",
-        "initiate_Approval": "//oj-c-button[@class='oj-sm-margin-4x-end cx-cpq-header-action-button oj-complete']//button[@aria-label='Initiate Approval'][normalize-space()='Initiate Approval']"
+        "justification_Details_Textbox": {
+            "role": "textbox",
+            "name": "Provide detail justification for discount"
+        },
+        "initiate_Approval": "//oj-c-button[@class='oj-sm-margin-4x-end cx-cpq-header-action-button oj-complete']//button[@aria-label='Initiate Approval'][normalize-space()='Initiate Approval']",
+        "submit_For_Approval_Button": "(//button[@role='button' and normalize-space()='Submit'])[1]",
+        "justification_Combobox": "(//input[@role='combobox'])[1]",
+        "competition_Tab": {
+            "role": "tab",
+            "name": "Competition"
+        },
+        "competitor_Name_Combobox": {
+            "role": "combobox",
+            "name": "Provide competitor name(s)*"
+        },
+        "competitor_Dell_Option": {
+            "role": "option",
+            "name": "Dell"
+        },
+        "competitor_Offering_Textbox": {
+            "role": "textbox",
+            "name": "Provide competitor offering"
+        },
+        "competitor_Pricing_Textbox": {
+            "role": "textbox",
+            "name": "Provide competitor pricing"
+        },
+        "submit_For_Approval_Button_2": {
+            "role": "button",
+            "name": "Submit"
+        },
+        "awaiting_Approval_Button": {
+            "role": "button",
+            "name": "Awaiting Approval (1)"
+        },
+        "actions_Needed_Tab": {
+            "role": "tab",
+            "name": "Actions Needed"
+        },
+        "approve_Button": {
+            "role": "button",
+            "name": "Approve"
+        },
+        "close_Status_Button": {
+            "role": "button",
+            "name": "Close Status"
+        }
+    },
+    "PrivateOfferPage": {
+        "Marketplace_Private_Offer_Text": "//*[text()='Marketplace Private Offer']",
+        "Edit_Marketplace_Private_Offer_ID_Button": {
+            "role": "button",
+            "name": "Edit Marketplace Private Offer ID"
+        },
+        "Edit_Private_Offer_Creation_Date_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Creation Date"
+        },
+        "Edit_Private_Offer_Expiration_Date_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Expiration Date"
+        },
+        "Edit_Private_Offer_Acceptance_Date_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Acceptance Date"
+        },
+        "Edit_Private_Offer_End_Date_Button": {
+            "role": "button",
+            "name": "Edit Private Offer End Date"
+        },
+        "Edit_Contract_End_Date_Button": {
+            "role": "button",
+            "name": "Edit Contract End Date"
+        },
+        "Edit_Hyperscaler_Button": "(//*[@title='Edit Hyperscaler'])[2]",
+        "Edit_Hyperscaler_Partner_ID_Button": {
+            "role": "button",
+            "name": "Edit Hyperscaler Partner ID"
+        },
+        "Edit_Marketplace_Private_Offer_Name_Button": {
+            "role": "button",
+            "name": "Edit Marketplace Private Offer Name"
+        },
+        "Edit_Private_Offer_Status_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Status"
+        },
+        "Edit_Private_Offer_Activation_Date_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Activation Date"
+        },
+        "Edit_Contract_Start_Date_Button": {
+            "role": "button",
+            "name": "Edit Contract Start Date"
+        },
+        "Edit_Private_Offer_Quote_Button": {
+            "role": "button",
+            "name": "Edit Private Offer Quote"
+        },
+        "Edit_Hyperscaler_Customer_ID_Button": {
+            "role": "button",
+            "name": "Edit Hyperscaler Customer ID"
+        },
+        "Edit_Renewal_Existing_Private_Offer_Button": {
+            "role": "button",
+            "name": "Edit Renewal/Existing Private Offer"
+        },
+        "Edit_Active_Button": {
+            "role": "button",
+            "name": "Edit Active"
+        },
+        "Active_Checkbox": "input[name='Active__c']",
+        "Private_Offer_Quote_Checkbox": "input[name='Private_Offer_Quote__c']",
+        "Hyperscaler_Value_Text": "((//*[text() = 'Hyperscaler'])[2]//following::span)[1]",
+        "Hyperscaler_Input": "input[name='Hyperscaler__c']"
+    },
+    "PrivateOfferQuotesPage": {
+        "quotes_Link": {
+            "role": "link",
+            "name": "Quotes"
+        },
+        "quotes_Link_2": "(//*[text()='Quotes'])[1]",
+        "combobox_Button_Quote_Type": {
+            "role": "combobox",
+            "name": "Views"
+        },
+        "combobox_Button_Search_Field": {
+            "role": "combobox",
+            "name": "Views"
+        },
+        "quote_Name_Option": {
+            "role": "option",
+            "name": "Quote Name"
+        },
+        "search_Input": {
+            "placeholder": "Enter minimum 3 characters to"
+        },
+        "search_Button": {
+            "title": "Search"
+        },
+        "show_Actions_Button": {
+            "role": "button",
+            "name": "Show actions"
+        },
+        "copy_Button": {
+            "role": "menuitem",
+            "name": "Copy"
+        },
+        "Move_Button": {
+            "role": "menuitem",
+            "name": "Move"
+        }
+    },
+    "QuotesListPage": {
+        "quotes_Tab": "//span[@class='slds-truncate' and normalize-space(text())='Quotes']",
+        "select_Field_To_Search_Button": "//span[@class='slds-truncate' and @part='input-button-value' and text()='-Select field to Search-']",
+        "quote_Name_Option": "(//span[@title='Quote Name' and text()='Quote Name'])[1]",
+        "search_Input": "//input[@class='slds-input' and @placeholder='Enter minimum 3 characters to search' and @part='input']",
+        "search_Button": "//button[@title='Search']//lightning-primitive-icon[@exportparts='icon']",
+        "quote_Row_Action_Button": "//lightning-datatable//tbody//tr//th//lightning-primitive-cell-actions//lightning-button-menu//button//lightning-primitive-icon",
+        "copy_Quote_Menu_Item": "//lightning-menu-item[1]//div[1]//a[1]"
     },
     "AttachmentsPage": {
         "attachments_Tab": "//span[text()='Attachments']",
@@ -117,6 +1297,11 @@
     "PurchaseOrderPage": {
         "purchase_Order_Tab": "//span[text()='Purchase Order']",
         "purchase_Order_Number": "(//input[contains(@class, 'TextFieldInputStyles_textFieldInputBase__lkfh4l0')])[1]",
+        "keystone_Subscription_Quotes": "(//input[@autocomplete='on'])[5]",
+        "fetch_Subscription_Details": "//button[@aria-label='Fetch Subscription Details']",
+        "keystone_Support_Cmat_Id": "(//div[@role='textbox' and @aria-readonly='true' and contains(@class, 'ReadonlyTextFieldInputStyles_readOnlyTextFieldInputBase') and contains(@class, 'text_textAlign_start')])[4]",
+        "keystone_Support_Ownership": "(//div[@role='textbox' and @aria-readonly='true' and contains(@class, 'ReadonlyTextFieldInputStyles_readOnlyTextFieldInputBase') and contains(@class, 'text_textAlign_start')])[5]",
+        "keystone_Subscription_Id": "(//div[@role='textbox' and @aria-readonly='true' and contains(@class, 'ReadonlyTextFieldInputStyles_readOnlyTextFieldInputBase') and contains(@class, 'text_textAlign_start')])[6]",
         "po_Email": {
             "role": "textbox",
             "name": "Order Acknowledgement Contact"
@@ -131,17 +1316,99 @@
         }
     },
     "HomePage_TPD": {
-            "global_Search": "//a[@href='/global-search']",
-            "transaction_Number": "//*[@id='transactionNumber']",
-            "po_Number": "//*[@id='poNumber']",
-            "go_Button": "//*[@id='go-submit-search']",
-            "order_Status": "//*[@id='tpd-table']/tbody/tr/td[16]/app-tpd-table-field",
-            "sub_Process_Status": "//*[@id='tpd-table']/tbody/tr/td[17]/app-tpd-table-field",
-            "transaction_Review": "//div[contains(text(), 'Transaction Review')]",
-            "rpa_Review": "//div[contains(text(), 'RPA Review')]",
-            "actions_DD": "(//select[@id='transaction-actions'])[1]",
-            "actions_Go_Button": "//*[@id='action-go-btn']",
-            "yes_Button": "//button[normalize-space(text())='Yes']"        
-    }
-    
+        "global_Search": "//a[@href='/global-search']",
+        "transaction_Number": "//*[@id='transactionNumber']",
+        "po_Number": "//*[@id='poNumber']",
+        "go_Button": "//*[@id='go-submit-search']",
+        "order_Status": "//*[@id='tpd-table']/tbody/tr/td[16]/app-tpd-table-field",
+        "sub_Process_Status": "//*[@id='tpd-table']/tbody/tr/td[17]/app-tpd-table-field",
+        "subscription_Number": "//*[@id='tpd-table']/tbody/tr/td[11]/app-tpd-table-field",
+        "transaction_Review": "//div[contains(text(), 'Transaction Review')]",
+        "rpa_Review": "//div[contains(text(), 'RPA Review')]",
+        "transaction_Data": "//div[text()='Transaction Data']",
+        "actions_DD": "(//select[@id='transaction-actions'])[1]",
+        "actions_Go_Button": "//*[@id='action-go-btn']",
+        "yes_Button": "//button[normalize-space(text())='Yes']"
+    },
+    "SalesPursuitPage": {        
+        "sales_Pursuit_Link": {
+            "role": "link",
+            "name": "Sales Pursuit"
+        },
+        "show_More_Navigation_Item": {
+            "role": "button",
+            "name": "Show more navigation items"
+        },
+        "sales_Pursuit_Menuitem": {
+            "role": "menuitem",
+            "name": "Sales Pursuit"
+        },       
+        "select_Opportunity": {
+            "role": "combobox",
+            "name": "Select Opportunity"
+        },
+        "investigating_Pursuit": {
+            "role": "combobox",
+            "name": "Investigating Pursuit"
+        },
+        "pursuit_Action": {
+            "role": "combobox",
+            "name": "Pursuit Action"
+        },
+        "next_Button": {
+            "role": "button",
+            "name": "Next"
+        },
+        "edit_Button": "(//button[@name= 'Edit'])[1]" ,
+        "record_Updated": "//*[contains(text(), 'Record Updated')]",
+        "add_Filter_Button":"//*[contains(text(),'Add Filter')]",
+        "delete_Filter_Button":"(//lightning-icon[@icon-name = 'action:delete'])[1]"
+    },
+   "ContactPage": {        
+        "view_All_Link": "(//span[@class = 'view-all-label'])[1]",
+        "new_Contact": {
+            "role": "button",
+            "name": "NewContact"
+        },
+        "partner_Radio_Button" : "//span[text() = 'Partner']",
+        "email_TextBox" : "//input[@name = 'Email']",
+        "error_Label": "//div[contains(@class, 'slds-popover__body')]//ul[contains(@class, 'errorsList')]"
+    },
+    "PrivateOfferRequest": {
+        "annual_Revenue_Before_Discount": "//input[@name='Potential_ARR_Before_Discount_USD' and @role='spinbutton']",
+        "contact_Picklist":"//select[@name='Customer_Contact']",
+        "cloud_Marketplace_Listing_Dropdown": "//button[@role='combobox' and @aria-label='Cloud Marketplace Listing Name']",
+        "term_Type_Dropdown": "//button[@role='combobox' and @aria-label='Term Type']",
+        "term_Length_Months_Select": "//select[@name='Term_Length_Months']",
+        "discount_Justification_Category_Select": "//select[@name='Discount_Justification_Category']",
+        "justification_For_Discount": "//*[contains(normalize-space(),'Justification for Discount')]/following::textarea[contains(@class,'slds-textarea')][1]",
+        "private_Offer_Save_Button": "//button[@type='button' and normalize-space()='Save' and contains(@class,'slds-button_brand')]",
+        "private_Offer_Request_Status_Value": "(//span[contains(@class,'test-id__field-label') and normalize-space()='Private Offer Request Status']/following::span[contains(@class,'test-id__field-value')][1]//lightning-formatted-text)[1]",
+        "add_Dimension_Button": "//button[@name='Private_Offer_Pricing_Request__c.Dimension' and normalize-space()='Add Dimension']",
+        "dimension_Dropdown": "(//*[contains(normalize-space(),'Dimension')]/following::a[@role='button' and contains(@class,'select')][1])[2]",
+        "quantity_Input": "//span[normalize-space()='Quantity']/ancestor::div[contains(@class,'uiInput')][1]//input[contains(@class,'uiInputSmartNumber') and @type='text']",
+        "discount_Percentage_Amount_Input": "//span[normalize-space()='Discount Percentage Amount (%)']/ancestor::div[contains(@class,'uiInput')][1]//input[contains(@class,'uiInputSmartNumber') and @type='text']",
+        "total_Discounted_Price_Input": "//span[normalize-space()='Total Discounted Price']/ancestor::div[contains(@class,'uiInput')][1]//input[contains(@class,'uiInputSmartNumber') and @type='text']",
+        "uom_Dropdown": "(//*[contains(normalize-space(),'Dimension')]/following::a[@role='button' and contains(@class,'select')][1])[3]",
+        "dimension_Save_Button": "(//button[contains(@class,'slds-button_brand') and .//span[normalize-space()='Save']] | //button[contains(@class,'slds-button_brand') and normalize-space()='Save'])[last()]",
+        "submit_For_Approval_Button": "//button[@name='Private_Offer_Pricing_Request__c.Submit_for_Approval' and normalize-space()='Submit for Approval']",
+        "submit_Button": "//button[@type='button' and normalize-space()='Submit' and contains(@class,'slds-button_brand')]",
+        "marketplace_Operations_Status_Edit_Icon": "(//button[@title='Edit Marketplace Operations Status' or .//span[normalize-space()='Edit Marketplace Operations Status']] | //span[contains(@class,'test-id__field-label') and normalize-space()='Marketplace Operations Status']/following::button[contains(@class,'inline-edit-trigger')][1])[1]",
+        "marketplace_Operations_Status_Dropdown": "//button[@role='combobox' and @aria-label='Marketplace Operations Status']",
+        "final_Unit_Price_Error_Message": "//h2[normalize-space()='We hit a snag.']",
+        "dimension_Record_Link": "(//a[.//span[starts-with(normalize-space(),'D-')]] | //a[starts-with(normalize-space(),'D-')])[1]",
+        "final_Unit_Price_Edit_Icon": "(//span[contains(@class,'test-id__field-label') and normalize-space()='Final Unit Price $']/following::button[contains(@class,'inline-edit-trigger')][1])[1]",
+        "final_Unit_Price_Input": "//input[@name='Final_Unit_Price__c' and @role='spinbutton']",
+        "cancel_Button": "(//button[@name='CancelEdit' and normalize-space()='Cancel'] | //button[normalize-space()='Cancel'])[last()]",
+        "approved_Locked_Message": "(//strong[contains(normalize-space(),'You may not edit this Private Offer Request as it has been Approved/Rejected/Cancelled')])[1]",
+        "manual_Offer_Name_Edit_Icon": "(//button[@title='Edit Offer Name' or @title='Edit Tackle Offer Name' or .//span[contains(normalize-space(),'Edit Offer Name')] or .//span[contains(normalize-space(),'Edit Tackle Offer Name')]] | //span[contains(@class,'test-id__field-label') and (normalize-space()='Offer Name' or normalize-space()='Tackle Offer Name')]/following::button[contains(@class,'inline-edit-trigger')][1])[1]",
+        "offer_Name_Input": "//input[@name='Tackle_Offer_Name__c' and contains(@class,'slds-input')]",
+        "offer_ID_Input": "//input[@name='Offer_ID__c' and contains(@class,'slds-input')]",
+        "offer_URL_Input": "//input[@name='Offer_URL__c' and contains(@class,'slds-input')]",
+        "offer_Accepted_Date_Input": "(//input[@name='Offer_Accepted_Date__c' and contains(@class,'slds-input')])[1]",
+        "save_Button": {
+        "role": "button",
+        "name": "Save"
+        }
+    } 
 }

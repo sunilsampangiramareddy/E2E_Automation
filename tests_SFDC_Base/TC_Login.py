@@ -25,7 +25,7 @@ from utils.data_validation import is_valid_data
 
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
-relative_file_path = os.path.join("testData", "TC_Login.xlsx")
+relative_file_path = os.path.join("testData/tests_SFDC_Base", "TC_Login.xlsx")
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
@@ -51,7 +51,7 @@ def test_login(page: Page, base_url, config, test_case) -> None:
 
         if is_valid_data(test_case["User Name"]):
             lp.enterUserName(test_case["User Name"])
-            logger.info(f"Username entered: {test_case['User Name']}")            
+            logger.info(f"Username entered: {test_case['User Name']}")
 
         # lp.enterUserName(config.get_username())
         # ss.capture_screenshot("Username entered")
@@ -65,8 +65,8 @@ def test_login(page: Page, base_url, config, test_case) -> None:
         logger.info("Entered password")
 
         lp.clickSigninButton()
-        logger.info("Signin button clicked")      
-        
+        logger.info("Signin button clicked")
+
         lp.clickYesButton()
         logger.info("Yes button clicked")
 

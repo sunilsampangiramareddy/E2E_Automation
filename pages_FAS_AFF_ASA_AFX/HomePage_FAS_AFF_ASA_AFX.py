@@ -47,6 +47,9 @@ class HomePageFAS_AFF_ASA_AFX:
         self.doYouWantToAddRansomwareRecoveryAssurance = self.page.get_by_role(
             "group", name="Do you want to add the"
         ).get_by_label("No", exact=True)
+        self.netappConsoleDeployment = self.page.locator(
+            "(//h5[@class='card-label' and text()='No'])[12]"
+        )
         self.addToQuote = self.page.get_by_role("button", name="Add to Quote")
         self.saveButton = self.page.get_by_role("button", name="Save")
         self.productsTab = self.page.get_by_role("tab", name=" Products")
@@ -366,8 +369,10 @@ class HomePageFAS_AFF_ASA_AFX:
         time.sleep(self.nw)
 
     def clickDoesYourCustomerRequireBlueXP(self):
-        wait_for_element(self.doesYourCustomerRequireBlueXP)
-        self.doesYourCustomerRequireBlueXP.click()
+        self.doesYourCustomerRequireBlueXP.first.wait_for(
+            state="visible", timeout=60000
+        )
+        self.doesYourCustomerRequireBlueXP.first.click()
         time.sleep(self.nw)
 
     def clickDoesYourCustomerNeedPSONTAP(self):
@@ -378,6 +383,11 @@ class HomePageFAS_AFF_ASA_AFX:
     def clickDoYouWantToAddRansomwareRecoveryAssurance(self):
         wait_for_element(self.doYouWantToAddRansomwareRecoveryAssurance)
         self.doYouWantToAddRansomwareRecoveryAssurance.click()
+        time.sleep(self.nw)
+
+    def clickNetappConsoleDeployment(self):
+        wait_for_element(self.netappConsoleDeployment)
+        self.netappConsoleDeployment.click()
         time.sleep(self.nw)
 
     def selectIncludeSwitch_Yes(self):
@@ -577,6 +587,12 @@ class HomePageFAS_AFF_ASA_AFX:
             f"[RESULT] AddToQuote to Products Page Navigation completed in {elapsed} seconds"
         )
         return elapsed
+
+    def selectAdaptersToAdd(self, protocol):
+        xpath = f"//button[contains(@data-add-id, '{protocol}')]"
+        self.page.locator(xpath).wait_for(state="visible", timeout=60000)
+        self.page.locator(xpath).click()
+        time.sleep(self.nw)
 
     def clickSaveButton(self):
         wait_for_element(self.saveButton)

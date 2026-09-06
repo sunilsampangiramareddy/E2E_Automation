@@ -56,7 +56,7 @@ class AccountInformationPage:
         )
         self.page.get_by_role("button", name="Close").click()
         time.sleep(self.nw)
-        
+
     def enterSoldTo_2(self, email):
         self.page.get_by_title("Sold To").wait_for(state="visible", timeout=60000)
         self.page.get_by_title("Sold To").click()
@@ -70,11 +70,15 @@ class AccountInformationPage:
         self.page.get_by_label("Search Type :").wait_for(state="visible", timeout=60000)
         self.page.get_by_label("Search Type :").select_option("Contact")
         time.sleep(self.nw)
-        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(state="visible", timeout=60000)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(
+            state="visible", timeout=60000
+        )
         self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').click()
         self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').fill(email)
         self.page.get_by_role("button", name="Search").last.click()
-        self.page.get_by_role("button", name="Select").wait_for(state="visible", timeout=60000)        
+        self.page.get_by_role("button", name="Select").wait_for(
+            state="visible", timeout=60000
+        )
         self.page.get_by_role("button", name="Select").first.click()
         time.sleep(self.nw)
         self.page.get_by_role("button", name="Close").wait_for(
@@ -122,7 +126,7 @@ class AccountInformationPage:
         )
         self.page.get_by_role("button", name="Close").click()
         time.sleep(self.nw)
-        
+
     def enterEndCustomer_2(self, email):
         self.page.get_by_text("End Customer").wait_for(state="visible", timeout=60000)
         self.page.get_by_text("End Customer").click()
@@ -131,11 +135,15 @@ class AccountInformationPage:
         )
         self.page.locator("(//span[contains(text(),'Edit')])[3]").click()
         time.sleep(self.nw)
-        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(state="visible", timeout=60000)
+        self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').wait_for(
+            state="visible", timeout=60000
+        )
         self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').click()
         self.page.locator('//*[@id="pw_comm_SearchContacts_email"]').fill(email)
         self.page.get_by_role("button", name="Search").last.click()
-        self.page.get_by_role("button", name="Select").wait_for(state="visible", timeout=60000)
+        self.page.get_by_role("button", name="Select").wait_for(
+            state="visible", timeout=60000
+        )
         self.page.get_by_role("button", name="Select").first.click()
         time.sleep(self.nw)
         self.page.get_by_role("button", name="Close").wait_for(
@@ -144,6 +152,29 @@ class AccountInformationPage:
         self.page.get_by_role("button", name="Close").click()
         time.sleep(self.nw)
 
+    def enterEndCustomer_3(self, first_name, last_name):
+        self.page.get_by_text("End Customer").wait_for(state="visible", timeout=60000)
+        self.page.get_by_text("End Customer").click()
+        self.page.locator("//div[21]/div/oj-switcher/oj-defer[10]/div/oj-switcher[1]/oj-defer[1]/oj-switcher/oj-defer[1]/a").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("//div[21]/div/oj-switcher/oj-defer[10]/div/oj-switcher[1]/oj-defer[1]/oj-switcher/oj-defer[1]/a").click()
+        time.sleep(self.nw)
+        self.page.get_by_role("textbox", name="First Name").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("textbox", name="First Name").click()
+        self.page.get_by_role("textbox", name="First Name").fill(first_name)
+        self.page.get_by_role("textbox", name="Last Name").click()
+        self.page.get_by_role("textbox", name="Last Name").fill(last_name)
+        self.page.get_by_role("button", name="Search").last.click()
+        self.page.get_by_role("button", name="Select").first.click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Close").wait_for(
+            state="visible", timeout=90000
+        )
+        self.page.get_by_role("button", name="Close").first.click()
+        time.sleep(self.nw)
 
     def enterSoftwareDelivery(self):
         self.page.get_by_text("Software Delivery").wait_for(
@@ -212,6 +243,30 @@ class AccountInformationPage:
         self.page.get_by_role("button", name="Close").click()
         time.sleep(self.nw)
 
+    def enterServiceCustomer_3(self):
+        self.page.locator("(//div[@title='Service Customer'])[1]").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("(//div[@title='Service Customer'])[1]").click()
+        self.page.locator("//div[31]/div/oj-switcher/oj-defer[10]/div/oj-switcher[1]/oj-defer[1]/oj-switcher/oj-defer[1]/a").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.locator("//div[31]/div/oj-switcher/oj-defer[10]/div/oj-switcher[1]/oj-defer[1]/oj-switcher/oj-defer[1]/a").click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Set").wait_for(
+            state="visible", timeout=60000
+        )
+        
+        self.page.locator('//select[@id="pw_comm_copy_from"]').select_option(label="End Customer")
+        logger.info("Successfully selected 'End Customer' from the Same As: dropdown menu.")
+        self.page.get_by_role("button", name="Set").click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Close").wait_for(
+            state="visible", timeout=90000
+        )
+        self.page.get_by_role("button", name="Close").first.click()
+        time.sleep(self.nw)
+
     # This method is for the scenario where ShipTo Customer is same as SoldTo Customer
     def enterShipToCustomer(self):
         self.page.get_by_text("Ship To Customer").wait_for(
@@ -271,4 +326,25 @@ class AccountInformationPage:
         self.page.get_by_role("textbox", name="Shipping Instructions").fill(
             shipping_instructions
         )
+        time.sleep(self.nw)
+
+    def selectInternalOrderType(self, order_type):
+        wait_for_element(self.page.get_by_role("combobox", name="Internal Order Type"))
+        self.page.get_by_role("combobox", name="Internal Order Type").click()
+        self.page.get_by_role("combobox", name="Internal Order Type").fill(order_type)
+        self.page.get_by_text(order_type).click()
+        time.sleep(self.nw)
+
+    def selectGLAccount(self, gl_account):
+        wait_for_element(self.page.get_by_role("combobox", name="GL Account"))
+        self.page.get_by_role("combobox", name="GL Account").click()
+        self.page.get_by_role("combobox", name="GL Account").fill(str(gl_account))
+        self.page.get_by_text(str(gl_account)).click()
+        time.sleep(self.nw)
+
+    def selectProjectCode(self, project_code):
+        wait_for_element(self.page.get_by_role("combobox", name="Project Code"))
+        self.page.get_by_role("combobox", name="Project Code").click()
+        self.page.get_by_role("combobox", name="Project Code").fill(project_code)
+        self.page.get_by_text(project_code).click()
         time.sleep(self.nw)

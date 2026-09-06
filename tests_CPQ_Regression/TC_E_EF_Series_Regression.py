@@ -38,7 +38,9 @@ from utils.data_validation import is_valid_data
 
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
-relative_file_path = os.path.join("testData", "TC_E_EF_Series_Regression.xlsx")
+relative_file_path = os.path.join(
+    "testData/tests_CPQ_Regression", "TC_E_EF_Series_Regression.xlsx"
+)
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
 test_data = read_test_data(file_path)
@@ -630,7 +632,6 @@ def test_E_EF_Series_Regression(page: Page, base_url, config, test_case) -> None
                 logger.info(f"Clicked on Save button")
 
             # =============================Purchase Order Tab=================================================================================
-
             po = PurchaseOrderPage(new_tab)
             logger.info(f"PurchaseOrderPage instance created for the new tab")
 

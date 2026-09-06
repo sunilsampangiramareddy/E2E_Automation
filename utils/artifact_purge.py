@@ -15,6 +15,7 @@ class ArtifactPurge:
             'screenshots',
             'downloads',
             'excel_test_results',
+	    	'logs',
             'generated_test_data'
         ]
 

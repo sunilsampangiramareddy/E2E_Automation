@@ -141,7 +141,7 @@ class HomePageCPQ:
                 logger.info(f"Extracted text: {text}")
                 print(text, end="\t")
             else:
-                logger.warning(
+                logger.info(
                     f"Empty text found for element index {i} in column: {column_name}"
                 )
         print()

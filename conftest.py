@@ -33,6 +33,12 @@ def pytest_addoption(parser):
         default=False,
         help="Run tests in headless mode",
     )
+    parser.addoption(
+        "--report_name",
+        action="store",
+        default=None,
+        help="Custom name for the HTML report",
+    )
 
 
 @pytest.fixture(scope="session")
@@ -88,8 +94,11 @@ def pytest_configure(config):
     if not os.path.exists(reports_directory):
         os.makedirs(reports_directory)
 
-    # Get the test script name
-    if config.invocation_params.args and len(config.invocation_params.args) > 0:
+    # Use the --report_name option if provided, otherwise default to the script name
+    report_name_arg = config.getoption("report_name")
+    if report_name_arg:
+        script_name = report_name_arg
+    elif config.invocation_params.args and len(config.invocation_params.args) > 0:
         script_name = os.path.basename(config.invocation_params.args[0]).replace(
             ".py", ""
         )

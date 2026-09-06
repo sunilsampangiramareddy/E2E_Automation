@@ -1,0 +1,55 @@
+# -------------------------
+# Python / Virtual Environment
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+venv1/
+.venv1/
+
+# -------------------------
+# VS Code Settings
+# -------------------------
+.vscode/
+
+# -------------------------
+# Pytest / Test Outputs
+# -------------------------
+.pytest_cache/
+reports/
+screenshots/
+logs/
+downloads/
+excel_test_results/
+
+# Keep this — since testData is manually created, do NOT ignore it
+# testData/
+
+# -------------------------
+# Files you probably don't want to track
+# -------------------------
+.env
+*.log
+failed_report.xml
+
+# -------------------------
+# OS-specific
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Python build artifacts
+# -------------------------
+build/
+dist/
+*.egg-info/
+
+# -------------------------
+# Framework-specific
+# -------------------------
+# Bat_Execution/   <-- removed from ignore as per your instruction

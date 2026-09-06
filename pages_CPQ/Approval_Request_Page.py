@@ -146,3 +146,19 @@ class ApprovalRequestPage:
         wait_for_element(self.initiateApproval)
         self.initiateApproval.click()
         time.sleep(self.lw)
+
+    def clickSubmitForApproval(self):
+        # self.page.evaluate("document.getElementById('walkme-player').style.display = 'none'")
+        self.page.get_by_role("button", name="Submit").first.click()
+        time.sleep(self.lw)
+        
+
+    def approveRequest(self):
+        wait_for_element(self.page.get_by_role("button", name="Awaiting Approval (1)"))
+        self.page.get_by_role("button", name="Awaiting Approval (1)").click()
+        self.page.get_by_role("tab", name="Actions Needed").click()
+        self.page.get_by_role("button", name="Approve").first.click()
+        time.sleep(self.nw)
+        self.page.get_by_role("button", name="Approve").first.click()
+        self.page.get_by_role("button", name="Close Status").click()
+        time.sleep(self.lw)

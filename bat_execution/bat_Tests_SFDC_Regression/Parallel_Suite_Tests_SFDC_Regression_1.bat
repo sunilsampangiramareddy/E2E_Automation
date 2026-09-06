@@ -1,0 +1,21 @@
+@echo off
+REM Set the working directory to the project directory
+cd /d %~dp0..\..
+
+REM Activate the virtual environment (if using one)
+call venv\Scripts\activate
+
+REM Run the specific Pytest test script
+pytest -n 4 tests_SFDC_Regression\accounts\TC_New_Partner_Account_Creation_SFDC.py tests_SFDC_Regression\campaigns\TC_CampaignActions.py tests_SFDC_Regression\incentive_Registrations\TC_IR_CreationAssociate_StdIndirect_Oppty.py tests_SFDC_Regression\leads\TC_Campaign_And_Lead.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_CreateDirect_ConvertTo_IndirectOppty.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_IndirectOpportunity_ResellerChange.py tests_SFDC_Regression\partner_Connect_Regression\TC_Verify_Partner_Connect_Fields.py tests_SFDC_Regression\resource_Requests\TC_Account_Resource_Request.py tests_SFDC_Regression\resource_Requests\TC_CreateOpportunityResourceRequest.py tests_SFDC_Regression\private_Offer\TC_Private_Offer_E2E.py tests_SFDC_Regression\opportunity_Sales_Type_On_Customer_Type\TC_Sales_Type.py tests_SFDC_Regression\wwss\TC_WWSS_Validations.py tests_SFDC_Regression\partner_Contacts\TC_PartnerAndCustomerAccountContact.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_DealRegistration.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_IndirectOpptyRenewal.py tests_SFDC_Regression\leads\TC_Lead_Creation_and_Convertion.py tests_SFDC_Regression\propensity\TC_Verify_Engagement_Scores.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_DirectAndIndirectOpptyClosure.py --browser_type=chromium --url=https://netapp2--uat.sandbox.lightning.force.com/ --headed --reruns 2 --junitxml=failed_report.xml --report_name=Parallel_Suite_Tests_SFDC_Regression_1
+
+REM Check the exit code of the previous pytest run
+if %ERRORLEVEL% NEQ 0 (
+    REM Run only the failed tests from the current batch file
+    pytest -n 4 --lf tests_SFDC_Regression\accounts\TC_New_Partner_Account_Creation_SFDC.py tests_SFDC_Regression\campaigns\TC_CampaignActions.py tests_SFDC_Regression\incentive_Registrations\TC_IR_CreationAssociate_StdIndirect_Oppty.py tests_SFDC_Regression\leads\TC_Campaign_And_Lead.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_CreateDirect_ConvertTo_IndirectOppty.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_IndirectOpportunity_ResellerChange.py tests_SFDC_Regression\partner_Connect_Regression\TC_Verify_Partner_Connect_Fields.py tests_SFDC_Regression\resource_Requests\TC_Account_Resource_Request.py tests_SFDC_Regression\resource_Requests\TC_CreateOpportunityResourceRequest.py tests_SFDC_Regression\private_Offer\TC_Private_Offer_E2E.py tests_SFDC_Regression\opportunity_Sales_Type_On_Customer_Type\TC_Sales_Type.py tests_SFDC_Regression\wwss\TC_WWSS_Validations.py tests_SFDC_Regression\partner_Contacts\TC_PartnerAndCustomerAccountContact.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_DealRegistration.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_IndirectOpptyRenewal.py tests_SFDC_Regression\leads\TC_Lead_Creation_and_Convertion.py tests_SFDC_Regression\propensity\TC_Verify_Engagement_Scores.py tests_SFDC_Regression\opportunities\opportunities_Common_Validations\TC_DirectAndIndirectOpptyClosure.py --browser_type=chromium --url=https://netapp2--uat.sandbox.lightning.force.com/ --headed --reruns 2 --junitxml=failed_report.xml --report_name=Parallel_Suite_Tests_SFDC_Regression_1
+)
+
+REM Deactivate the virtual environment
+call venv\Scripts\deactivate
+
+REM Pause to keep the command prompt open after execution
+pause

@@ -14,7 +14,6 @@ from utils.write_excel_results import WriteExcelResults
 from utils.data_validation import is_valid_data
 from utils.step_logger import StepLogger
 
-
 # =========================================================================================================================
 # Test Metadata
 # =========================================================================================================================
@@ -28,7 +27,7 @@ from utils.step_logger import StepLogger
 logger = logging.getLogger("playwright_pytest")
 # Load test data from Excel
 relative_file_path = os.path.join(
-    "testData", "TC_Direct_CreateOpportunity_Step_Logger.xlsx"
+    "testData/tests_SFDC_Base", "TC_Direct_CreateOpportunity_Step_Logger.xlsx"
 )
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
@@ -278,8 +277,8 @@ def test_createDirectOpportunityStepLogger(
             [
                 script_name,
                 boolean_status,
-                oppty_number, # type: ignore
-                oppty_name, # type: ignore
+                oppty_number,  # type: ignore
+                oppty_name,  # type: ignore
                 "Opportunity created successfully",
             ],
         ]

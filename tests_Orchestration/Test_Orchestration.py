@@ -44,7 +44,7 @@ logging.basicConfig(level=logging.INFO)
 
 # Load test data from Excel
 relative_file_path = os.path.join(
-    "testData", "Test_Orchestration.xlsx"
+    "testData/tests_Orchestration", "Test_Orchestration.xlsx"
 )  # Update with your Excel file path
 working_directory = os.getcwd()
 file_path = os.path.join(working_directory, relative_file_path)
@@ -111,8 +111,8 @@ TEST_SCRIPT_PATHS = {
     "TC_API_Validation": "tests_CPQ_Base/TC_API_Validation.py",
     "TC_Copy_Quote": "tests_CPQ_Base/TC_Copy_Quote.py",
     "TC_Open_Quote": "tests_CPQ_Base/TC_Open_Quote.py",
-    "TC_FAS_AFF_Cluster_Config": "tests_CPQ_Base/TC_FAS_AFF_Cluster_Config.py",    
-    "TC_E_EF_Series_Regression": "tests_CPQ_Regression/TC_E_EF_Series_Regression.py",    
+    "TC_FAS_AFF_Cluster_Config": "tests_CPQ_Base/TC_FAS_AFF_Cluster_Config.py",
+    "TC_E_EF_Series_Regression": "tests_CPQ_Regression/TC_E_EF_Series_Regression.py",
     "E2E_UAT_003_Part_1": "tests_ERP_FTR/E2E_UAT_003_Part_1.py",
     "E2E_UAT_003_Part_2": "tests_ERP_FTR/E2E_UAT_003_Part_2.py",
     "E2E_UAT_017": "tests_ERP_FTR/E2E_UAT_017.py",

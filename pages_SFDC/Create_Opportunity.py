@@ -41,7 +41,7 @@ class CreateOpportunity:
             "//input[@class='slds-combobox__input slds-input' and @placeholder='Search Accounts...' and @aria-label='Reseller']"
         )
         self.salesType = page.locator(
-            "//select[@class='slds-select' and @name='Sales_Motion']"
+            "//select[@class='slds-select' and @name='Sales_Type_Value']"
         )
         self.salesType_1p = page.locator(
             "//select[@name='Sales_Type' and contains(@class, 'slds-select')]"
@@ -128,6 +128,14 @@ class CreateOpportunity:
         wait_for_element(self.primaryContact)
         # Select the option by value
         self.primaryContact.select_option(primary_Contact)
+
+    def select_PrimaryContact(self, primary_Contact):
+        self.page.get_by_role("combobox", name="Primary Contact").wait_for(
+            state="visible", timeout=60000
+        )
+        self.page.get_by_role("combobox", name="Primary Contact").click()
+        self.page.get_by_role("combobox", name="Primary Contact").fill(primary_Contact)
+        self.page.get_by_title(primary_Contact).click()
 
     def selectPrimaryContact_1p(self, primary_Contact):
         wait_for_element(self.primaryContact_1p)
@@ -239,3 +247,35 @@ class CreateOpportunity:
         wait_for_element(self.opptyName)
         opp_name = self.opptyName.inner_text()
         return opp_name
+
+    def validateOpportunityStatus(self, status):
+        stage_section = self.page.locator("record_flexipage-record-field").filter(
+            has=self.page.locator(".test-id__field-label", has_text="Stage")
+        )
+        expect(stage_section).to_contain_text(status)
+
+    def selectPrimaryContactFirst(self, primary_Contact):
+        primary=self.page.get_by_role("combobox", name="Primary Contact")
+        wait_for_element(primary)
+        primary.click()
+        primary.press("ArrowDown")
+        primary.press("Enter")
+
+    def verifySalesTypePrefilled(self, expected_sales_type: str):
+        select = self.page.locator('select[name="Sales_Type_Value"]')
+        selected_text = select.locator("option:checked").inner_text()
+        assert selected_text == expected_sales_type, (
+            f"Expected '{expected_sales_type}', got '{selected_text}'"
+        )
+
+    def verifySalesTypeCannotBeEmpty(self):
+        self.selectSalesType("--None--")
+        self.nextButton.click()
+        time.sleep(self.nw)
+
+        error_message = self.page.locator(
+            '.flowruntime-input-error',
+            has_text="Please select a choice."
+        )
+        wait_for_element(error_message)
+        expect(error_message).to_be_visible()
