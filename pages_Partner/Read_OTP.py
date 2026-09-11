@@ -6,16 +6,16 @@ import requests
 
 class ReadOTP:
     # Static config based on your values
-    USER_EMAIL = "test@netapp.com"
+    USER_EMAIL = "test@nettestapp.com"
     PORT = 993
     PROTOCOL = "imaps"
     EXPECTED_SUBJECT = "OTP Email"
     MAX_MAILS = 1000
     FOLDER_PATH = "INBOX"
-    HOST = "outlook.office365.com"
+    HOST = "outlook.test.office365.com"
     CLIENT_ID = "test"
     CLIENT_SECRET = "test"
-    TOKEN_URL = "https://login.microsoftonline.com/test/oauth2/v2.0/token"
+    TOKEN_URL = "https://login.microsoftonline.com/test/oauth2/test/v2.0/token"
 
     @classmethod
     def _get_access_token(cls) -> str:
@@ -23,7 +23,7 @@ class ReadOTP:
             "client_id": cls.CLIENT_ID,
             "client_secret": cls.CLIENT_SECRET,
             "grant_type": "client_credentials",
-            "scope": "https://outlook.office365.com/test",
+            "scope": "https://outlook.test.office365.com/test",
         }
         resp = requests.post(cls.TOKEN_URL, data=payload)
         resp.raise_for_status()
